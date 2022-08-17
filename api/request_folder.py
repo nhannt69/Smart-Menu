@@ -12,7 +12,7 @@ import numpy as np
 class Request():
 
     def __init__(self, folder_path):
-        self.file_path = folder_path
+        self.folder_path = folder_path
 
     def count_file(self):
         _, _, files = next(os.walk(self.folder_path))
@@ -53,15 +53,29 @@ class Request():
         evaluation = Metric()
         
         score = evaluation.evaluation(result)
+        print(score)
+
+        try:
+            bar = "\\"
+            bar2 = "/"
+            with open(f"test_evaluation/result_score/{str(self.folder_path).split(bar)[-1]}.txt", "a") as f:
+                f.write(f'{image_name}: {str(score)}\n')
+            with open(f"test_evaluation/result_score/{str(self.folder_path).split(bar2)[-1]}.txt", "a") as f:
+                f.write(f'{image_name}: {str(score)}\n')
+        except:
+            pass
+        
         return score
 
     def request_folder(self):
         score_list = []
         score_arg = 0.0
-        for img in os.listdir(self.file_path):
-            img_path = os.path.join(self.file_path, img)
+
+        for img in os.listdir(self.folder_path):
+            img_path = os.path.join(self.folder_path, img)
             score = self.request_image(img_path= img_path)
             score_list += [score]
+        print(score_list)
         score_arg = np.average(score)
         return score_list, score_arg
 

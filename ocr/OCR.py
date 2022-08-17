@@ -1,3 +1,4 @@
+import codecs
 import os
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 import sys
@@ -5,7 +6,7 @@ sys.path.insert(0, 'C:\chuyen\\fpt-software\.test\OCR-Vietnamese-master\OCR-Viet
 sys.path.insert(1, 'C:\chuyen\\fpt-software\.test\OCR-Vietnamese-master\OCR-Vietnamese-master\ocr')
 from detection import get_detector, get_textbox
 from recognition import Predictor, get_text
-from utils import group_text_box, get_image_list,printProgressBar,reformat_input,diff
+from utils import group_text_box, get_image_list,printProgressBar,reformat_input,diff, loadImage
 # from bidi.algorithm import get_display
 import numpy as np
 import cv2
@@ -24,6 +25,7 @@ class Reader(object):
 
     def __init__(self, config, gpu=True, model_storage_directory=None,
                  download_enabled=True, detector=True, recognizer=True):
+        time_load_model = time.time()
         self.config = config
         
         self.device = config['device']
@@ -33,6 +35,7 @@ class Reader(object):
             self.detector = get_detector(self.detector_path, self.device)
         if recognizer:
             self.recognizer = Predictor(config)
+        self.time_load_config = time.time() - time_load_model
 
     def detect(self, img, min_size = 20, text_threshold = 0.7, low_text = 0.4,\
                link_threshold = 0.4,canvas_size = 2560, mag_ratio = 1.,\
@@ -54,7 +57,7 @@ class Reader(object):
     def recognize(self, img, horizontal_list=None, free_list=None,reformat=True,imgH = 32):
 
         if reformat:
-            img, img_cv_grey = reformat_input(img_cv_grey)
+            img, img_cv_grey = reformat_input(img)
 
         if (horizontal_list==None) and (free_list==None):
             b,y_max, x_max = img.shape
@@ -67,7 +70,9 @@ class Reader(object):
             image_list, max_width = get_image_list(horizontal_list, free_list, img, model_height = imgH)
         
         result = get_text(self.recognizer,image_list)
-        # print(result)
+        
+        f = codecs.open(f"ocr\image_recognize\image_recognoze.txt", "a+", encoding='utf8')
+        f.write(f"\n=============================================\n{result}")
         return result
 
     def readtext(self, image,min_size = 20,\
@@ -81,6 +86,8 @@ class Reader(object):
         '''
         img, img_cv_grey = reformat_input(image)
 
+        time_detect = time.time()
+
         horizontal_list, free_list = self.detect(img, min_size, text_threshold,\
                                                  low_text, link_threshold,\
                                                  canvas_size, mag_ratio,\
@@ -88,10 +95,30 @@ class Reader(object):
                                                  height_ths,width_ths,\
                                                  add_margin, False)
 
+        #==========================================
+        try:
+            img_copy = loadImage(image)
+            for list_box in horizontal_list:
+                cv2.rectangle(img_copy, (list_box[0], list_box[2]), (list_box[1], list_box[3]), (0,0,255), 1)
+            bar = '\\'
+            bar_2 = '/'
+            cv2.imwrite(f"ocr\image_detect\img_detect_{str(image).split(bar)[-1]}", img_copy)
+            cv2.imwrite(f"ocr\image_detect\img_detect_{str(image).split(bar_2)[-1]}", img_copy)
+        except:
+            pass
+        #==========================================
+        
+        time_detect_finish = time.time() - time_detect
+
+        time_recognize = time.time()
         result = self.recognize(img, horizontal_list, free_list,False)
+        time_recognize_finish = time.time() - time_recognize
+
+        with open("test/result_info.txt", "a+") as f:
+            f.write(f'\n\n{image}\ntime load config: {self.time_load_config}\ntime detect ocr: {time_detect_finish}\ntime recognize ocr: {time_recognize_finish}')
         return result
 if __name__ == '__main__':
-    config = Cfg.load_config_from_file('config/vgg-transformer.yml')
+    config = Cfg.load_config_from_file('ocr\config\\vgg-transformer.yml')
     parser = argparse.ArgumentParser()
     parser.add_argument("--image_path", required=True, help="path to image test")
     args = parser.parse_args()
@@ -101,12 +128,6 @@ if __name__ == '__main__':
     start = time.time()
     result = reader.readtext(args.image_path)
 
-    img = cv2.imread(args.image_path)
-    img_copy = img.copy()
-    # print(reader.recognize(img_copy))
-    # for rs in result:
-    #     print(rs)
-    # cv2.rectangle(img_copy, (58, 170), (274, 194), (0,255,0), 1)
-    # cv2.imshow("test2", img_copy)
-    # cv2.waitKey()
-    # # print(time.time()-start)
+    for rs in result:
+        print(rs)
+    print(time.time()-start)

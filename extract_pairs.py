@@ -97,8 +97,8 @@ class Extractor:
     if isinstance(input, str):
       ## Detect + OCR ##
       image_path = input
-      image = cv2.imread(image_path)
-      result = list(self.reader.readtext(image))
+      # image = cv2.imread(image_path)
+      result = list(self.reader.readtext(image_path))
       # print(f' 1 2 3 {result}')
       
       ## Extract lines ##
@@ -113,7 +113,10 @@ class Extractor:
       ## Extract lines ##
       lines = self.extract_lines(result)
 
+
+
     ## Extract pairs ##
+    time_postprocessing = time.time()
     pairs = []
     # price_pattern = r"(\d{1,3}k(\/\w{1,3})?)|((\d\s?){1,3}[\.\,](\d\s?){3}\s?(d|đ|vnđ|vnd)?)|miễn\sphí"
     price_pattern = r"(\d{2,3}k?)|((\d\s?){[1,3}\.\,](\d\s?){3}\s?)|miễn\sphí" #Hỏi quân ??? regular expression 300k 3000k 15000 (\d{2,3}k?) 1     k
@@ -162,6 +165,9 @@ class Extractor:
             # print(f'case 3: price = {price}')
             # print(f'foodname: foodname = {food_name}')
 
+            time_postprocessing_finish = time.time() - time_postprocessing
+
+            time_translate = time.time()
             # ## Translation ##
             translated_name = ''
 
@@ -180,6 +186,7 @@ class Extractor:
               translated_name = translation.text
               print(f'googe translate {translated_name}')
               pass
+            time_translate_finish = time.time() - time_translate
                       
           if price[0] != '0':
             pairs.append((self.format_result.format_result_dict(food_name.upper()), price, translated_name))
@@ -188,7 +195,9 @@ class Extractor:
       except Exception as E:
         print(f'Exception: {E}')
         pass
-    # print(pairs)
+    with open("postprocessing\post_text_time.txt", "a") as f:
+      f.write(f"\n===========Post Pre=============\n{str(time_postprocessing_finish)}\ntime-transalte: {str(time_translate_finish)}")
+
     return pairs
 
 if __name__ == "__main__":
