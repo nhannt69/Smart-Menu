@@ -1,3 +1,7 @@
+import sys
+sys.path.insert(0, 'C:\chuyen\\fpt-software\.test\OCR-Vietnamese-master\OCR-Vietnamese-master')
+sys.path.insert(1, 'C:\chuyen\\fpt-software\.test\OCR-Vietnamese-master\OCR-Vietnamese-master\postprocessing')
+sys.path.insert(2, 'C:\chuyen\\fpt-software\.test\OCR-Vietnamese-master\OCR-Vietnamese-master\ocr')
 from email import header
 import os
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
@@ -13,17 +17,17 @@ import io
 import random
 import datetime
 import string
-from tools.config import Cfg
-from OCR import Reader
-from dictionary_menu import Formating_Dictionary
+from ocr.tools.config import Cfg
+from ocr.OCR import Reader
+from postprocessing.dictionary_menu import Formating_Dictionary
 import pandas as pd
 
 class Extractor:
-  def __init__(self, referenced_translations='Data_Labeling.xlsx'):
-    config = Cfg.load_config_from_file('config/vgg-transformer.yml')
+  def __init__(self, referenced_translations='data_sample\Data_Labeling.xlsx'):
+    config = Cfg.load_config_from_file('.\ocr\config\\vgg-transformer.yml')
     self.reader = Reader(config, gpu=False)
     # self.reader = easy_reader
-    self.format_result = Formating_Dictionary('dictionary_menu.xlsx')
+    self.format_result = Formating_Dictionary('postprocessing\dictionary_menu.xlsx')
     self.translator = Translator()
     self.referenced_translations = {}
     if referenced_translations:
@@ -194,14 +198,14 @@ if __name__ == "__main__":
   args = parser.parse_args()
 
   
-  labels_df = pd.read_excel('Data_Labeling.xlsx', header = None)
+  labels_df = pd.read_excel('data_sample\Data_Labeling.xlsx', header = None)
   print(labels_df)
   referenced_translations = {}
   for index, row in labels_df.iterrows():
       referenced_translations[row[1]] = row[2]
       # print(referenced_translations)
 
-  extractor = Extractor('Data_Labeling.xlsx')
+  extractor = Extractor('data_sample\Data_Labeling.xlsx')
   start_time = time.time()
   pairs = extractor.extract_menu(args.input_file)
   # print(type(pairs))
