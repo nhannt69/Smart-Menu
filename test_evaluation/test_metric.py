@@ -74,7 +74,7 @@ class Metric():
 
         score =   0.9*f1_score + 0.1*f1_score_translate
 
-        return score
+        return score, f1_score, f1_score_translate
 
         
 

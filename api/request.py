@@ -47,7 +47,7 @@ result = response.json()
 # print(str(result))
 
 evaluation = Metric()
-print(evaluation.evaluation(result))
+s, f1, f1_trans = evaluation.evaluation(result)
 
 # with open(f'{args.input_folder}/{result["image_name"]}_ocr.txt', 'w', encoding='utf8') as f:
 #   f.write(f'{result}')

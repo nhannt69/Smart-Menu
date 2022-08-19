@@ -75,7 +75,7 @@ class Reader(object):
         f.write(f"\n=============================================\n{result}")
         return result
 
-    def readtext(self, image,min_size = 20,\
+    def readtext(self, image, image_name, min_size = 20,\
                  text_threshold = 0.7, low_text = 0.4, link_threshold = 0.4,\
                  canvas_size = 2560, mag_ratio = 1.,\
                  slope_ths = 0.1, ycenter_ths = 0.5, height_ths = 0.5,\
@@ -102,10 +102,18 @@ class Reader(object):
                 cv2.rectangle(img_copy, (list_box[0], list_box[2]), (list_box[1], list_box[3]), (0,0,255), 1)
             bar = '\\'
             bar_2 = '/'
-            cv2.imwrite(f"ocr\image_detect\img_detect_{str(image).split(bar)[-1]}", img_copy)
-            cv2.imwrite(f"ocr\image_detect\img_detect_{str(image).split(bar_2)[-1]}", img_copy)
+            try:
+                cv2.imwrite(f"ocr\image_detect\img_detect_{str(image_name).split(bar)[-1]}", img_copy)
+            except:
+                pass
+            
+            try:
+                cv2.imwrite(f"ocr\image_detect\img_detect_{str(image_name).split(bar_2)[-1]}", img_copy)
+            except:
+                pass
         except:
             pass
+        
         #==========================================
         
         time_detect_finish = time.time() - time_detect
@@ -115,7 +123,7 @@ class Reader(object):
         time_recognize_finish = time.time() - time_recognize
 
         with open("test/result_info.txt", "a+") as f:
-            f.write(f'\n\n{image}\ntime load config: {self.time_load_config}\ntime detect ocr: {time_detect_finish}\ntime recognize ocr: {time_recognize_finish}')
+            f.write(f'\n\n{image_name}\ntime load config: {self.time_load_config}\ntime detect ocr: {time_detect_finish}\ntime recognize ocr: {time_recognize_finish}')
         return result
 if __name__ == '__main__':
     config = Cfg.load_config_from_file('ocr\config\\vgg-transformer.yml')
@@ -126,8 +134,10 @@ if __name__ == '__main__':
     
     reader = Reader(config)
     start = time.time()
-    result = reader.readtext(args.image_path)
+    result = reader.readtext(args.image_path, image_name= args.image_path)
 
     for rs in result:
         print(rs)
     print(time.time()-start)
+
+    

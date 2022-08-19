@@ -5,9 +5,11 @@ Output: image preprocessed
 Rotate -> Inverted image -> Grayscale (Binarization) -> Noise removal
 """
 
+import argparse
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
+import os
 
 
 #displaying-different-images-with-actual-size-in-matplotlib-subplot
@@ -140,7 +142,8 @@ def remove_borders(image):
 
 
 def preprocessing_menu(image_path):
-    path = "temp/img_processing_grayscale.png"
+    bar = "\\"
+    path = f"preprocessing\\temp\{str(image_path).split(bar)[-1]}"
 
     img = cv2.imread(image_path)
 
@@ -183,5 +186,14 @@ def preprocessing_image(img_path):
 
 
 if __name__ == "__main__":
-    img = cv2.imread('001.jpeg')
-    cv2.pre
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input_folder", help="test grayscale")
+    args = parser.parse_args()
+
+
+    for file in os.listdir(args.input_folder):
+        img_path = os.path.join(args.input_folder, file)
+        print(img_path)
+        img_grayscale = preprocessing_menu(img_path)
+
+

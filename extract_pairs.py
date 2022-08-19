@@ -93,12 +93,12 @@ class Extractor:
         return price + '000'
       return price
 
-  def extract_menu(self, input):
+  def extract_menu(self, input, image_name):
     if isinstance(input, str):
       ## Detect + OCR ##
       image_path = input
       # image = cv2.imread(image_path)
-      result = list(self.reader.readtext(image_path))
+      result = list(self.reader.readtext(image_path, image_name=image_name))
       # print(f' 1 2 3 {result}')
       
       ## Extract lines ##
@@ -216,7 +216,7 @@ if __name__ == "__main__":
 
   extractor = Extractor('data_sample\Data_Labeling.xlsx')
   start_time = time.time()
-  pairs = extractor.extract_menu(args.input_file)
+  pairs = extractor.extract_menu(args.input_file, image_name= args.input_file)
   # print(type(pairs))
   # print(f'{args.input_folder}/{pairs["image_name"]}_ocr.txt')
   # with open(f'{args.input_folder}/{pairs[0]["image_name"]}_ocr.txt', 'w', encoding='utf8') as f:

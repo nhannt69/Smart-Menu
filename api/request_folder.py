@@ -24,9 +24,7 @@ class Request():
         score = 0.0
 
         headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0",
-            "Accept-Encoding": "*",
-            "Connection": "keep-alive"
+             'accept': 'application/json',
         }
 
         
@@ -52,16 +50,19 @@ class Request():
 
         evaluation = Metric()
         
-        score = evaluation.evaluation(result)
+        score, f1_score, f1_score_translate = evaluation.evaluation(result)
         print(score)
 
+        bar = "\\"
+        bar2 = "/"
         try:
-            bar = "\\"
-            bar2 = "/"
             with open(f"test_evaluation/result_score/{str(self.folder_path).split(bar)[-1]}.txt", "a") as f:
-                f.write(f'{image_name}: {str(score)}\n')
+                f.write(f'{image_name}: {str(score)} {str(f1_score)} {str(f1_score_translate)}\n')
+        except:
+            pass
+        try:
             with open(f"test_evaluation/result_score/{str(self.folder_path).split(bar2)[-1]}.txt", "a") as f:
-                f.write(f'{image_name}: {str(score)}\n')
+                f.write(f'{image_name}: {str(score)} {str(f1_score)} {str(f1_score_translate)}\n')
         except:
             pass
         

@@ -53,7 +53,7 @@ def infer():
     # TODO
     # Call model for inference
     try:
-        pairs = extractor.extract_menu(img)
+        pairs = extractor.extract_menu(img, image_name)
         response = {
             "image_name": image_name,
             "infers": []
