@@ -1,0 +1,559 @@
+preprocessing/temp/001.jpeg
+time load config: 3.9268739223480225
+time detect ocr: 1.7592287063598633
+time recognize ocr: 13.767004013061523
+
+preprocessing/temp/002.jpeg
+time load config: 3.6746065616607666
+time detect ocr: 1.8360002040863037
+time recognize ocr: 13.666000366210938
+
+preprocessing/preprocessing_image\001.jpeg
+time load config: 3.60369610786438
+time detect ocr: 1.5699996948242188
+time recognize ocr: 12.085999011993408
+
+preprocessing/preprocessing_image\001.jpeg
+time load config: 3.6593220233917236
+time detect ocr: 1.5259978771209717
+time recognize ocr: 12.118013143539429
+
+preprocessing/preprocessing_image\001.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.5569987297058105
+time recognize ocr: 12.141000270843506
+
+preprocessing/preprocessing_image\002.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.4839980602264404
+time recognize ocr: 11.952002048492432
+
+preprocessing/preprocessing_image\003.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.4709961414337158
+time recognize ocr: 15.526998281478882
+
+preprocessing/preprocessing_image\004.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.764998435974121
+time recognize ocr: 16.759519338607788
+
+preprocessing/preprocessing_image\005.jpeg
+time load config: 3.546727418899536
+time detect ocr: 2.300001621246338
+time recognize ocr: 23.487972497940063
+
+preprocessing/preprocessing_image\006.jpeg
+time load config: 3.546727418899536
+time detect ocr: 3.5870227813720703
+time recognize ocr: 45.13299775123596
+
+preprocessing/preprocessing_image\007.jpeg
+time load config: 3.546727418899536
+time detect ocr: 3.320997714996338
+time recognize ocr: 17.608999490737915
+
+preprocessing/preprocessing_image\008.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.5701355934143066
+time recognize ocr: 13.724999189376831
+
+preprocessing/preprocessing_image\009.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.58302903175354
+time recognize ocr: 14.164973735809326
+
+preprocessing/preprocessing_image\010.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.6579983234405518
+time recognize ocr: 13.073000192642212
+
+preprocessing/preprocessing_image\011.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.5139648914337158
+time recognize ocr: 11.983998537063599
+
+preprocessing/preprocessing_image\012.jpeg
+time load config: 3.546727418899536
+time detect ocr: 2.333998680114746
+time recognize ocr: 3.295999765396118
+
+preprocessing/preprocessing_image\013.jpeg
+time load config: 3.546727418899536
+time detect ocr: 2.1859989166259766
+time recognize ocr: 3.955998182296753
+
+preprocessing/preprocessing_image\014.jpeg
+time load config: 3.546727418899536
+time detect ocr: 2.221999406814575
+time recognize ocr: 1.4129996299743652
+
+preprocessing/preprocessing_image\015.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.6450247764587402
+time recognize ocr: 16.223000288009644
+
+preprocessing/preprocessing_image\016.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.5050315856933594
+time recognize ocr: 9.288002967834473
+
+preprocessing/preprocessing_image\017.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.48002290725708
+time recognize ocr: 18.48500156402588
+
+preprocessing/preprocessing_image\018.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.46700119972229
+time recognize ocr: 7.729999542236328
+
+preprocessing/preprocessing_image\019.jpeg
+time load config: 3.546727418899536
+time detect ocr: 2.108001708984375
+time recognize ocr: 4.512840270996094
+
+preprocessing/preprocessing_image\020.jpeg
+time load config: 3.546727418899536
+time detect ocr: 2.1439950466156006
+time recognize ocr: 7.605029582977295
+
+preprocessing/preprocessing_image\021.jpeg
+time load config: 3.546727418899536
+time detect ocr: 2.1540262699127197
+time recognize ocr: 4.463003158569336
+
+preprocessing/preprocessing_image\022.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.5309629440307617
+time recognize ocr: 8.883999586105347
+
+preprocessing/preprocessing_image\023.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.562026023864746
+time recognize ocr: 15.419986724853516
+
+preprocessing/preprocessing_image\024.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.4819653034210205
+time recognize ocr: 8.557177066802979
+
+preprocessing/preprocessing_image\025.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.5440001487731934
+time recognize ocr: 5.108028173446655
+
+preprocessing/preprocessing_image\026.jpeg
+time load config: 3.546727418899536
+time detect ocr: 2.2189676761627197
+time recognize ocr: 5.633333921432495
+
+preprocessing/preprocessing_image\027.jpeg
+time load config: 3.546727418899536
+time detect ocr: 4.596001148223877
+time recognize ocr: 18.207274436950684
+
+preprocessing/preprocessing_image\028.jpeg
+time load config: 3.546727418899536
+time detect ocr: 4.543000221252441
+time recognize ocr: 18.5749671459198
+
+preprocessing/preprocessing_image\029.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.5499978065490723
+time recognize ocr: 12.690000295639038
+
+preprocessing/preprocessing_image\030.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.5229954719543457
+time recognize ocr: 14.431998252868652
+
+preprocessing/preprocessing_image\031.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.484999656677246
+time recognize ocr: 10.965999841690063
+
+preprocessing/preprocessing_image\032.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.5489990711212158
+time recognize ocr: 7.378000736236572
+
+preprocessing/preprocessing_image\033.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.7729825973510742
+time recognize ocr: 4.7170000076293945
+
+preprocessing/preprocessing_image\034.jpeg
+time load config: 3.546727418899536
+time detect ocr: 5.751998662948608
+time recognize ocr: 24.49099826812744
+
+preprocessing/preprocessing_image\035.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.9425079822540283
+time recognize ocr: 16.70899748802185
+
+preprocessing/preprocessing_image\036.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.536999225616455
+time recognize ocr: 18.400123357772827
+
+preprocessing/preprocessing_image\037.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.9809985160827637
+time recognize ocr: 9.135998487472534
+
+preprocessing/preprocessing_image\038.jpeg
+time load config: 3.546727418899536
+time detect ocr: 1.9839954376220703
+time recognize ocr: 32.04596948623657
+
+preprocessing/preprocessing_image\039.jpeg
+time load config: 3.546727418899536
+time detect ocr: 2.0589988231658936
+time recognize ocr: 32.22099995613098
+
+preprocessing/preprocessing_image\040.jpeg
+time load config: 3.546727418899536
+time detect ocr: 2.9959988594055176
+time recognize ocr: 21.97099733352661
+
+preprocessing/preprocessing_image\041.jpeg
+time load config: 3.546727418899536
+time detect ocr: 2.8099961280822754
+time recognize ocr: 9.053999185562134
+
+preprocessing/preprocessing_image\042.jpeg
+time load config: 3.546727418899536
+time detect ocr: 2.8639960289001465
+time recognize ocr: 9.796997308731079
+
+preprocessing/preprocessing_image\043.jpeg
+time load config: 3.546727418899536
+time detect ocr: 3.1820008754730225
+time recognize ocr: 9.340002298355103
+
+preprocessing/preprocessing_image\044.jpeg
+time load config: 3.546727418899536
+time detect ocr: 4.805001735687256
+time recognize ocr: 15.070998191833496
+
+preprocessing/preprocessing_image\045.jpeg
+time load config: 3.546727418899536
+time detect ocr: 5.066962480545044
+time recognize ocr: 11.347961664199829
+
+preprocessing/preprocessing_image\046.jpeg
+time load config: 3.546727418899536
+time detect ocr: 5.387003660202026
+time recognize ocr: 20.15596628189087
+
+preprocessing/preprocessing_image\047.jpeg
+time load config: 3.546727418899536
+time detect ocr: 2.628999948501587
+time recognize ocr: 20.626003980636597
+
+preprocessing/preprocessing_image\048.jpeg
+time load config: 3.546727418899536
+time detect ocr: 11.943001985549927
+time recognize ocr: 29.181037187576294
+
+preprocessing/preprocessing_image\049.jpeg
+time load config: 3.546727418899536
+time detect ocr: 2.440000057220459
+time recognize ocr: 7.1409995555877686
+
+preprocessing/preprocessing_image\050.jpeg
+time load config: 3.546727418899536
+time detect ocr: 3.6789979934692383
+time recognize ocr: 41.12999629974365
+
+preprocessing/preprocessing_image\051.jpeg
+time load config: 6.106315851211548
+time detect ocr: 8.299739837646484
+time recognize ocr: 103.86923122406006
+
+preprocessing/preprocessing_image\052.jpeg
+time load config: 6.106315851211548
+time detect ocr: 6.298001527786255
+time recognize ocr: 32.2741973400116
+
+preprocessing/preprocessing_image\053.jpeg
+time load config: 6.106315851211548
+time detect ocr: 7.987997531890869
+time recognize ocr: 75.56200003623962
+
+preprocessing/preprocessing_image\054.jpeg
+time load config: 6.106315851211548
+time detect ocr: 5.9569220542907715
+time recognize ocr: 20.389890432357788
+
+preprocessing/preprocessing_image\055.jpeg
+time load config: 6.106315851211548
+time detect ocr: 6.1220033168792725
+time recognize ocr: 26.868995428085327
+
+preprocessing/preprocessing_image\056.jpeg
+time load config: 6.106315851211548
+time detect ocr: 4.833006143569946
+time recognize ocr: 36.770467042922974
+
+preprocessing/preprocessing_image\057.jpeg
+time load config: 6.106315851211548
+time detect ocr: 4.472480058670044
+time recognize ocr: 26.546194076538086
+
+preprocessing/preprocessing_image\058.jpeg
+time load config: 6.106315851211548
+time detect ocr: 5.074997425079346
+time recognize ocr: 18.763997077941895
+
+preprocessing/preprocessing_image\059.jpeg
+time load config: 6.106315851211548
+time detect ocr: 5.232266426086426
+time recognize ocr: 12.662998914718628
+
+preprocessing/preprocessing_image\060.jpeg
+time load config: 6.106315851211548
+time detect ocr: 6.65878701210022
+time recognize ocr: 11.12499451637268
+
+preprocessing/preprocessing_image\061.jpeg
+time load config: 6.106315851211548
+time detect ocr: 3.417048454284668
+time recognize ocr: 14.343979835510254
+
+preprocessing/preprocessing_image\062.jpeg
+time load config: 6.106315851211548
+time detect ocr: 7.312960147857666
+time recognize ocr: 35.92573595046997
+
+preprocessing/preprocessing_image\063.jpeg
+time load config: 6.106315851211548
+time detect ocr: 2.8429999351501465
+time recognize ocr: 13.469000577926636
+
+preprocessing/preprocessing_image\064.jpeg
+time load config: 6.106315851211548
+time detect ocr: 2.688997983932495
+time recognize ocr: 11.83351993560791
+
+preprocessing/preprocessing_image\065.jpeg
+time load config: 6.106315851211548
+time detect ocr: 2.8204660415649414
+time recognize ocr: 19.807997703552246
+
+preprocessing/preprocessing_image\066.jpeg
+time load config: 6.106315851211548
+time detect ocr: 2.7709953784942627
+time recognize ocr: 29.34641194343567
+
+preprocessing/preprocessing_image\067.jpeg
+time load config: 6.106315851211548
+time detect ocr: 2.6419968605041504
+time recognize ocr: 14.216999053955078
+
+preprocessing/preprocessing_image\068.jpeg
+time load config: 6.106315851211548
+time detect ocr: 2.770996332168579
+time recognize ocr: 15.295998096466064
+
+preprocessing/preprocessing_image\069.jpeg
+time load config: 6.106315851211548
+time detect ocr: 2.7299904823303223
+time recognize ocr: 13.135258913040161
+
+preprocessing/preprocessing_image\070.jpeg
+time load config: 6.106315851211548
+time detect ocr: 4.726000547409058
+time recognize ocr: 14.246998310089111
+
+preprocessing/preprocessing_image\071.jpeg
+time load config: 6.106315851211548
+time detect ocr: 3.252995729446411
+time recognize ocr: 27.807998418807983
+
+preprocessing/preprocessing_image\072.jpeg
+time load config: 6.106315851211548
+time detect ocr: 3.296002149581909
+time recognize ocr: 25.20800542831421
+
+preprocessing/preprocessing_image\073.jpeg
+time load config: 6.106315851211548
+time detect ocr: 6.602993965148926
+time recognize ocr: 35.3463339805603
+
+preprocessing/preprocessing_image\074.jpeg
+time load config: 6.106315851211548
+time detect ocr: 2.9769935607910156
+time recognize ocr: 4.96899938583374
+
+preprocessing/preprocessing_image\075.jpeg
+time load config: 6.106315851211548
+time detect ocr: 3.4359984397888184
+time recognize ocr: 11.907999753952026
+
+preprocessing/preprocessing_image\076.jpeg
+time load config: 6.106315851211548
+time detect ocr: 3.3969976902008057
+time recognize ocr: 5.808001756668091
+
+preprocessing/preprocessing_image\077.jpeg
+time load config: 6.106315851211548
+time detect ocr: 4.016998529434204
+time recognize ocr: 8.023816108703613
+
+preprocessing/preprocessing_image\078.jpeg
+time load config: 6.106315851211548
+time detect ocr: 3.9735360145568848
+time recognize ocr: 22.646997928619385
+
+preprocessing/preprocessing_image\079.jpeg
+time load config: 6.106315851211548
+time detect ocr: 3.2380006313323975
+time recognize ocr: 18.25399160385132
+
+preprocessing/preprocessing_image\080.jpeg
+time load config: 6.106315851211548
+time detect ocr: 3.270998239517212
+time recognize ocr: 28.054835081100464
+
+preprocessing/preprocessing_image\081.jpeg
+time load config: 6.106315851211548
+time detect ocr: 8.815942525863647
+time recognize ocr: 26.923996925354004
+
+preprocessing/preprocessing_image\082.jpeg
+time load config: 6.106315851211548
+time detect ocr: 5.020995140075684
+time recognize ocr: 26.852997064590454
+
+preprocessing/preprocessing_image\083.jpeg
+time load config: 6.106315851211548
+time detect ocr: 6.3060643672943115
+time recognize ocr: 40.15562105178833
+
+preprocessing/preprocessing_image\084.jpeg
+time load config: 6.106315851211548
+time detect ocr: 7.944450616836548
+time recognize ocr: 25.206570148468018
+
+preprocessing/preprocessing_image\085.jpeg
+time load config: 6.106315851211548
+time detect ocr: 5.752994537353516
+time recognize ocr: 32.1609947681427
+
+preprocessing/preprocessing_image\086.jpeg
+time load config: 6.106315851211548
+time detect ocr: 6.381908893585205
+time recognize ocr: 57.238964796066284
+
+preprocessing/preprocessing_image\087.jpeg
+time load config: 6.106315851211548
+time detect ocr: 6.787708520889282
+time recognize ocr: 32.66500639915466
+
+preprocessing/preprocessing_image\088.jpeg
+time load config: 6.106315851211548
+time detect ocr: 7.701995372772217
+time recognize ocr: 57.197359800338745
+
+preprocessing/preprocessing_image\089.jpeg
+time load config: 6.106315851211548
+time detect ocr: 4.463032245635986
+time recognize ocr: 23.591084718704224
+
+preprocessing/preprocessing_image\090.jpeg
+time load config: 6.106315851211548
+time detect ocr: 4.298525094985962
+time recognize ocr: 18.674412965774536
+
+preprocessing/preprocessing_image\091.jpeg
+time load config: 6.106315851211548
+time detect ocr: 8.220153570175171
+time recognize ocr: 10.475982904434204
+
+preprocessing/preprocessing_image\092.jpeg
+time load config: 6.106315851211548
+time detect ocr: 3.3730313777923584
+time recognize ocr: 28.046998500823975
+
+preprocessing/preprocessing_image\093.jpeg
+time load config: 6.106315851211548
+time detect ocr: 5.157654762268066
+time recognize ocr: 17.406405925750732
+
+preprocessing/preprocessing_image\094.jpeg
+time load config: 6.106315851211548
+time detect ocr: 3.8150203227996826
+time recognize ocr: 23.942917346954346
+
+preprocessing/preprocessing_image\095.jpeg
+time load config: 6.106315851211548
+time detect ocr: 4.308998346328735
+time recognize ocr: 22.946097135543823
+
+preprocessing/preprocessing_image\096.jpeg
+time load config: 6.106315851211548
+time detect ocr: 6.19999885559082
+time recognize ocr: 15.439106702804565
+
+preprocessing/preprocessing_image\097.jpeg
+time load config: 6.106315851211548
+time detect ocr: 4.811997890472412
+time recognize ocr: 29.936997890472412
+
+preprocessing/preprocessing_image\098.jpeg
+time load config: 6.106315851211548
+time detect ocr: 4.820992946624756
+time recognize ocr: 14.504997253417969
+
+preprocessing/preprocessing_image\099.jpeg
+time load config: 6.106315851211548
+time detect ocr: 4.243626594543457
+time recognize ocr: 16.219999074935913
+
+preprocessing/preprocessing_image\100.jpeg
+time load config: 6.106315851211548
+time detect ocr: 2.7499969005584717
+time recognize ocr: 22.68696689605713
+
+preprocessing/preprocessing_image\101.jpeg
+time load config: 6.106315851211548
+time detect ocr: 3.2710039615631104
+time recognize ocr: 9.448601961135864
+
+preprocessing/preprocessing_image\102.jpeg
+time load config: 6.106315851211548
+time detect ocr: 3.2590010166168213
+time recognize ocr: 12.540002346038818
+
+preprocessing/preprocessing_image\103.jpeg
+time load config: 6.106315851211548
+time detect ocr: 3.220996141433716
+time recognize ocr: 32.63748812675476
+
+preprocessing/preprocessing_image\104.jpeg
+time load config: 6.106315851211548
+time detect ocr: 3.2569642066955566
+time recognize ocr: 10.532999277114868
+
+preprocessing/preprocessing_image\105.jpeg
+time load config: 6.106315851211548
+time detect ocr: 3.697000741958618
+time recognize ocr: 10.946000337600708
+
+preprocessing/preprocessing_image\106.jpeg
+time load config: 6.106315851211548
+time detect ocr: 3.282999038696289
+time recognize ocr: 13.504522800445557
+
+preprocessing/preprocessing_image\107.jpeg
+time load config: 6.106315851211548
+time detect ocr: 6.416067838668823
+time recognize ocr: 25.435002088546753
+
+preprocessing/preprocessing_image\108.jpeg
+time load config: 6.106315851211548
+time detect ocr: 6.998000383377075
+time recognize ocr: 25.323039293289185

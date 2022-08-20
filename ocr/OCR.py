@@ -4,6 +4,7 @@ os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 import sys
 sys.path.insert(0, 'C:\chuyen\\fpt-software\.test\OCR-Vietnamese-master\OCR-Vietnamese-master')
 sys.path.insert(1, 'C:\chuyen\\fpt-software\.test\OCR-Vietnamese-master\OCR-Vietnamese-master\ocr')
+sys.path.insert(1, 'C:\chuyen\\fpt-software\.test\OCR-Vietnamese-master\OCR-Vietnamese-master\postprocessing')
 from detection import get_detector, get_textbox
 from recognition import Predictor, get_text
 from utils import group_text_box, get_image_list,printProgressBar,reformat_input,diff, loadImage
@@ -54,7 +55,7 @@ class Reader(object):
 
         return horizontal_list, free_list
 
-    def recognize(self, img, horizontal_list=None, free_list=None,reformat=True,imgH = 32):
+    def recognize(self, img, image_name, horizontal_list=None, free_list=None,reformat=True,imgH = 32):
 
         if reformat:
             img, img_cv_grey = reformat_input(img)
@@ -72,7 +73,7 @@ class Reader(object):
         result = get_text(self.recognizer,image_list)
         
         f = codecs.open(f"ocr\image_recognize\image_recognoze.txt", "a+", encoding='utf8')
-        f.write(f"\n=============================================\n{result}")
+        f.write(f"\n{str(image_name)}: {result}")
         return result
 
     def readtext(self, image, image_name, min_size = 20,\
@@ -94,6 +95,7 @@ class Reader(object):
                                                  slope_ths, ycenter_ths,\
                                                  height_ths,width_ths,\
                                                  add_margin, False)
+        time_detect_finish = time.time() - time_detect
 
         #==========================================
         try:
@@ -114,12 +116,11 @@ class Reader(object):
         except:
             pass
         
-        #==========================================
-        
-        time_detect_finish = time.time() - time_detect
+        #==========================================      
+
 
         time_recognize = time.time()
-        result = self.recognize(img, horizontal_list, free_list,False)
+        result = self.recognize(img, image_name, horizontal_list, free_list,False)
         time_recognize_finish = time.time() - time_recognize
 
         with open("test/result_info.txt", "a+") as f:
