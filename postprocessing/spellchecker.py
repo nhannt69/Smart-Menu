@@ -23,6 +23,8 @@ class SpellChecker(object):
         :param text: The text to be corrected
         :return: The first suggestion from the spell checker.
         """
+        text = text.lower()
+
         text = re.sub(r"[.\?#@+,<>%~`!$^&\(\):;\\\/]", r" \g<0> ", text)
 
         suggestion = self.spell.lookup_compound(
