@@ -7,7 +7,7 @@ class SpellChecker(object):
     def __init__(
         self, vocabulary_path: str, vocabulary_big_gram_path: str, edit_distance=3
     ):
-        self.spell = SymSpell(edit_distance=edit_distance)
+        self.spell = SymSpell(max_dictionary_edit_distance=edit_distance)
         self.ed = edit_distance
 
         self.spell.load_dictionary(
@@ -27,9 +27,15 @@ class SpellChecker(object):
         :param text: The text to be corrected
         :return: The first suggestion from the spell checker.
         """
+
+        if not text:
+            return text
+
         text = text.lower()
 
         text = re.sub(r"[.\?#@+,<>%~`!$^&\(\):;\\\/]", r" \g<0> ", text)
+
+        text = re.sub(r'[\\/]', 'hoặc', text)
 
         suggestion = self.spell.lookup_compound(
             text,
