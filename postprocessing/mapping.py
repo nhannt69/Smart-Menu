@@ -21,17 +21,17 @@ def clean_raw_text(raw_text: str) -> str:
 def get_price_and_food(clean_text: str):
     ents = clean_text.split('\n')
 
-    price_token = r"(\d\s?)+k?|miễn\sphí|free"
+    price_token = r"(\d\s?)+k?|(\d+\s?[\.,]+)+k?|miễn\sphí|free"
 
     list_price = []
     list_food = []
 
     for idx, ent in enumerate(ents):
+        ent = ent.lower()
         if re.search(price_token, ent):
             #format price
-            ent = ent.lower()
             ent = ent.replace('o', '0').replace('k', '000')
-            ent = re.sub(r'^[\d]', '', ent)
+            ent = re.sub(r'[^\d]', '', ent)
             list_price += [idx, ent]
         else:
             list_food += [idx, ent]
@@ -40,11 +40,11 @@ def get_price_and_food(clean_text: str):
 
 
 #Step 3 mapping price and food
-def mapping(foods: list, prices: list) -> List[Tuple[str]]:
+def map(foods: list, prices: list) -> List[List[str]]:
 
     menu = []
 
-    while foods[0][0] < prices[0][0]:
+    while foods[0][0] < prices[0][0]-1:
         menu.append([foods[0][1], "NO GIVEN"])
         foods.pop(0)
 

@@ -10,10 +10,14 @@ class SpellChecker(object):
         self.spell = SymSpell(edit_distance=edit_distance)
         self.ed = edit_distance
 
-        self.spell.load_dictionary(vocabulary_path)
+        self.spell.load_dictionary(
+            vocabulary_path, 0, 1, separator="$", encoding="utf-8"
+        )
 
         if vocabulary_big_gram_path:
-            self.spell.load_bigram_dictionary(vocabulary_big_gram_path)
+            self.spell.load_bigram_dictionary(
+                vocabulary_big_gram_path, 0, 1, separator="$", encoding="utf-8"
+            )
 
     def correct_spell(self, text):
         """
