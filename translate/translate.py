@@ -7,23 +7,23 @@ Output: list loop but each item is a tuple has three element: ('food_name', 'pri
 from googletrans import Translator
 
 class Translator_Menu(object):
-    def __init__(self, menu):
-        self.menu = menu
+    def __init__(self):
         self.translator = Translator()
     
-    def translatate(self):
+    def process_translate(self, menu):
+        import time
+        start = time.time()
         pairs = []
         
-        for item in self.menu:
+        for item in menu:
             translation = self.translator.translate(item[0], dest='en', src='vi')
             translated_name = translation.text
-            item += [translated_name]
+            item += [translated_name.upper()]
             pairs.append((item[0].upper(), item[1], item[2]))
-            print(item)
         return pairs
 
 if __name__ =='__main__':
     menu = [['Rau muống xào tỏi', '20000'],['Bắp cải xào tỏi', '150000'],['Đậu xào', '145800'],['Gà nướng', '45000']]
-    translator = Translator_Menu(menu=menu)
-    print(translator.translatate())
+    translator = Translator_Menu()
+    print(translator.process_translatate(menu=menu))
 
