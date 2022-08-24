@@ -59,11 +59,14 @@ def get_text(recognizer,image_list):
     list_time= []
     for img in img_list:
         result, time_finish = recognizer.predict(img)
+        # import matplotlib.pyplot as plt
+        # plt.imshow(img)
+        # plt.show()
         result_str.append(result)
         list_time += [time_finish]
-        # import codecs
-        # f = codecs.open("postprocessing\\post_processing_result\\result_ocr.txt", "a", "utf8")
-        # f.write(f'\n{result_str}\n{list_time}')
+        import codecs
+        f = codecs.open("postprocessing\\post_processing_result\\result_ocr.txt", "a", "utf8")
+        f.write(f'\n{result_str}')
         
     result = []
 

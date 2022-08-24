@@ -153,23 +153,23 @@ class Reader(object):
         # time_detect_finish = time.time() - time_detect
 
         #==========================================
-        # try:
-        #     img_copy = loadImage(image)
-        #     for list_box in horizontal_list:
-        #         cv2.rectangle(img_copy, (list_box[0], list_box[2]), (list_box[1], list_box[3]), (0,0,255), 1)
-        #     bar = '\\'
-        #     bar_2 = '/'
-        #     try:
-        #         cv2.imwrite(f"ocr\image_detect\img_detect1_{str(image_name).split(bar)[-1]}", img_copy)
-        #     except:
-        #         pass
+        try:
+            img_copy = loadImage(image)
+            for list_box in horizontal_list:
+                cv2.rectangle(img_copy, (list_box[0], list_box[2]), (list_box[1], list_box[3]), (0,0,255), 1)
+            bar = '\\'
+            bar_2 = '/'
+            try:
+                cv2.imwrite(f"ocr\image_detect\img_detect1_{str(image_name).split(bar)[-1]}", img_copy)
+            except:
+                pass
             
-        #     try:
-        #         cv2.imwrite(f"ocr\image_detect\img_detect1_{str(image_name).split(bar_2)[-1]}", img_copy)
-        #     except:
-        #         pass
-        # except:
-        #     pass
+            try:
+                cv2.imwrite(f"ocr\image_detect\img_detect1_{str(image_name).split(bar_2)[-1]}", img_copy)
+            except:
+                pass
+        except:
+            pass
         
         #==========================================      
         # time_recognize = time.time()

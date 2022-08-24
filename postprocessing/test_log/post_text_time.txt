@@ -1,0 +1,221 @@
+
+===========Post Pre=============
+1660760492.814588
+time-transalte-3321520988.534174
+===========Post Pre=============
+9.700171947479248
+time-transalte1.5499985218048096
+===========Post Pre=============
+9.008779287338257
+time-transalte: 1.6000056266784668
+===========Post Pre=============
+52.95464372634888
+time-transalte: 2.6173460483551025
+===========Post Pre=============
+51.9522647857666
+time-transalte: 2.693415880203247
+===========Post Pre=============
+19.029564380645752
+time-transalte: 2.7790558338165283
+===========Post Pre=============
+47.60666561126709
+time-transalte: 2.6472675800323486
+===========Post Pre=============
+47.49808478355408
+time-transalte: 2.6597862243652344
+===========Post Pre=============
+47.76173710823059
+time-transalte: 2.69316029548645
+===========Post Pre=============
+48.31676650047302
+time-transalte: 2.6439197063446045
+===========Post Pre=============
+28.266896963119507
+time-transalte: 2.9928958415985107
+===========Post Pre=============
+14.846356391906738
+time-transalte: 2.556992769241333
+===========Post Pre=============
+92.87826108932495
+time-transalte: 1.3094651699066162
+===========Post Pre=============
+132.49960613250732
+time-transalte: 1.1925935745239258
+===========Post Pre=============
+65.02096843719482
+time-transalte: 2.70045804977417
+===========Post Pre=============
+83.36034059524536
+time-transalte: 2.7871997356414795
+===========Post Pre=============
+133.5557415485382
+time-transalte: 3.0930004119873047
+===========Post Pre=============
+142.99306750297546
+time-transalte: 2.6055843830108643
+===========Post Pre=============
+40.3333580493927
+time-transalte: 1.266822099685669
+===========Post Pre=============
+144.2393763065338
+time-transalte: 5.047102451324463
+===========Post Pre=============
+135.80771374702454
+time-transalte: 5.936971426010132
+===========Post Pre=============
+62.18583345413208
+time-transalte: 2.8471627235412598
+===========Post Pre=============
+20.84495782852173
+time-transalte: 2.5869383811950684
+===========Post Pre=============
+5788.589483499527
+time-transalte: 7.698580026626587
+===========Post Pre=============
+187.58356833457947
+time-transalte: 5.17314887046814
+===========Post Pre=============
+91.9601469039917
+time-transalte: 4.653009653091431
+===========Post Pre=============
+16.76771879196167
+time-transalte: 6.808587074279785
+===========Post Pre=============
+50.58771467208862
+time-transalte: 2.67406964302063
+===========Post Pre=============
+31.024516105651855
+time-transalte: 3.00266432762146
+===========Post Pre=============
+104.79670691490173
+time-transalte: 5.4772539138793945
+===========Post Pre=============
+55.94896411895752
+time-transalte: 4.5475873947143555
+===========Post Pre=============
+151.53837084770203
+time-transalte: 3.698718786239624
+===========Post Pre=============
+229.19281435012817
+time-transalte: 11.413324117660522
+===========Post Pre=============
+47.21810531616211
+time-transalte: 20.957730293273926
+===========Post Pre=============
+512.2355055809021
+time-transalte: 1.6950016021728516
+===========Post Pre=============
+681.3269698619843
+time-transalte: 4.211307048797607
+===========Post Pre=============
+154.46972513198853
+time-transalte: 5.536773920059204preprocessing/preprocessing_image\001.jpeg: Time load config: 3.610694408416748 Time OCR: 13.815996885299683 Time Postprocessing 0.029004335403442383 Time 17.45669674873352
+preprocessing/preprocessing_image\001.jpeg: Time load config: 3.666323184967041 Time OCR: 13.752999544143677 Time Postprocessing 3.1704792976379395 Time 16.923478841781616
+preprocessing/preprocessing_image\001.jpeg: Time load config: 3.5537261962890625 Time OCR: 13.818999528884888 Time Postprocessing 3.079003095626831 Time 16.89800262451172
+preprocessing/preprocessing_image\002.jpeg: Time load config: 3.5537261962890625 Time OCR: 13.526998043060303 Time Postprocessing 31.576033353805542 Time 45.103031396865845
+preprocessing/preprocessing_image\003.jpeg: Time load config: 3.5537261962890625 Time OCR: 17.08180809020996 Time Postprocessing 41.1783549785614 Time 58.26016306877136
+preprocessing/preprocessing_image\004.jpeg: Time load config: 3.5537261962890625 Time OCR: 18.623522520065308 Time Postprocessing 36.614033460617065 Time 55.23755598068237
+preprocessing/preprocessing_image\005.jpeg: Time load config: 3.5537261962890625 Time OCR: 25.858999967575073 Time Postprocessing 14.447998523712158 Time 40.30699849128723
+preprocessing/preprocessing_image\006.jpeg: Time load config: 3.5537261962890625 Time OCR: 48.77799892425537 Time Postprocessing 56.442033529281616 Time 105.22003245353699
+preprocessing/preprocessing_image\007.jpeg: Time load config: 3.5537261962890625 Time OCR: 20.97599959373474 Time Postprocessing 27.707038164138794 Time 48.683037757873535
+preprocessing/preprocessing_image\008.jpeg: Time load config: 3.5537261962890625 Time OCR: 15.388132333755493 Time Postprocessing 35.424030780792236 Time 50.81216311454773
+preprocessing/preprocessing_image\009.jpeg: Time load config: 3.5537261962890625 Time OCR: 15.83500075340271 Time Postprocessing 23.775042295455933 Time 39.61004304885864
+preprocessing/preprocessing_image\010.jpeg: Time load config: 3.5537261962890625 Time OCR: 14.800998210906982 Time Postprocessing 3.487002372741699 Time 18.28800058364868
+preprocessing/preprocessing_image\011.jpeg: Time load config: 3.5537261962890625 Time OCR: 13.569998264312744 Time Postprocessing 16.1710045337677 Time 29.741002798080444
+preprocessing/preprocessing_image\012.jpeg: Time load config: 3.5537261962890625 Time OCR: 5.705961227416992 Time Postprocessing 0.9920015335083008 Time 6.697962760925293
+preprocessing/preprocessing_image\013.jpeg: Time load config: 3.5537261962890625 Time OCR: 6.196984052658081 Time Postprocessing 0.9100258350372314 Time 7.1070098876953125
+preprocessing/preprocessing_image\014.jpeg: Time load config: 3.5537261962890625 Time OCR: 3.721155881881714 Time Postprocessing 1.0710327625274658 Time 4.79218864440918
+preprocessing/preprocessing_image\015.jpeg: Time load config: 3.5537261962890625 Time OCR: 17.94599747657776 Time Postprocessing 33.58603358268738 Time 51.53203105926514
+preprocessing/preprocessing_image\016.jpeg: Time load config: 3.5537261962890625 Time OCR: 10.871002912521362 Time Postprocessing 15.712031364440918 Time 26.58303427696228
+preprocessing/preprocessing_image\017.jpeg: Time load config: 3.5537261962890625 Time OCR: 20.037002086639404 Time Postprocessing 18.427000522613525 Time 38.46400260925293
+preprocessing/preprocessing_image\018.jpeg: Time load config: 3.5537261962890625 Time OCR: 9.266828536987305 Time Postprocessing 15.236032724380493 Time 24.502861261367798
+preprocessing/preprocessing_image\019.jpeg: Time load config: 3.5537261962890625 Time OCR: 6.689854621887207 Time Postprocessing 1.047008752822876 Time 7.736863374710083
+preprocessing/preprocessing_image\020.jpeg: Time load config: 3.5537261962890625 Time OCR: 9.81482744216919 Time Postprocessing 0.933037281036377 Time 10.747864723205566
+preprocessing/preprocessing_image\021.jpeg: Time load config: 3.5537261962890625 Time OCR: 6.708999395370483 Time Postprocessing 1.091036319732666 Time 7.800035715103149
+preprocessing/preprocessing_image\022.jpeg: Time load config: 3.5537261962890625 Time OCR: 10.487997770309448 Time Postprocessing 16.69903588294983 Time 27.187033653259277
+preprocessing/preprocessing_image\023.jpeg: Time load config: 3.5537261962890625 Time OCR: 17.066994667053223 Time Postprocessing 37.0350341796875 Time 54.10202884674072
+preprocessing/preprocessing_image\024.jpeg: Time load config: 3.5537261962890625 Time OCR: 10.12014365196228 Time Postprocessing 14.03303599357605 Time 24.15317964553833
+preprocessing/preprocessing_image\025.jpeg: Time load config: 3.5537261962890625 Time OCR: 6.7239720821380615 Time Postprocessing 10.02103304862976 Time 16.745005130767822
+preprocessing/preprocessing_image\026.jpeg: Time load config: 3.5537261962890625 Time OCR: 7.911333799362183 Time Postprocessing 0.939032793045044 Time 8.850366592407227
+preprocessing/preprocessing_image\027.jpeg: Time load config: 3.5537261962890625 Time OCR: 22.888277053833008 Time Postprocessing 25.007030248641968 Time 47.895307302474976
+preprocessing/preprocessing_image\028.jpeg: Time load config: 3.5537261962890625 Time OCR: 23.201063632965088 Time Postprocessing 35.59300088882446 Time 58.79406452178955
+preprocessing/preprocessing_image\029.jpeg: Time load config: 3.5537261962890625 Time OCR: 14.31800127029419 Time Postprocessing 19.481032848358154 Time 33.799034118652344
+preprocessing/preprocessing_image\030.jpeg: Time load config: 3.5537261962890625 Time OCR: 16.036996603012085 Time Postprocessing 23.533032417297363 Time 39.57002902030945
+preprocessing/preprocessing_image\031.jpeg: Time load config: 3.5537261962890625 Time OCR: 12.53599762916565 Time Postprocessing 4.785036563873291 Time 17.32103419303894
+preprocessing/preprocessing_image\032.jpeg: Time load config: 3.5537261962890625 Time OCR: 9.007997989654541 Time Postprocessing 9.29304027557373 Time 18.30103826522827
+preprocessing/preprocessing_image\033.jpeg: Time load config: 3.5537261962890625 Time OCR: 6.593963384628296 Time Postprocessing 10.26500153541565 Time 16.858964920043945
+preprocessing/preprocessing_image\034.jpeg: Time load config: 3.5537261962890625 Time OCR: 30.49593424797058 Time Postprocessing 40.32500171661377 Time 70.82093596458435
+preprocessing/preprocessing_image\035.jpeg: Time load config: 3.5537261962890625 Time OCR: 18.871490001678467 Time Postprocessing 10.278033018112183 Time 29.14952301979065
+preprocessing/preprocessing_image\036.jpeg: Time load config: 3.5537261962890625 Time OCR: 20.00909161567688 Time Postprocessing 14.642001628875732 Time 34.65109324455261
+preprocessing/preprocessing_image\037.jpeg: Time load config: 3.5537261962890625 Time OCR: 11.197999238967896 Time Postprocessing 11.352998971939087 Time 22.550998210906982
+preprocessing/preprocessing_image\038.jpeg: Time load config: 3.5537261962890625 Time OCR: 34.12300252914429 Time Postprocessing 72.37203049659729 Time 106.49503302574158
+preprocessing/preprocessing_image\039.jpeg: Time load config: 3.5537261962890625 Time OCR: 34.38099956512451 Time Postprocessing 59.23203134536743 Time 93.61303091049194
+preprocessing/preprocessing_image\040.jpeg: Time load config: 3.5537261962890625 Time OCR: 25.13093662261963 Time Postprocessing 22.513004302978516 Time 47.643940925598145
+preprocessing/preprocessing_image\041.jpeg: Time load config: 3.5537261962890625 Time OCR: 11.985998630523682 Time Postprocessing 12.491001844406128 Time 24.47700047492981
+preprocessing/preprocessing_image\042.jpeg: Time load config: 3.5537261962890625 Time OCR: 12.807982921600342 Time Postprocessing 0.0009996891021728516 Time 12.808982610702515
+preprocessing/preprocessing_image\043.jpeg: Time load config: 3.5537261962890625 Time OCR: 12.571004152297974 Time Postprocessing 10.070029973983765 Time 22.64103412628174
+preprocessing/preprocessing_image\044.jpeg: Time load config: 3.5537261962890625 Time OCR: 19.932997465133667 Time Postprocessing 39.11000061035156 Time 59.04299807548523
+preprocessing/preprocessing_image\045.jpeg: Time load config: 3.5537261962890625 Time OCR: 16.87996530532837 Time Postprocessing 0.0 Time 16.87996530532837
+preprocessing/preprocessing_image\046.jpeg: Time load config: 3.5537261962890625 Time OCR: 25.688005208969116 Time Postprocessing 1.368030309677124 Time 27.05603551864624
+preprocessing/preprocessing_image\047.jpeg: Time load config: 3.5537261962890625 Time OCR: 23.3689706325531 Time Postprocessing 39.26403307914734 Time 62.63300371170044
+preprocessing/preprocessing_image\048.jpeg: Time load config: 3.5537261962890625 Time OCR: 41.233319997787476 Time Postprocessing 65.56000232696533 Time 106.79332232475281
+preprocessing/preprocessing_image\049.jpeg: Time load config: 3.5537261962890625 Time OCR: 9.70696473121643 Time Postprocessing 4.988002061843872 Time 14.694966793060303
+preprocessing/preprocessing_image\050.jpeg: Time load config: 3.5537261962890625 Time OCR: 44.92899751663208 Time Postprocessing 39.72400140762329 Time 84.65299892425537
+preprocessing/preprocessing_image\051.jpeg: Time load config: 6.119280576705933 Time OCR: 112.32197308540344 Time Postprocessing 209.76736068725586 Time 322.0893337726593
+preprocessing/preprocessing_image\052.jpeg: Time load config: 6.119280576705933 Time OCR: 38.63523507118225 Time Postprocessing 57.464473724365234 Time 96.09970879554749
+preprocessing/preprocessing_image\053.jpeg: Time load config: 6.119280576705933 Time OCR: 83.63400077819824 Time Postprocessing 72.96509003639221 Time 156.59909081459045
+preprocessing/preprocessing_image\054.jpeg: Time load config: 6.119280576705933 Time OCR: 26.43780493736267 Time Postprocessing 36.23004221916199 Time 62.66784715652466
+preprocessing/preprocessing_image\055.jpeg: Time load config: 6.119280576705933 Time OCR: 33.1209979057312 Time Postprocessing 52.771090269088745 Time 85.89208817481995
+preprocessing/preprocessing_image\056.jpeg: Time load config: 6.119280576705933 Time OCR: 41.6674542427063 Time Postprocessing 40.90443825721741 Time 82.5718924999237
+preprocessing/preprocessing_image\057.jpeg: Time load config: 6.119280576705933 Time OCR: 31.07125473022461 Time Postprocessing 27.15400218963623 Time 58.22525691986084
+preprocessing/preprocessing_image\058.jpeg: Time load config: 6.119280576705933 Time OCR: 23.88599920272827 Time Postprocessing 39.165590047836304 Time 63.051589250564575
+preprocessing/preprocessing_image\059.jpeg: Time load config: 6.119280576705933 Time OCR: 17.961268424987793 Time Postprocessing 12.536001682281494 Time 30.497270107269287
+preprocessing/preprocessing_image\060.jpeg: Time load config: 6.119280576705933 Time OCR: 17.874784469604492 Time Postprocessing 15.687942504882812 Time 33.562726974487305
+preprocessing/preprocessing_image\061.jpeg: Time load config: 6.119280576705933 Time OCR: 17.892998933792114 Time Postprocessing 2.1919994354248047 Time 20.08499836921692
+preprocessing/preprocessing_image\062.jpeg: Time load config: 6.119280576705933 Time OCR: 43.35975456237793 Time Postprocessing 59.34272742271423 Time 102.70248198509216
+preprocessing/preprocessing_image\063.jpeg: Time load config: 6.119280576705933 Time OCR: 16.346998691558838 Time Postprocessing 9.227084875106812 Time 25.57408356666565
+preprocessing/preprocessing_image\064.jpeg: Time load config: 6.119280576705933 Time OCR: 14.567517518997192 Time Postprocessing 10.659999370574951 Time 25.227516889572144
+preprocessing/preprocessing_image\065.jpeg: Time load config: 6.119280576705933 Time OCR: 22.663469552993774 Time Postprocessing 12.71603512763977 Time 35.379504680633545
+preprocessing/preprocessing_image\066.jpeg: Time load config: 6.119280576705933 Time OCR: 32.168574810028076 Time Postprocessing 40.573439836502075 Time 72.74201464653015
+preprocessing/preprocessing_image\067.jpeg: Time load config: 6.119280576705933 Time OCR: 16.90820074081421 Time Postprocessing 8.51599669456482 Time 25.42419743537903
+preprocessing/preprocessing_image\068.jpeg: Time load config: 6.119280576705933 Time OCR: 18.10099744796753 Time Postprocessing 31.413469552993774 Time 49.514467000961304
+preprocessing/preprocessing_image\069.jpeg: Time load config: 6.119280576705933 Time OCR: 15.929226160049438 Time Postprocessing 17.896000385284424 Time 33.82522654533386
+preprocessing/preprocessing_image\070.jpeg: Time load config: 6.119280576705933 Time OCR: 19.025965929031372 Time Postprocessing 24.653882026672363 Time 43.679847955703735
+preprocessing/preprocessing_image\071.jpeg: Time load config: 6.119280576705933 Time OCR: 31.172999620437622 Time Postprocessing 41.77710032463074 Time 72.95009994506836
+preprocessing/preprocessing_image\072.jpeg: Time load config: 6.119280576705933 Time OCR: 28.608004808425903 Time Postprocessing 57.77900576591492 Time 86.38701057434082
+preprocessing/preprocessing_image\073.jpeg: Time load config: 6.119280576705933 Time OCR: 42.023688316345215 Time Postprocessing 92.14878940582275 Time 134.17247772216797
+preprocessing/preprocessing_image\074.jpeg: Time load config: 6.119280576705933 Time OCR: 8.0068941116333 Time Postprocessing 2.6110002994537354 Time 10.617894411087036
+preprocessing/preprocessing_image\075.jpeg: Time load config: 6.119280576705933 Time OCR: 15.412001132965088 Time Postprocessing 31.704540252685547 Time 47.116541385650635
+preprocessing/preprocessing_image\076.jpeg: Time load config: 6.119280576705933 Time OCR: 9.270998477935791 Time Postprocessing 0.0 Time 9.270998477935791
+preprocessing/preprocessing_image\077.jpeg: Time load config: 6.119280576705933 Time OCR: 12.096816539764404 Time Postprocessing 9.81603479385376 Time 21.912851333618164
+preprocessing/preprocessing_image\078.jpeg: Time load config: 6.119280576705933 Time OCR: 26.69798254966736 Time Postprocessing 27.787999629974365 Time 54.485982179641724
+preprocessing/preprocessing_image\079.jpeg: Time load config: 6.119280576705933 Time OCR: 21.58496332168579 Time Postprocessing 21.32599973678589 Time 42.91096305847168
+preprocessing/preprocessing_image\080.jpeg: Time load config: 6.119280576705933 Time OCR: 31.440848112106323 Time Postprocessing 16.355562448501587 Time 47.79641056060791
+preprocessing/preprocessing_image\081.jpeg: Time load config: 6.119280576705933 Time OCR: 35.838072538375854 Time Postprocessing 51.76400065422058 Time 87.60207319259644
+preprocessing/preprocessing_image\082.jpeg: Time load config: 6.119280576705933 Time OCR: 31.925999641418457 Time Postprocessing 11.356000423431396 Time 43.28200006484985
+preprocessing/preprocessing_image\083.jpeg: Time load config: 6.119280576705933 Time OCR: 46.5546510219574 Time Postprocessing 79.52103042602539 Time 126.07568144798279
+preprocessing/preprocessing_image\084.jpeg: Time load config: 6.119280576705933 Time OCR: 33.231993198394775 Time Postprocessing 76.6156747341156 Time 109.84766793251038
+preprocessing/preprocessing_image\085.jpeg: Time load config: 6.119280576705933 Time OCR: 38.023996353149414 Time Postprocessing 103.09599876403809 Time 141.1199951171875
+preprocessing/preprocessing_image\086.jpeg: Time load config: 6.119280576705933 Time OCR: 63.68085479736328 Time Postprocessing 138.2961552143097 Time 201.97701001167297
+preprocessing/preprocessing_image\087.jpeg: Time load config: 6.119280576705933 Time OCR: 39.5727014541626 Time Postprocessing 24.273149967193604 Time 63.8458514213562
+preprocessing/preprocessing_image\088.jpeg: Time load config: 6.119280576705933 Time OCR: 65.01936054229736 Time Postprocessing 4.456999063491821 Time 69.47635960578918
+preprocessing/preprocessing_image\089.jpeg: Time load config: 6.119280576705933 Time OCR: 28.098088264465332 Time Postprocessing 66.77985191345215 Time 94.87794017791748
+preprocessing/preprocessing_image\090.jpeg: Time load config: 6.119280576705933 Time OCR: 23.01094150543213 Time Postprocessing 48.911096811294556 Time 71.92203831672668
+preprocessing/preprocessing_image\091.jpeg: Time load config: 6.119280576705933 Time OCR: 18.834691047668457 Time Postprocessing 20.888023614883423 Time 39.72271466255188
+preprocessing/preprocessing_image\092.jpeg: Time load config: 6.119280576705933 Time OCR: 31.456000566482544 Time Postprocessing 41.52203583717346 Time 72.978036403656
+preprocessing/preprocessing_image\093.jpeg: Time load config: 6.119280576705933 Time OCR: 22.618144512176514 Time Postprocessing 37.31890082359314 Time 59.93704533576965
+preprocessing/preprocessing_image\094.jpeg: Time load config: 6.119280576705933 Time OCR: 27.80795168876648 Time Postprocessing 26.42786169052124 Time 54.23581337928772
+preprocessing/preprocessing_image\095.jpeg: Time load config: 6.119280576705933 Time OCR: 27.29309844970703 Time Postprocessing 14.152110815048218 Time 41.44520926475525
+preprocessing/preprocessing_image\096.jpeg: Time load config: 6.119280576705933 Time OCR: 21.686098098754883 Time Postprocessing 20.16544008255005 Time 41.85153818130493
+preprocessing/preprocessing_image\097.jpeg: Time load config: 6.119280576705933 Time OCR: 34.79899621009827 Time Postprocessing 28.935003519058228 Time 63.733999729156494
+preprocessing/preprocessing_image\098.jpeg: Time load config: 6.119280576705933 Time OCR: 19.371000051498413 Time Postprocessing 13.986001968383789 Time 33.3570020198822
+preprocessing/preprocessing_image\099.jpeg: Time load config: 6.119280576705933 Time OCR: 20.499579906463623 Time Postprocessing 7.312896490097046 Time 27.81247639656067
+preprocessing/preprocessing_image\100.jpeg: Time load config: 6.119280576705933 Time OCR: 25.52595829963684 Time Postprocessing 18.990882873535156 Time 44.516841173172
+preprocessing/preprocessing_image\101.jpeg: Time load config: 6.119280576705933 Time OCR: 12.777604103088379 Time Postprocessing 11.829390048980713 Time 24.606994152069092
+preprocessing/preprocessing_image\102.jpeg: Time load config: 6.119280576705933 Time OCR: 15.874000787734985 Time Postprocessing 22.86549735069275 Time 38.739498138427734
+preprocessing/preprocessing_image\103.jpeg: Time load config: 6.119280576705933 Time OCR: 35.88650870323181 Time Postprocessing 21.140109062194824 Time 57.026617765426636
+preprocessing/preprocessing_image\104.jpeg: Time load config: 6.119280576705933 Time OCR: 13.827964067459106 Time Postprocessing 11.101030111312866 Time 24.928994178771973
+preprocessing/preprocessing_image\105.jpeg: Time load config: 6.119280576705933 Time OCR: 14.67400074005127 Time Postprocessing 7.547000169754028 Time 22.221000909805298
+preprocessing/preprocessing_image\106.jpeg: Time load config: 6.119280576705933 Time OCR: 16.828489780426025 Time Postprocessing 15.280999660491943 Time 32.10948944091797
+preprocessing/preprocessing_image\107.jpeg: Time load config: 6.119280576705933 Time OCR: 31.963067293167114 Time Postprocessing 47.58229374885559 Time 79.5453610420227
+preprocessing/preprocessing_image\108.jpeg: Time load config: 6.119280576705933 Time OCR: 32.45104241371155 Time Postprocessing 34.87000298500061 Time 67.32104539871216
