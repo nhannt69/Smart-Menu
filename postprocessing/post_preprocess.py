@@ -20,7 +20,7 @@ class PostPreprocessor(object):
 
     def __init__logger(self, debug):
         logger = logging.getLogger(__name__)
-        fh = logging.FileHandler(f"{os.path.dirname(__file__)}/test_log/post_results_{date.today()}.log", mode = 'a', encoding = 'utf-8')
+        fh = logging.FileHandler(f"{os.path.dirname(__file__)}/test_log/post_results_{date.today()}.log", mode = 'w', encoding = 'utf-8')
         f_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s\n')
         fh.setFormatter(f_format)
 
@@ -35,6 +35,7 @@ class PostPreprocessor(object):
 
 
     def preprocess(self, entities:List[str]):
+        self.logger.debug(f"Input entities: {entities}")
         #Clean text
         text = "\n".join(entities)
         text = mapping.clean_raw_text(text)
@@ -52,6 +53,6 @@ class PostPreprocessor(object):
         #Step 3: Mapping entities
         map_entities = mapping.map(foods, prices)
 
-        self.logger.log(logging.INFO, f"Step 3 mapping:\n{map_entities}\n-----------------------------------------------------------")
+        self.logger.log(logging.DEBUG, f"Step 3 mapping:\n{map_entities}\n-----------------------------------------------------------")
 
         return map_entities

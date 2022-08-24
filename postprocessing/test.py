@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
             img = test_case[0]
             test_case = test_case[1:]
-            post_preprocessor.logger.log(logging.INFO, f"Image {img}:\n{test_case}")
+            post_preprocessor.logger.log(logging.DEBUG, f"Image {img}")
 
             post_preprocessor.preprocess(test_case)
 
