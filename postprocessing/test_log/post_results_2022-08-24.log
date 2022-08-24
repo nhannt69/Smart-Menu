@@ -133,6 +133,7 @@ FOODS: ['menu', 'two l acerola cơm hoặc m thu chanh', '415 417 nguyên huế'
 [['ốc bươu nhồi', 155000], ['chân gà sốt thái', 45000], ['chân gà xào cay', 45000], ['combo nướng', 45000], ['trà trộn', 45000], ['trà trộn', 55000], ['trứng cút lộn bơ tổi', 45000], ['water', 45000], ['ba chỉ bò lòng chân gà bồ lá lốt', 45000], ['ba chỉ bò lòng chân gà bồ lá lốt', 99000], ['gỏi bồ bánh da', 60000], ['trứng cút lộn xào me', 30000], ['ba chỉ nướng', 59000], ['ram chả ốc', 45000], ['cá viên chiên', 30000], ['bồ nướng', 69000], ['ram tôm cuốn cải', 45000], ['khoai lang ken', 35000], ['lồng nướng', 69000], ['ếch nướng', 69000], ['chân gà rút xương', 69000], ['bồ cuộn năm kim châm', 75000], ['giải khát', 75000], ['coca', 75000], ['coca', 12000], ['pepsi', 12000], ['trà chanh hoặc tắc', 12000], ['trà chanh hoặc tắc', 12000], ['khoáng lạc', 10000], ['trà thảo mộc hạt chia', 18000], ['nước suối', 10000], ['trà tắc thảo mộc', 18000], ['bồ húc', 18000], ['chả đường nhan yến tuyết', 20000], ['tiger', 18000], ['heineken', 23000], ['gan heo', 23000], ['ngoại', 23000], ['chi', 23000]]
 -----------------------------------------------------------
 
+<<<<<<< HEAD
 2022-08-24 15:50:48,475 - post_preprocess - INFO - Image 001.jpeg:
 ['LẦU VÀ NƯỚNG CÔ BA', '005 Trương Văn Của', 'TP.Quy Nhơn 00778226254', 'THỜI GIAN MỞ CỪA 13H30', '23H00', 'COMBO ĐỒNG GIÁ 169K', '(Nướng Tại Bàn)', 'COMBO1', 'Lòng', 'gà nướng', 'Dẽ sườn nướng', 'Ba chỉ bò cuộn kim châm', 'Mưc nướng sa tế', 'Lầu hải sản (nhỏ)', 'COMBO2', 'Lòng nướng cay', 'Ech nướng', 'Ba chỉ nướng', 'Tôm nướng', 'Lầu hải sản (nhỏ)', 'COMBO3', 'Lòng gà nướng', 'Dẽ sườn nướng', 'Ba chỉ bò cuộn kim châm', 'Bạch tuộc nướng cay', 'Lầu hải sản (nhỏ)', 'BIA', 'NƯƠC', 'Rượu Soju', 'Rượu Vodka', 'TigerLon', 'Tiger Chai', 'Tiger Bạc Chai', 'Ken Bạc Lon', 'Coca/Sprite/Suôi/', 'Tăng', 'Lực', 'Bò Búc', 'Bia Quy Nhơn', 'Bia Bivina', 'Strong bow']
 
@@ -287,3 +288,5 @@ FOODS: ['menu', 'two l acerola cơm hoặc m thu chanh', '415 417 nguyên huế'
 [['l', 33453080], ['bánh chay', 33453080], ['040', 33453080], ['mề đế hoặc bì đá cua không nhân', 33453080], ['khoai', 33453080], ['khoai nhỏ', 18000], ['khoai vừa', 12000], ['khoai lớn', 10000], ['đậu xanh salmon ớt chim', 12000], ['k nhỏ', 12000], ['k vừa', 10000], ['bò nhỏ', 13000], ['bò vừa', 13000], ['bò lớn', 3000], ['l trong', 10000], ['vòng', 10000], ['gia hành', 10000], ['mận nội', 10000], ['cho đá phồng trên', 10000], ['cho đá phồng trên', 150000], ['fresh', 150000]]
 -----------------------------------------------------------
 
+=======
+>>>>>>> 605addb7e402f29eb2070d3a3216a1e192b209ea
