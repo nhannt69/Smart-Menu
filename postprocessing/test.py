@@ -1,15 +1,15 @@
-
 import ast
 import logging
+import re
 
 import mapping
 from post_preprocess import PostPreprocessor
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
-    post_preprocessor = PostPreprocessor(debug = True)
+    post_preprocessor = PostPreprocessor(debug=True)
 
-    with open('postprocessing/ocr_entities_testcases.txt', 'r', encoding='utf-8') as f:
+    with open("postprocessing/ocr_entities_testcases.txt", "r", encoding="utf-8") as f:
         for line in f:
             test_case = ast.literal_eval(line)
 
@@ -19,9 +19,7 @@ if __name__ == '__main__':
 
             post_preprocessor.preprocess(test_case)
 
-
-            # test = "COMBO ĐỒNG GIÁ 169K BÚN ĐẬU GÁNH ĐẶC BIỆT 79.000 NEM CHUA NEM CHUA 55,000 55,000"
+            # test = "COMBO ĐỒNG GIÁ 169K BÚN ĐẬU GÁNH ĐẶC BIỆT S: 39K L: 79K"
             # print(mapping.clean_raw_text(test))
 
-            #break
-
+            # break
