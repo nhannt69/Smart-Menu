@@ -14,6 +14,7 @@ from ocr.OCR import Reader
 import postprocessing.mapping
 from postprocessing.post_preprocess import PostPreprocessor
 from translate.translate import Translator_Menu
+from test_evaluation.test_evaluation_tuple import Metric
 
 class Extractor:
   def __init__(self):
@@ -37,6 +38,7 @@ class Extractor:
 
     ## Translate ##
     pairs = []
+    pairs.append(image_name)
     pairs = self.translate.process_translate(result_map)
 
     return pairs
@@ -46,10 +48,23 @@ if __name__ == "__main__":
   parser.add_argument("--input_file", help="input file path")
   parser.add_argument("--input_folder", help="input folder path")
   args = parser.parse_args()
+  metric = Metric()
+  list_score = []
 
   extract = Extractor()
-  result = extract.extract_menu(args.input_file, args.input_file[-8::])
+  time_st = time.time()
+  for file in os.listdir(args.input_folder):
+    file_path = os.path.join(args.input_folder, file)
 
-  print(result)
+    start_time = time.time()
+    pairs = extract.extract_menu(file_path, file_path[-8::])
+    score, f1_ocr, f1_trans = metric.evaluation(pairs)
+    list_score += [score]
+    with open("result.txt", "a") as f:
+      f.write(f'\n{file_path[-8::]}: {score, f1_ocr, f1_trans}')
+    print(f'Elapsed time: {time.time() - start_time}')
+  print(np.average(list_score))
+  time_fi = time.time() - time_st
+  print(time_fi)
 
 
