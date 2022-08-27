@@ -1,13 +1,15 @@
 import re
 
-from symspellpy import SymSpell
+from symspellpy import SymSpell, Verbosity
 
 
 class SpellChecker(object):
     def __init__(
-        self, vocabulary_path: str, vocabulary_big_gram_path: str, edit_distance=3
+        self, vocabulary_path: str, vocabulary_big_gram_path: str, edit_distance=5
     ):
-        self.spell = SymSpell(max_dictionary_edit_distance=edit_distance)
+        self.spell = SymSpell(
+            max_dictionary_edit_distance=edit_distance, prefix_length=10
+        )
         self.ed = edit_distance
 
         self.spell.load_dictionary(
@@ -19,7 +21,7 @@ class SpellChecker(object):
                 vocabulary_big_gram_path, 0, 1, separator="$", encoding="utf-8"
             )
 
-    def correct_spell(self, text):
+    def correct_spell(self, text, lookup_only=True, include_unknown=False):
         """
         It takes a string, splits it into words, and then checks each word against the spellchecker. If the
         word is not in the dictionary, it will be replaced with the most likely suggestion
@@ -32,14 +34,19 @@ class SpellChecker(object):
 
         text = text.lower()
 
-        text = re.sub(r"[.\?#@+,<>%~`!$^&\(\):;\\\/]", r" \g<0> ", text)
+        if lookup_only:
+            suggestion = self.spell.lookup(
+                text, Verbosity.CLOSEST, include_unknown=include_unknown
+            )
+        else:
+            suggestion = self.spell.lookup_compound(
+                text,
+                max_edit_distance=self.ed,
+                ignore_non_words=True,
+                ignore_term_with_digits=True,
+            )
 
-        text = re.sub(r'[\\/]', 'hoặc', text)
+        if not suggestion:
+            return ""
 
-        suggestion = self.spell.lookup_compound(
-            text,
-            max_edit_distance=self.ed,
-            ignore_non_words=True,
-            ignore_term_with_digits=True,
-        )
         return suggestion[0]._term

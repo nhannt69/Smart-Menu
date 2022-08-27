@@ -6,15 +6,15 @@ Output: list loop but each item is a tuple has three element: ('food_name', 'pri
 """
 from googletrans import Translator
 
+
 class Translator_Menu(object):
     def __init__(self):
         self.translator = Translator()
-    
+
     def process_translate(self, menu):
-        import time
-        start = time.time()
+
         pairs = []
-        
+
         for item in menu:
             translation = self.translator.translate(item[0], dest='en', src='vi')
             translated_name = translation.text
