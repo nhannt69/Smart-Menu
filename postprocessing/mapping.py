@@ -19,7 +19,7 @@ def clean_raw_text(raw_text: str) -> str:
     clean_text = re.sub(token, r"\g<1>\n\g<3>", clean_text)
 
     # Remove size entities
-    token = r"size|\s+x{0,2}[lms][\.\s:-]+|(nhỏ|vừa|lớn|bự|to|small|medium|big):?"
+    token = r"size|\s+x{0,2}[lms][\.\s:-]+|(nhỏ|vừa|lớn|bự|to|small|medium|big|large):?"
     clean_text = re.sub(token, "\n", clean_text)
 
     return clean_text.strip()
@@ -31,7 +31,7 @@ def get_price_and_food(ents):
     price_token = r"\d{4,}|\d+k|[\d.,]{5,}|miễn\sphí|free"
 
     list_price = []
-    list_food = [None] * len(ents)
+    list_food = [''] * len(ents)
 
     for idx, ent in enumerate(ents):
         ent = ent.lower()

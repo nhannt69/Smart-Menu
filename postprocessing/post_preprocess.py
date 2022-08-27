@@ -13,8 +13,7 @@ class PostPreprocessor(object):
         folder_path = os.path.dirname(__file__)
 
         self.spellchecker = SpellChecker(
-            f"{folder_path}/food_vocabulary/one_gram.txt",
-            f"{folder_path}/food_vocabulary/big_gram.txt",
+            f"{folder_path}/food_vocabulary/raw.txt",
         )
 
         self.logger = self.__init__logger(debug)
