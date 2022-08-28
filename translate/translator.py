@@ -7,4 +7,5 @@ class DictionaryTranslator(object):
             self.dictionary = json.load(f)
 
     def translate(self, text):
+        text = text.lower()
         return self.dictionary.get(text, text)
