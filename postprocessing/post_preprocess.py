@@ -61,6 +61,11 @@ class PostPreprocessor(object):
         # Step 3: Mapping entities
         map_entities = mapping.map(foods, prices)
 
+        left_over_foods = [f for f in foods if f]
+
+        for f in left_over_foods:
+            map_entities.append([f, "NOT GIVEN"])
+
         self.logger.log(
             logging.DEBUG,
             f"Step 3 mapping:\n{map_entities}\n-----------------------------------------------------------",

@@ -43,7 +43,6 @@ def get_price_and_food(ents):
             price_ent = price_ent.group(0)
             price_ent = price_ent.replace("o", "0").replace("k", "000")
             price_ent = re.sub(r"[^\d]", "", price_ent)
-            price_ent = int(price_ent)
             list_price.append([idx, price_ent])
         else:
             if ent:
@@ -71,9 +70,10 @@ def map(foods: list, prices: list) -> List[List[str]]:
     n_prices = len(prices)
     # If only has one price on image, mapping all the food to this price
     if n_prices == 1:
-        for idx, f in enumerate(foods):
+        for idx, f in enumerate(foods[:-5]):
             if idx >= prices[0][0] - 1 and f:
                 menu.append([f, prices[0][1]])
+                foods[idx] = ''
         return menu
 
     i = 0
@@ -86,10 +86,10 @@ def map(foods: list, prices: list) -> List[List[str]]:
 
         # Mapping by size
         if dis_price == 1:
-            current_food = str(foods[current_price_ent_idx - 1])
+            current_food = foods[current_price_ent_idx - 1]
 
-            menu.append([current_food + " nhỏ", current_price_ent[1]])
-            menu.append([current_food + " vừa", next_price_ent[1]])
+            menu.append([current_food + " SIZE S", current_price_ent[1]])
+            menu.append([current_food + " SIZE M", next_price_ent[1]])
             i += 2
 
             if i + 2 < n_prices:
@@ -97,26 +97,33 @@ def map(foods: list, prices: list) -> List[List[str]]:
                 dis_price_1 = next_price_ent_1[0] - next_price_ent[0]
 
                 if dis_price_1 == 1:
-                    menu.append([current_food + " lớn", next_price_ent_1[1]])
+                    menu.append([current_food + " SIZE L", next_price_ent_1[1]])
                     i += 1
 
+            foods[current_price_ent_idx - 1] = ''
+
         # Map near
-        elif dis_price == 2:
+        elif dis_price == 2 or dis_price == 0:
             menu.append([foods[current_price_ent_idx - 1], current_price_ent[1]])
+            foods[current_price_ent_idx - 1] = ''
             i += 1
 
         # Mapping group
-        elif dis_price > 2 or dis_price == 0:
+        elif dis_price > 2:
             if i == n_prices - 1:
-                for food in foods[current_price_ent_idx - 1 :]:
+                for idx in range(current_price_ent_idx - 1, len(foods)):
+                    food = foods[idx]
                     if food:
                         menu.append([food, current_price_ent[1]])
+                        foods[idx] = ''
             else:
-                for food in foods[
-                    current_price_ent_idx - 1 : current_price_ent_idx + dis_price
-                ]:
+                for idx in range(
+                    current_price_ent_idx - 1, current_price_ent_idx + dis_price
+                ):
+                    food = foods[idx]
                     if food:
                         menu.append([food, current_price_ent[1]])
+                        foods[idx] = ''
             i += 1
 
     return menu
