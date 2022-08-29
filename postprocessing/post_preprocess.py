@@ -32,7 +32,7 @@ class PostPreprocessor(object):
 
         log_level = logging.DEBUG if debug else logging.INFO
 
-        fh.setLevel(logging.DEBUG)
+        #fh.setLevel(logging.DEBUG)
         logger.setLevel(log_level)
 
         logger.addHandler(fh)
@@ -42,14 +42,13 @@ class PostPreprocessor(object):
     def preprocess(self, entities: List[str]):
         self.logger.debug(f"Input entities: {entities}")
         # Clean text
-        text = "\n".join(entities)
-        text = mapping.clean_raw_text(text)
+        raw_text = "\n".join(entities)
+        text = mapping.clean_raw_text(raw_text)
         entities = text.split("\n")
         self.logger.debug(f"After clean entities: {entities}")
 
         # Step 1: Classify food and prices
         foods, prices = mapping.get_price_and_food(entities)
-
         self.logger.log(
             logging.DEBUG, f"Step 1 classify: \nFOODS: {foods}\nPRICES: {prices}"
         )
@@ -58,17 +57,26 @@ class PostPreprocessor(object):
         foods = [self.spellchecker.correct_spell(food) for food in foods]
         self.logger.log(logging.DEBUG, f"Step 2 correct spell:\nFOODS: {foods}")
 
+        #Get size entities
+        sizes = mapping.get_size(raw_text)
+
         # Step 3: Mapping entities
-        map_entities = mapping.map(foods, prices)
+        map_entities = mapping.map(foods, prices, sizes)
 
         left_over_foods = [f for f in foods if f]
-
         for f in left_over_foods:
             map_entities.append([f, "NOT GIVEN"])
 
+        #Spell check again
+        map_entities = [[self.spellchecker.correct_spell(f), p] for f, p in map_entities]
+
+        #Clean empty entities
+        map_entities = [[f, p] for f, p in map_entities if f]
+
+
         self.logger.log(
             logging.DEBUG,
-            f"Step 3 mapping:\n{map_entities}\n-----------------------------------------------------------",
+            f"Step 3 mapping:\n{map_entities}",
         )
 
         return map_entities

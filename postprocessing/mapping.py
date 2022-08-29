@@ -4,11 +4,18 @@ from typing import List, Tuple
 
 # Step 1 clean raw text
 def clean_raw_text(raw_text: str) -> str:
-    raw_text = raw_text.lower()
+    clean_text = raw_text.lower()
 
     # Remove anything in parentheses
     token = r"\([^)]*\)"
     clean_text = re.sub(token, "", raw_text)
+
+    # Remove hyperlink
+    # clean_text = re.sub(
+    #     r"""(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’]))""",
+    #     " ",
+    #     clean_text,
+    # )
 
     # Clean phone
     phone_token = r"(\(?\+?\d{2,2}\)?|0)[\s\-\.]*\d{3}[\s\-\.]*\d{3}[\s\-\.]*\d{3}\b"
@@ -31,7 +38,7 @@ def get_price_and_food(ents):
     price_token = r"\d{4,}|\d+k|[\d.,]{5,}|miễn\sphí|free"
 
     list_price = []
-    list_food = [''] * len(ents)
+    list_food = [""] * len(ents)
 
     for idx, ent in enumerate(ents):
         ent = ent.lower()
@@ -62,9 +69,29 @@ def get_current_food(foods: List, current_price_idx: int):
 
     return current_food
 
+def get_size(text):
+    text = text.lower()
+    size_token = r"\s+s|nhỏ|small"
+
+    quantity_token = r"size|set"
+
+    size = re.findall(size_token, text)
+    quantity = re.findall(quantity_token,text)
+
+    if not size:
+        return ["S", "M", "L"]
+
+    size = size[0]
+    quantity = quantity[0] if quantity else ''
+    if re.match(r"\s+s", size):
+        return [quantity + ' s', quantity + ' m', quantity + ' l']
+    if re.match(r'small', size):
+        return [quantity + ' small', quantity + ' medium', quantity + ' large']
+    if re.match(r'nhỏ', size):
+        return [quantity + ' nhỏ', quantity + ' vừa', quantity + ' lớn']
 
 # Step 3 mapping price and food
-def map(foods: list, prices: list) -> List[List[str]]:
+def map(foods: list, prices: list, sizes:list) -> List[List[str]]:
     menu = []
 
     n_prices = len(prices)
@@ -73,7 +100,7 @@ def map(foods: list, prices: list) -> List[List[str]]:
         for idx, f in enumerate(foods[:-5]):
             if idx >= prices[0][0] - 1 and f:
                 menu.append([f, prices[0][1]])
-                foods[idx] = ''
+                foods[idx] = ""
         return menu
 
     i = 0
@@ -88,8 +115,8 @@ def map(foods: list, prices: list) -> List[List[str]]:
         if dis_price == 1:
             current_food = foods[current_price_ent_idx - 1]
 
-            menu.append([current_food + " SIZE S", current_price_ent[1]])
-            menu.append([current_food + " SIZE M", next_price_ent[1]])
+            menu.append([current_food + sizes[0], current_price_ent[1]])
+            menu.append([current_food + sizes[1], next_price_ent[1]])
             i += 2
 
             if i + 2 < n_prices:
@@ -97,15 +124,15 @@ def map(foods: list, prices: list) -> List[List[str]]:
                 dis_price_1 = next_price_ent_1[0] - next_price_ent[0]
 
                 if dis_price_1 == 1:
-                    menu.append([current_food + " SIZE L", next_price_ent_1[1]])
+                    menu.append([current_food + sizes[2], next_price_ent_1[1]])
                     i += 1
 
-            foods[current_price_ent_idx - 1] = ''
+            foods[current_price_ent_idx - 1] = ""
 
         # Map near
-        elif dis_price == 2 or dis_price == 0:
+        elif dis_price == 2 or dis_price == 0 or dis_price == 3:
             menu.append([foods[current_price_ent_idx - 1], current_price_ent[1]])
-            foods[current_price_ent_idx - 1] = ''
+            foods[current_price_ent_idx - 1] = ""
             i += 1
 
         # Mapping group
@@ -115,7 +142,7 @@ def map(foods: list, prices: list) -> List[List[str]]:
                     food = foods[idx]
                     if food:
                         menu.append([food, current_price_ent[1]])
-                        foods[idx] = ''
+                        foods[idx] = ""
             else:
                 for idx in range(
                     current_price_ent_idx - 1, current_price_ent_idx + dis_price
@@ -123,7 +150,7 @@ def map(foods: list, prices: list) -> List[List[str]]:
                     food = foods[idx]
                     if food:
                         menu.append([food, current_price_ent[1]])
-                        foods[idx] = ''
+                        foods[idx] = ""
             i += 1
 
     return menu
