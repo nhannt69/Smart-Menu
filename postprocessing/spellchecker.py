@@ -5,7 +5,7 @@ from symspellpy import SymSpell, Verbosity
 
 class SpellChecker(object):
     def __init__(
-        self, vocabulary_path: str, vocabulary_big_gram_path: str=None, edit_distance=3, prefix_length=10
+        self, vocabulary_path: str, vocabulary_big_gram_path: str=None, edit_distance=7, prefix_length=12
     ):
         self.spell = SymSpell(
             max_dictionary_edit_distance=edit_distance, prefix_length=prefix_length

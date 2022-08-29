@@ -8802,11 +8802,11 @@ tiết canh tôm$1
 cháo đậu xanh, hạt sen$1
 _x0008_tôm bỏ lò phô mai$1
 tôm ăn kiểu thái/ nhật$1
-tôm sốt ớt 
+tôm sốt ớt
 singapore$1
 tôm hấp _x0008_sả, bia$1
 tôm nướng mọi, nướng ớt$1
-cháo đậu 
+cháo đậu
 xanh$1
 lẩu chua cay$1
 ghẹ hấp bia/ hấp sả$1
@@ -8817,12 +8817,12 @@ cua sốt ớt singapore$1
 cua bỏ lò phô mai$1
 cua lắc muối hong kong$1
 _x0008_cua rang me$1
-lẩu thái 
+lẩu thái
 cua$1
 lươn om chuối$1
 lươn bằm xúc bánh đa$1
 lươn hấp mướp hương$1
-lịch huyết 
+lịch huyết
 om$1
 ba ba rang muối$1
 ba ba om chuối đậu$1
@@ -8852,7 +8852,7 @@ canh cải thịt bằm/ tôm$1
 _x0008_canh cá thát lát khổ qua$1
 canh rong biển hải sản$1
 _x0008_canh rau tập tàng$1
-canh chua 
+canh chua
 ngao$1
 đặc biệt cơm chiên thịt ghẹ$1
 cơm chiên hải sản/ cá mặn$1
@@ -8881,7 +8881,7 @@ bò lúc lắc hạt điều khoai tây$1
 bò bít tết khoai tây/ củ quả$1
 bò nướng sốt lê$1
 bò sốt rượu vang$1
-bò nướng sốt 
+bò nướng sốt
 bò nhúng giấm$1
 đuôi bò hấp hành gừng$1
 đuôi bò xào xả ớt$1
@@ -9742,17 +9742,17 @@ lẩu cá song nấu kiểu thái$1
 lẩu cá song nấu lá giang$1
 lẩu cá chình nấu kiểu thái$1
 lẩu cá chình nấu lá giang$1
-b52 
+b52
 (kahlua, bailey's, cointreau)$1
-b53 
+b53
 (kahlua, balley's, gin)$1
-long island iced tea 
+long island iced tea
 (vodka, gin rum, tequila, cointreau, chanh, coke)$1
-fruit mojito 
+fruit mojito
 (bocard, mojito syrup. chọn vị (dâu, việt quất, chanh leo...)$1
-singapore sling 
+singapore sling
 (gin cherry brandy, grenadine, dứa, chanh...)$1
-whisky sour 
+whisky sour
 (jim beam, chanh tươi đường)$1
 spurta lamborghini (set 1 glass) (balley's, kahlua, galliano)$1
 sparta lamborghini (set 3 glass)

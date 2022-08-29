@@ -11,10 +11,13 @@ from test_evaluation.test_evaluation_tuple import Metric
 
 import mapping
 from post_preprocess import PostPreprocessor
+from spellchecker import SpellChecker
 
 if __name__ == "__main__":
 
     post_preprocessor = PostPreprocessor(debug=True)
+
+    #print(post_preprocessor.spellchecker.correct_spell('rau muốn xào', 'hành'))
     metric = Metric()
     scores = []
     with open("postprocessing/ocr_entities_testcases.txt", "r", encoding="utf-8") as f:
