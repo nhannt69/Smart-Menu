@@ -49,7 +49,7 @@ def clean_raw_text(raw_text: str) -> str:
 # Step 2 get list price and food
 def get_price_and_food(ents):
     # price_token = r"(\d\s?){2,}k?|(\d\s?[\.,]+)+k?|miễn\sphí|free"
-    price_token = r"\d{4,}|\d+k|[\d.,]{5,}|miễn\sphí|free"
+    price_token = r"[\do]{4,}|[\do]+k|[\d.,o]{5,}|miễn\sphí|free"
 
     list_price = []
     list_food = [""] * len(ents)
