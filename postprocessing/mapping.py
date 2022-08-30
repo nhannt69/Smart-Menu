@@ -88,7 +88,7 @@ def get_size(text):
         return ["S", "M", "L"]
 
     size = size[0]
-    quantity = quantity[0] if quantity else ''
+    quantity = quantity[0] if quantity else 'size'
     if re.match(r"\s+s", size):
         return [quantity + ' s', quantity + ' m', quantity + ' l']
     if re.match(r'small', size):
