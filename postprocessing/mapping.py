@@ -123,6 +123,8 @@ def map(foods: list, prices: list, sizes: list) -> List[List[str]]:
         else:
             break
 
+        if idx == 5: break
+
     # If only has one price on image, mapping all the food to this price
     if n_prices == 1:
         for idx, f in enumerate(foods[:-5]):
