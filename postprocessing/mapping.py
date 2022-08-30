@@ -8,7 +8,7 @@ def clean_raw_text(raw_text: str) -> str:
 
     # Remove anything in parentheses
     token = r"\([^)]*\)"
-    clean_text = re.sub(token, "", raw_text)
+    clean_text = re.sub(token, "", clean_text)
 
     # Remove hyperlink
     clean_text = re.sub(
@@ -18,11 +18,15 @@ def clean_raw_text(raw_text: str) -> str:
     )
 
     # Clean phone
-    phone_token = r"(\(?\+?\d{2,2}\)?|0)[\s\-\.]*\d{3}[\s\-\.]*\d{3}[\s\-\.]*\d{3}\b"
+    phone_token = r"(\(?\+?\d{2,2}\)?|0)[\s\-\.]*\d{3}[\s\-\.]*\d{3}[\s\-\.]*\d{3,4}"
     clean_text = re.sub(phone_token, "", clean_text)
 
     # Remove time entities
-    token = r"\d{1,2}\s?(h|giờ|phút)\s?\d{0,2}\s?(phút|minutes?)?}"
+    token = r"\d{1,2}\s?(h|giờ|hour)\s?\d{0,2}\s?(phút|minutes?)?"
+    clean_text = re.sub(token, "", clean_text)
+
+    #Remove stop words
+    token = r"menu|thời\sgian"
     clean_text = re.sub(token, "", clean_text)
 
     # Split ent between foods and prices
@@ -32,6 +36,7 @@ def clean_raw_text(raw_text: str) -> str:
     # Remove size entities
     token = r"size|\s+x{0,2}[lms][\.\s:-]+|(nhỏ|vừa|lớn|bự|to|small|medium|big|large):?"
     clean_text = re.sub(token, "\n", clean_text)
+
 
     return clean_text.strip()
 
