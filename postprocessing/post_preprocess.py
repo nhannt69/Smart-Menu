@@ -13,7 +13,8 @@ class PostPreprocessor(object):
         folder_path = os.path.dirname(__file__)
 
         self.spellchecker = SpellChecker(
-            f"{folder_path}/food_vocabulary/raw.txt",
+            f"{folder_path}/food_vocabulary/one_gram.txt",
+            f"{folder_path}/food_vocabulary/big_gram.txt"
         )
 
         self.logger = self.__init__logger(debug)
@@ -54,7 +55,7 @@ class PostPreprocessor(object):
         )
 
         # Step 2: Correct spell for foo entities
-        foods = [self.spellchecker.correct_spell(food) for food in foods]
+        foods = [self.spellchecker.correct_spell(food, lookup_only=False, include_unknown=True) for food in foods]
         self.logger.log(logging.DEBUG, f"Step 2 correct spell:\nFOODS: {foods}")
 
         #Get size entities
@@ -68,7 +69,7 @@ class PostPreprocessor(object):
             map_entities.append([f, "NOT GIVEN"])
 
         #Spell check again
-        map_entities = [[self.spellchecker.correct_spell(f), p] for f, p in map_entities]
+        #map_entities = [[self.spellchecker.correct_spell(f), p] for f, p in map_entities]
 
         #Clean empty entities
         map_entities = [[f, p] for f, p in map_entities if f]

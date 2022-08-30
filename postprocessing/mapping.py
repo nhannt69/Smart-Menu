@@ -11,15 +11,19 @@ def clean_raw_text(raw_text: str) -> str:
     clean_text = re.sub(token, "", raw_text)
 
     # Remove hyperlink
-    # clean_text = re.sub(
-    #     r"""(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’]))""",
-    #     " ",
-    #     clean_text,
-    # )
+    clean_text = re.sub(
+        r"""(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’]))""",
+        " ",
+        clean_text,
+    )
 
     # Clean phone
     phone_token = r"(\(?\+?\d{2,2}\)?|0)[\s\-\.]*\d{3}[\s\-\.]*\d{3}[\s\-\.]*\d{3}\b"
     clean_text = re.sub(phone_token, "", clean_text)
+
+    # Remove time entities
+    token = r"\d{1,2}\s?(h|giờ|phút)\s?\d{0,2}\s?(phút|minutes?)?}"
+    clean_text = re.sub(token, "", clean_text)
 
     # Split ent between foods and prices
     token = r"(\D+\s*)(\s)([\d\,\.\w]{2,})"
@@ -28,6 +32,8 @@ def clean_raw_text(raw_text: str) -> str:
     # Remove size entities
     token = r"size|\s+x{0,2}[lms][\.\s:-]+|(nhỏ|vừa|lớn|bự|to|small|medium|big|large):?"
     clean_text = re.sub(token, "\n", clean_text)
+
+
 
     return clean_text.strip()
 
@@ -95,6 +101,14 @@ def map(foods: list, prices: list, sizes:list) -> List[List[str]]:
     menu = []
 
     n_prices = len(prices)
+
+    #Clean header content
+    for idx, f in enumerate(foods):
+        if idx < prices[0][0] - 1:
+            foods[idx] = ''
+        else:
+            break
+
     # If only has one price on image, mapping all the food to this price
     if n_prices == 1:
         for idx, f in enumerate(foods[:-5]):
