@@ -30,9 +30,11 @@ if __name__ == "__main__":
 
             output = post_preprocessor.preprocess(test_case)
 
-            output = [(food, price, 'None') for food, price in output]
+            output = [(food.upper(), price, 'None') for food, price in output]
 
             #output.insert(0, img)
+
+
 
             f1_score = metric.evaluation(output, img)[1]
             scores.append(f1_score)

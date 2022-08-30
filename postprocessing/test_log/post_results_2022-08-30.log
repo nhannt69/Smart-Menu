@@ -1,194 +1,763 @@
-2022-08-30 15:19:52,978 - post_preprocess - DEBUG - Image 001.jpeg
+2022-08-30 15:45:13,363 - post_preprocess - DEBUG - Image 001.jpeg
 
-2022-08-30 15:19:52,979 - post_preprocess - DEBUG - Input entities: ['LẤU VÀ NƯỚNG CÔ BA', '05 Trương Văn Của TP. Quy Nhơn 0077 822 6254', 'THỜI GIAN MỞ CỬA: 13H30 23H00', 'COMBO ĐỒNG GIÁ 169K', '(Nướng Tại Bàn)', 'COMBO 1', 'Lòng gà nướng', 'Dẻ sườn nướng', 'Ba chỉ bò cuộn kim châm', 'Mực nướng sa tế', 'Lẩu hải sản (nhỏ)', 'COMBO 2', 'Lòng nướng cay', 'Ếch nướng', 'Ba chỉ nướng', 'Tôm nướng', 'Lẩu hải sản (nhỏ)', 'COMBO 3', 'Lòng gà nướng', 'Dẻ sườn nướng', 'Ba chỉ bò cuộn kim châm', 'Bạch tuộc nướng cay', 'Lẩu hải sản (nhỏ)', 'BIA NUoG', 'Rượu Soju', 'Rượu Vodka', 'Tiger Lon', 'Tiger Chai [Eiger}er', 'Tiger Bạc Chai', 'Ken Bạc Lon', 'Coca/ Sprite/ Suốil Tăng Lực', 'Bò Búc', 'Bia Quy Nhơn', 'Bia Bivina', 'Strong bow']
+2022-08-30 15:45:13,363 - post_preprocess - DEBUG - Input entities: ['LẤU VÀ NƯỚNG CÔ BA', '05 Trương Văn Của TP. Quy Nhơn 0077 822 6254', 'THỜI GIAN MỞ CỬA: 13H30 23H00', 'COMBO ĐỒNG GIÁ 169K', '(Nướng Tại Bàn)', 'COMBO 1', 'Lòng gà nướng', 'Dẻ sườn nướng', 'Ba chỉ bò cuộn kim châm', 'Mực nướng sa tế', 'Lẩu hải sản (nhỏ)', 'COMBO 2', 'Lòng nướng cay', 'Ếch nướng', 'Ba chỉ nướng', 'Tôm nướng', 'Lẩu hải sản (nhỏ)', 'COMBO 3', 'Lòng gà nướng', 'Dẻ sườn nướng', 'Ba chỉ bò cuộn kim châm', 'Bạch tuộc nướng cay', 'Lẩu hải sản (nhỏ)', 'BIA NUoG', 'Rượu Soju', 'Rượu Vodka', 'Tiger Lon', 'Tiger Chai [Eiger}er', 'Tiger Bạc Chai', 'Ken Bạc Lon', 'Coca/ Sprite/ Suốil Tăng Lực', 'Bò Búc', 'Bia Quy Nhơn', 'Bia Bivina', 'Strong bow']
 
-2022-08-30 15:19:52,981 - post_preprocess - DEBUG - After clean entities: ['lấu và nướng cô ba', '05 trương văn của tp. quy nhơn ', ' mở cửa: combo đồng giá', '169k', '', 'combo 1', 'lòng gà nướng', 'dẻ sườn nướng', 'ba chỉ bò cuộn kim châm', 'mực nướng sa tế', 'lẩu hải sản ', 'combo 2', 'lòng nướng cay', 'ếch nướng', 'ba chỉ nướng', 'tôm nướng', 'lẩu hải sản ', 'combo 3', 'lòng gà nướng', 'dẻ sườn nướng', 'ba chỉ bò cuộn kim châm', 'bạch tuộc nướng cay', 'lẩu hải sản ', 'bia nuog', 'rượu soju', 'rượu vodka', 'tiger lon', 'tiger chai [eiger}er', 'tiger bạc chai', 'ken bạc lon', 'coca/ sprite/ suốil tăng lực', 'bò búc', 'bia quy nhơn', 'bia bivina', 'strong', 'bow']
+2022-08-30 15:45:13,363 - post_preprocess - DEBUG - After clean entities: lấu và nướng cô ba
+05 trương văn của tp. quy nhơn 
+ mở cửa: combo đồng giá
+169k
+(nướng tại bàn)
+combo 1
+lòng gà nướng
+dẻ sườn nướng
+ba chỉ bò cuộn kim châm
+mực nướng sa tế
+lẩu hải sản (
+)
+combo 2
+lòng nướng cay
+ếch nướng
+ba chỉ nướng
+tôm nướng
+lẩu hải sản (
+)
+combo 3
+lòng gà nướng
+dẻ sườn nướng
+ba chỉ bò cuộn kim châm
+bạch tuộc nướng cay
+lẩu hải sản (
+)
+bia nuog
+rượu soju
+rượu vodka
+tiger lon
+tiger chai [eiger}er
+tiger bạc chai
+ken bạc lon
+coca/ sprite/ suốil tăng lực
+bò búc
+bia quy nhơn
+bia bivina
+strong
+bow
 
-2022-08-30 15:19:52,982 - post_preprocess - DEBUG - Step 1 classify: 
-FOODS: ['lấu và nướng cô ba', '05 trương văn của tp. quy nhơn ', ' mở cửa: combo đồng giá', '', '', 'combo 1', 'lòng gà nướng', 'dẻ sườn nướng', 'ba chỉ bò cuộn kim châm', 'mực nướng sa tế', 'lẩu hải sản ', 'combo 2', 'lòng nướng cay', 'ếch nướng', 'ba chỉ nướng', 'tôm nướng', 'lẩu hải sản ', 'combo 3', 'lòng gà nướng', 'dẻ sườn nướng', 'ba chỉ bò cuộn kim châm', 'bạch tuộc nướng cay', 'lẩu hải sản ', 'bia nuog', 'rượu soju', 'rượu vodka', 'tiger lon', 'tiger chai [eiger}er', 'tiger bạc chai', 'ken bạc lon', 'coca/ sprite/ suốil tăng lực', 'bò búc', 'bia quy nhơn', 'bia bivina', 'strong', 'bow']
+2022-08-30 15:45:13,363 - post_preprocess - DEBUG - Step 1 classify: 
+FOODS: ['lấu và nướng cô ba', '05 trương văn của tp. quy nhơn ', ' mở cửa: combo đồng giá', '', '(nướng tại bàn)', 'combo 1', 'lòng gà nướng', 'dẻ sườn nướng', 'ba chỉ bò cuộn kim châm', 'mực nướng sa tế', 'lẩu hải sản (', ')', 'combo 2', 'lòng nướng cay', 'ếch nướng', 'ba chỉ nướng', 'tôm nướng', 'lẩu hải sản (', ')', 'combo 3', 'lòng gà nướng', 'dẻ sườn nướng', 'ba chỉ bò cuộn kim châm', 'bạch tuộc nướng cay', 'lẩu hải sản (', ')', 'bia nuog', 'rượu soju', 'rượu vodka', 'tiger lon', 'tiger chai [eiger}er', 'tiger bạc chai', 'ken bạc lon', 'coca/ sprite/ suốil tăng lực', 'bò búc', 'bia quy nhơn', 'bia bivina', 'strong', 'bow']
 PRICES: [[3, '169000']]
 
-2022-08-30 15:19:53,004 - post_preprocess - DEBUG - Step 2 correct spell:
-FOODS: ['lấu và nướng cô ba', '05 trường ăn cua ép quy nhơn', 'mì cua combo đồng giá', '', '', 'combo 1', 'lòng gà nướng', 'dẻ sườn nướng', 'ba chỉ bò cuộn kim châm', 'mực nướng sa tế', 'lẩu hải sản', 'combo 2', 'lòng nướng cay', 'ếch nướng', 'ba chỉ nướng', 'tôm nướng', 'lẩu hải sản', 'combo 3', 'lòng gà nướng', 'dẻ sườn nướng', 'ba chỉ bò cuộn kim châm', 'bạch tuộc nướng cay', 'lẩu hải sản', 'bia nóng', 'rượu soju', 'rượu vodka', 'tiger lon', 'tiger chai tiger em', 'tiger bạc chai', 'ken bạc lon', 'coca sprite suối tăng lực', 'bò bún', 'bia quy nhơn', 'bia bivina', 'strong', 'bow']
+2022-08-30 15:45:13,378 - post_preprocess - DEBUG - Step 2 correct spell:
+FOODS: ['lấu và nướng cô ba', '05 trường ăn cua ép quy nhơn', 'mì cua combo đồng giá', '', 'nướng tại bàn', 'combo 1', 'lòng gà nướng', 'dẻ sườn nướng', 'ba chỉ bò cuộn kim châm', 'mực nướng sa tế', 'lẩu hải sản', '', 'combo 2', 'lòng nướng cay', 'ếch nướng', 'ba chỉ nướng', 'tôm nướng', 'lẩu hải sản', '', 'combo 3', 'lòng gà nướng', 'dẻ sườn nướng', 'ba chỉ bò cuộn kim châm', 'bạch tuộc nướng cay', 'lẩu hải sản', '', 'bia nóng', 'rượu soju', 'rượu vodka', 'tiger lon', 'tiger chai tiger em', 'tiger bạc chai', 'ken bạc lon', 'coca sprite suối tăng lực', 'bò bún', 'bia quy nhơn', 'bia bivina', 'strong', 'bow']
 
-2022-08-30 15:19:53,005 - post_preprocess - DEBUG - Step 3 mapping:
-[['mì cua combo đồng giá', '169000'], ['combo 1', '169000'], ['lòng gà nướng', '169000'], ['dẻ sườn nướng', '169000'], ['ba chỉ bò cuộn kim châm', '169000'], ['mực nướng sa tế', '169000'], ['lẩu hải sản', '169000'], ['combo 2', '169000'], ['lòng nướng cay', '169000'], ['ếch nướng', '169000'], ['ba chỉ nướng', '169000'], ['tôm nướng', '169000'], ['lẩu hải sản', '169000'], ['combo 3', '169000'], ['lòng gà nướng', '169000'], ['dẻ sườn nướng', '169000'], ['ba chỉ bò cuộn kim châm', '169000'], ['bạch tuộc nướng cay', '169000'], ['lẩu hải sản', '169000'], ['bia nóng', '169000'], ['rượu soju', '169000'], ['rượu vodka', '169000'], ['tiger lon', '169000'], ['tiger chai tiger em', '169000'], ['tiger bạc chai', '169000'], ['ken bạc lon', '169000'], ['coca sprite suối tăng lực', '169000'], ['bò bún', 'NOT GIVEN'], ['bia quy nhơn', 'NOT GIVEN'], ['bia bivina', 'NOT GIVEN'], ['strong', 'NOT GIVEN'], ['bow', 'NOT GIVEN']]
+2022-08-30 15:45:13,378 - post_preprocess - DEBUG - Step 3 mapping:
+[['mì cua combo đồng giá', '169000'], ['nướng tại bàn', '169000'], ['combo 1', '169000'], ['lòng gà nướng', '169000'], ['dẻ sườn nướng', '169000'], ['ba chỉ bò cuộn kim châm', '169000'], ['mực nướng sa tế', '169000'], ['lẩu hải sản', '169000'], ['combo 2', '169000'], ['lòng nướng cay', '169000'], ['ếch nướng', '169000'], ['ba chỉ nướng', '169000'], ['tôm nướng', '169000'], ['lẩu hải sản', '169000'], ['combo 3', '169000'], ['lòng gà nướng', '169000'], ['dẻ sườn nướng', '169000'], ['ba chỉ bò cuộn kim châm', '169000'], ['bạch tuộc nướng cay', '169000'], ['lẩu hải sản', '169000'], ['bia nóng', '169000'], ['rượu soju', '169000'], ['rượu vodka', '169000'], ['tiger lon', '169000'], ['tiger chai tiger em', '169000'], ['tiger bạc chai', '169000'], ['ken bạc lon', '169000'], ['coca sprite suối tăng lực', '169000'], ['bò bún', 'NOT GIVEN'], ['bia quy nhơn', 'NOT GIVEN'], ['bia bivina', 'NOT GIVEN'], ['strong', 'NOT GIVEN'], ['bow', 'NOT GIVEN']]
 
-2022-08-30 15:19:53,032 - post_preprocess - INFO - Score: 0.2127659574468085
+2022-08-30 15:45:13,410 - post_preprocess - INFO - Score: 0.20833333333333334
 --------------------------------------------------
 
-2022-08-30 15:19:53,033 - post_preprocess - DEBUG - Image 002.jpeg
+2022-08-30 15:45:13,410 - post_preprocess - DEBUG - Image 002.jpeg
 
-2022-08-30 15:19:53,033 - post_preprocess - DEBUG - Input entities: ['LẤU VÀ NƯỚNG CÔ BA', '05 Trương Văn Của TP. Quy Nhơn 0077 822 6254', 'THỜl GIAN MỞ CỬA: 13H30 23H00', 'KHAI VỊ', 'Rau muống xào tỏi 29k', 'Mồng tơi xào tỏi 29k', 'Cải xào tỏi 29k', 'Đậu bắp xào 29k', 'Khoai tây chiên 29k', 'Da ếch chiên mắm 29k', 'Da ếch chiên giòn 29k', 'Da ếch rang muối 29k', 'Đậu khuôn chiên 29k', 'Sứa chấm ruốc 35k', 'Bắp non xào hành 35k', 'Bắp non xào tép 39k', 'Ghẹ sữa chiên mắm Ht 55k', 'Ghẹ sữa rang muối Hot 55k', 'Chả ram tôm đất 59k', 'CÁC MÓN GỎI', 'Gỏi tai heo 55k', 'Gỏi sứa 55k', 'Gỏi hải sản 55k', 'Chân gà rút xương lắc ớt tắc 65k', 'Gỏi bò bóp thấu 65k', 'Gỏi bò tái chanh 65k', 'Gỏi bạch tuộc 65k', 'Hot', 'Gỏi tôm CÔ BA 75k']
+2022-08-30 15:45:13,410 - post_preprocess - DEBUG - Input entities: ['LẤU VÀ NƯỚNG CÔ BA', '05 Trương Văn Của TP. Quy Nhơn 0077 822 6254', 'THỜl GIAN MỞ CỬA: 13H30 23H00', 'KHAI VỊ', 'Rau muống xào tỏi 29k', 'Mồng tơi xào tỏi 29k', 'Cải xào tỏi 29k', 'Đậu bắp xào 29k', 'Khoai tây chiên 29k', 'Da ếch chiên mắm 29k', 'Da ếch chiên giòn 29k', 'Da ếch rang muối 29k', 'Đậu khuôn chiên 29k', 'Sứa chấm ruốc 35k', 'Bắp non xào hành 35k', 'Bắp non xào tép 39k', 'Ghẹ sữa chiên mắm Ht 55k', 'Ghẹ sữa rang muối Hot 55k', 'Chả ram tôm đất 59k', 'CÁC MÓN GỎI', 'Gỏi tai heo 55k', 'Gỏi sứa 55k', 'Gỏi hải sản 55k', 'Chân gà rút xương lắc ớt tắc 65k', 'Gỏi bò bóp thấu 65k', 'Gỏi bò tái chanh 65k', 'Gỏi bạch tuộc 65k', 'Hot', 'Gỏi tôm CÔ BA 75k']
 
-2022-08-30 15:19:53,033 - post_preprocess - DEBUG - After clean entities: ['lấu và nướng cô ba', '05 trương văn của tp. quy nhơn ', 'thờl gian mở cửa: khai vị', 'rau muống xào tỏi', '29k', 'mồng tơi xào tỏi', '29k', 'cải xào tỏi', '29k', 'đậu bắp xào', '29k', 'khoai tây chiên', '29k', 'da ếch chiên mắm', '29k', 'da ếch chiên giòn', '29k', 'da ếch rang muối', '29k', 'đậu khuôn chiên', '29k', 'sứa chấm ruốc', '35k', 'bắp non xào hành', '35k', 'bắp non xào tép', '39k', 'ghẹ sữa chiên mắm ht', '55k', 'ghẹ sữa rang muối hot', '55k', 'chả ram tôm đất', '59k', 'các món gỏi', 'gỏi tai heo', '55k', 'gỏi sứa', '55k', 'gỏi hải sản', '55k', 'chân gà rút xương lắc ớt tắc', '65k', 'gỏi bò bóp thấu', '65k', 'gỏi bò tái chanh', '65k', 'gỏi bạch tuộc', '65k', 'hot', 'gỏi tôm cô ba', '75k']
+2022-08-30 15:45:13,410 - post_preprocess - DEBUG - After clean entities: lấu và nướng cô ba
+05 trương văn của tp. quy nhơn 
+thờl gian mở cửa: khai vị
+rau muống xào tỏi
+29k
+mồng tơi xào tỏi
+29k
+cải xào tỏi
+29k
+đậu bắp xào
+29k
+khoai tây chiên
+29k
+da ếch chiên mắm
+29k
+da ếch chiên giòn
+29k
+da ếch rang muối
+29k
+đậu khuôn chiên
+29k
+sứa chấm ruốc
+35k
+bắp non xào hành
+35k
+bắp non xào tép
+39k
+ghẹ sữa chiên mắm ht
+55k
+ghẹ sữa rang muối hot
+55k
+chả ram tôm đất
+59k
+các món gỏi
+gỏi tai heo
+55k
+gỏi sứa
+55k
+gỏi hải sản
+55k
+chân gà rút xương lắc ớt tắc
+65k
+gỏi bò bóp thấu
+65k
+gỏi bò tái chanh
+65k
+gỏi bạch tuộc
+65k
+hot
+gỏi tôm cô ba
+75k
 
-2022-08-30 15:19:53,034 - post_preprocess - DEBUG - Step 1 classify: 
+2022-08-30 15:45:13,425 - post_preprocess - DEBUG - Step 1 classify: 
 FOODS: ['lấu và nướng cô ba', '05 trương văn của tp. quy nhơn ', 'thờl gian mở cửa: khai vị', 'rau muống xào tỏi', '', 'mồng tơi xào tỏi', '', 'cải xào tỏi', '', 'đậu bắp xào', '', 'khoai tây chiên', '', 'da ếch chiên mắm', '', 'da ếch chiên giòn', '', 'da ếch rang muối', '', 'đậu khuôn chiên', '', 'sứa chấm ruốc', '', 'bắp non xào hành', '', 'bắp non xào tép', '', 'ghẹ sữa chiên mắm ht', '', 'ghẹ sữa rang muối hot', '', 'chả ram tôm đất', '', 'các món gỏi', 'gỏi tai heo', '', 'gỏi sứa', '', 'gỏi hải sản', '', 'chân gà rút xương lắc ớt tắc', '', 'gỏi bò bóp thấu', '', 'gỏi bò tái chanh', '', 'gỏi bạch tuộc', '', 'hot', 'gỏi tôm cô ba', '']
 PRICES: [[4, '29000'], [6, '29000'], [8, '29000'], [10, '29000'], [12, '29000'], [14, '29000'], [16, '29000'], [18, '29000'], [20, '29000'], [22, '35000'], [24, '35000'], [26, '39000'], [28, '55000'], [30, '55000'], [32, '59000'], [35, '55000'], [37, '55000'], [39, '55000'], [41, '65000'], [43, '65000'], [45, '65000'], [47, '65000'], [50, '75000']]
 
-2022-08-30 15:19:53,054 - post_preprocess - DEBUG - Step 2 correct spell:
+2022-08-30 15:45:13,441 - post_preprocess - DEBUG - Step 2 correct spell:
 FOODS: ['lấu và nướng cô ba', '05 trường ăn cua ép quy nhơn', 'thịt giòn mì cua khai vị', 'rau muống xào tỏi', '', 'mồng tơi xào tỏi', '', 'cải xào tỏi', '', 'đậu bắp xào', '', 'khoai tây chiên', '', 'da ếch chiên mắm', '', 'da ếch chiên giòn', '', 'da ếch rang muối', '', 'đậu khuôn chiên', '', 'sứa chấm ruốc', '', 'bắp non xào hành', '', 'bắp non xào tép', '', 'ghẹ sữa chiên mắm ớt', '', 'ghẹ sữa rang muối hot', '', 'chả ram tôm đất', '', 'các món gỏi', 'gỏi tai heo', '', 'gỏi sứa', '', 'gỏi hải sản', '', 'chân gà rút xương lắc ớt tắc', '', 'gỏi bò bóp thấu', '', 'gỏi bò tái chanh', '', 'gỏi bạch tuộc', '', 'hot', 'gỏi tôm cô ba', '']
 
-2022-08-30 15:19:53,055 - post_preprocess - DEBUG - Step 3 mapping:
+2022-08-30 15:45:13,441 - post_preprocess - DEBUG - Step 3 mapping:
 [['rau muống xào tỏi', '29000'], ['mồng tơi xào tỏi', '29000'], ['cải xào tỏi', '29000'], ['đậu bắp xào', '29000'], ['khoai tây chiên', '29000'], ['da ếch chiên mắm', '29000'], ['da ếch chiên giòn', '29000'], ['da ếch rang muối', '29000'], ['đậu khuôn chiên', '29000'], ['sứa chấm ruốc', '35000'], ['bắp non xào hành', '35000'], ['bắp non xào tép', '39000'], ['ghẹ sữa chiên mắm ớt', '55000'], ['ghẹ sữa rang muối hot', '55000'], ['chả ram tôm đất', '59000'], ['gỏi tai heo', '55000'], ['gỏi sứa', '55000'], ['gỏi hải sản', '55000'], ['chân gà rút xương lắc ớt tắc', '65000'], ['gỏi bò bóp thấu', '65000'], ['gỏi bò tái chanh', '65000'], ['gỏi bạch tuộc', '65000'], ['gỏi tôm cô ba', '75000'], ['các món gỏi', 'NOT GIVEN'], ['hot', 'NOT GIVEN']]
 
-2022-08-30 15:19:53,073 - post_preprocess - INFO - Score: 0.7659574468085107
+2022-08-30 15:45:13,472 - post_preprocess - INFO - Score: 0.7659574468085107
 --------------------------------------------------
 
-2022-08-30 15:19:53,073 - post_preprocess - DEBUG - Image 003.jpeg
+2022-08-30 15:45:13,472 - post_preprocess - DEBUG - Image 003.jpeg
 
-2022-08-30 15:19:53,073 - post_preprocess - DEBUG - Input entities: ['LẤU VÀ NƯỚNG CÔ BA', '05 Trương Văn Của TP. Quy Nhơn 0077 822 6254', 'THỜl GIAN MỞ CỬA: 13H30 23H00', 'CÁC MÓN NƯÓNG BO', '(Nướng Tại Bàn)', 'Xúc xích Đức nướng 1Ok/ cây', 'Đậu bắp nướng 25k', 'Cà tím nướng 25k', 'Cá/ bò/ tôm viên nướng 25k', 'Bánh bao nướng 35k', 'Lòng heo nướng 35k', 'Mề gà nướng 35k', 'Mực nướng 35k', 'Tôm nướng 35k', 'Bạch tuộc nướng 35k', 'Sườn nướng BBQ 35k', 'Ba chỉ heo nướng 35k', 'Ếch nướng 35k', 'Ba chỉ bò mỹ nướng 35k', 'Ba chỉ bò cuộn nấm 4Ok', 'Ba chỉ bò cuộn phô mai 4Ok', 'Bò nướng sa tế 4Ok', 'Bò nướng Iá Iốt 4Ok', 'Bẹ sữa nướng 45k', 'CAC MÓN NƯONG SẮN', 'Hàu phô mai 12k/ con', 'Hàu nướng mỡ hành 55k', 'Xìa nướng 55k', 'Sò điệp nướng 55k', 'Ốc bươu nướng tiêu xanh 59k', 'Ba chỉ nướng 65k', 'Bẹ sữa nướng 69k', 'Tôm nướng 69k', 'Bạch tuộc nướng 69k', 'Bò nướng cay 69k', 'Bò nướng Iá Íốt 69k', 'Bò cuộn nấm kim châm 79k']
+2022-08-30 15:45:13,472 - post_preprocess - DEBUG - Input entities: ['LẤU VÀ NƯỚNG CÔ BA', '05 Trương Văn Của TP. Quy Nhơn 0077 822 6254', 'THỜl GIAN MỞ CỬA: 13H30 23H00', 'CÁC MÓN NƯÓNG BO', '(Nướng Tại Bàn)', 'Xúc xích Đức nướng 1Ok/ cây', 'Đậu bắp nướng 25k', 'Cà tím nướng 25k', 'Cá/ bò/ tôm viên nướng 25k', 'Bánh bao nướng 35k', 'Lòng heo nướng 35k', 'Mề gà nướng 35k', 'Mực nướng 35k', 'Tôm nướng 35k', 'Bạch tuộc nướng 35k', 'Sườn nướng BBQ 35k', 'Ba chỉ heo nướng 35k', 'Ếch nướng 35k', 'Ba chỉ bò mỹ nướng 35k', 'Ba chỉ bò cuộn nấm 4Ok', 'Ba chỉ bò cuộn phô mai 4Ok', 'Bò nướng sa tế 4Ok', 'Bò nướng Iá Iốt 4Ok', 'Bẹ sữa nướng 45k', 'CAC MÓN NƯONG SẮN', 'Hàu phô mai 12k/ con', 'Hàu nướng mỡ hành 55k', 'Xìa nướng 55k', 'Sò điệp nướng 55k', 'Ốc bươu nướng tiêu xanh 59k', 'Ba chỉ nướng 65k', 'Bẹ sữa nướng 69k', 'Tôm nướng 69k', 'Bạch tuộc nướng 69k', 'Bò nướng cay 69k', 'Bò nướng Iá Íốt 69k', 'Bò cuộn nấm kim châm 79k']
 
-2022-08-30 15:19:53,074 - post_preprocess - DEBUG - After clean entities: ['lấu và nướng cô ba', '05 trương văn của tp. quy nhơn ', 'thờl gian mở cửa: các món nưóng bo', '', 'xúc xích đức nướng', '1ok/ cây', 'đậu bắp nướng', '25k', 'cà tím nướng', '25k', 'cá/ bò/ tôm viên nướng', '25k', 'bánh bao nướng', '35k', 'lòng heo nướng', '35k', 'mề gà nướng', '35k', 'mực nướng', '35k', 'tôm nướng', '35k', 'bạch tuộc nướng', '35k', 'sườn nướng bbq', '35k', 'ba chỉ heo nướng', '35k', 'ếch nướng', '35k', 'ba chỉ bò mỹ nướng', '35k', 'ba chỉ bò cuộn nấm', '4ok', 'ba chỉ bò cuộn phô mai', '4ok', 'bò nướng sa tế', '4ok', 'bò nướng iá iốt', '4ok', 'bẹ sữa nướng', '45k', 'cac món nưong sắn', 'hàu phô mai', '12k/ con', 'hàu nướng mỡ hành', '55k', 'xìa nướng', '55k', 'sò điệp nướng', '55k', 'ốc bươu nướng tiêu xanh', '59k', 'ba chỉ nướng', '65k', 'bẹ sữa nướng', '69k', 'tôm nướng', '69k', 'bạch tuộc nướng', '69k', 'bò nướng cay', '69k', 'bò nướng iá íốt', '69k', 'bò cuộn nấm kim châm', '79k']
+2022-08-30 15:45:13,472 - post_preprocess - DEBUG - After clean entities: lấu và nướng cô ba
+05 trương văn của tp. quy nhơn 
+thờl gian mở cửa: các món nưóng bo
+(nướng tại bàn)
+xúc xích đức nướng
+1ok/ cây
+đậu bắp nướng
+25k
+cà tím nướng
+25k
+cá/ bò/ tôm viên nướng
+25k
+bánh bao nướng
+35k
+lòng heo nướng
+35k
+mề gà nướng
+35k
+mực nướng
+35k
+tôm nướng
+35k
+bạch tuộc nướng
+35k
+sườn nướng bbq
+35k
+ba chỉ heo nướng
+35k
+ếch nướng
+35k
+ba chỉ bò mỹ nướng
+35k
+ba chỉ bò cuộn nấm
+4ok
+ba chỉ bò cuộn phô mai
+4ok
+bò nướng sa tế
+4ok
+bò nướng iá iốt
+4ok
+bẹ sữa nướng
+45k
+cac món nưong sắn
+hàu phô mai
+12k/ con
+hàu nướng mỡ hành
+55k
+xìa nướng
+55k
+sò điệp nướng
+55k
+ốc bươu nướng tiêu xanh
+59k
+ba chỉ nướng
+65k
+bẹ sữa nướng
+69k
+tôm nướng
+69k
+bạch tuộc nướng
+69k
+bò nướng cay
+69k
+bò nướng iá íốt
+69k
+bò cuộn nấm kim châm
+79k
 
-2022-08-30 15:19:53,075 - post_preprocess - DEBUG - Step 1 classify: 
-FOODS: ['lấu và nướng cô ba', '05 trương văn của tp. quy nhơn ', 'thờl gian mở cửa: các món nưóng bo', '', 'xúc xích đức nướng', '1ok/ cây', 'đậu bắp nướng', '', 'cà tím nướng', '', 'cá/ bò/ tôm viên nướng', '', 'bánh bao nướng', '', 'lòng heo nướng', '', 'mề gà nướng', '', 'mực nướng', '', 'tôm nướng', '', 'bạch tuộc nướng', '', 'sườn nướng bbq', '', 'ba chỉ heo nướng', '', 'ếch nướng', '', 'ba chỉ bò mỹ nướng', '', 'ba chỉ bò cuộn nấm', '4ok', 'ba chỉ bò cuộn phô mai', '4ok', 'bò nướng sa tế', '4ok', 'bò nướng iá iốt', '4ok', 'bẹ sữa nướng', '', 'cac món nưong sắn', 'hàu phô mai', '', 'hàu nướng mỡ hành', '', 'xìa nướng', '', 'sò điệp nướng', '', 'ốc bươu nướng tiêu xanh', '', 'ba chỉ nướng', '', 'bẹ sữa nướng', '', 'tôm nướng', '', 'bạch tuộc nướng', '', 'bò nướng cay', '', 'bò nướng iá íốt', '', 'bò cuộn nấm kim châm', '']
+2022-08-30 15:45:13,472 - post_preprocess - DEBUG - Step 1 classify: 
+FOODS: ['lấu và nướng cô ba', '05 trương văn của tp. quy nhơn ', 'thờl gian mở cửa: các món nưóng bo', '(nướng tại bàn)', 'xúc xích đức nướng', '1ok/ cây', 'đậu bắp nướng', '', 'cà tím nướng', '', 'cá/ bò/ tôm viên nướng', '', 'bánh bao nướng', '', 'lòng heo nướng', '', 'mề gà nướng', '', 'mực nướng', '', 'tôm nướng', '', 'bạch tuộc nướng', '', 'sườn nướng bbq', '', 'ba chỉ heo nướng', '', 'ếch nướng', '', 'ba chỉ bò mỹ nướng', '', 'ba chỉ bò cuộn nấm', '4ok', 'ba chỉ bò cuộn phô mai', '4ok', 'bò nướng sa tế', '4ok', 'bò nướng iá iốt', '4ok', 'bẹ sữa nướng', '', 'cac món nưong sắn', 'hàu phô mai', '', 'hàu nướng mỡ hành', '', 'xìa nướng', '', 'sò điệp nướng', '', 'ốc bươu nướng tiêu xanh', '', 'ba chỉ nướng', '', 'bẹ sữa nướng', '', 'tôm nướng', '', 'bạch tuộc nướng', '', 'bò nướng cay', '', 'bò nướng iá íốt', '', 'bò cuộn nấm kim châm', '']
 PRICES: [[7, '25000'], [9, '25000'], [11, '25000'], [13, '35000'], [15, '35000'], [17, '35000'], [19, '35000'], [21, '35000'], [23, '35000'], [25, '35000'], [27, '35000'], [29, '35000'], [31, '35000'], [41, '45000'], [44, '12000'], [46, '55000'], [48, '55000'], [50, '55000'], [52, '59000'], [54, '65000'], [56, '69000'], [58, '69000'], [60, '69000'], [62, '69000'], [64, '69000'], [66, '79000']]
 
-2022-08-30 15:19:53,137 - post_preprocess - DEBUG - Step 2 correct spell:
-FOODS: ['lấu và nướng cô ba', '05 trường ăn cua ép quy nhơn', 'thịt giòn mì cua các món nướng bò', '', 'xúc xích đức nướng', '1ok cây', 'đậu bắp nướng', '', 'cà tím nướng', '', 'cá bò tôm viên nướng', '', 'bánh bao nướng', '', 'lòng heo nướng', '', 'mề gà nướng', '', 'mực nướng', '', 'tôm nướng', '', 'bạch tuộc nướng', '', 'sườn nướng bbq', '', 'ba chỉ heo nướng', '', 'ếch nướng', '', 'ba chỉ bò mỹ nướng', '', 'ba chỉ bò cuộn nấm', '4ok', 'ba chỉ bò cuộn phô mai', '4ok', 'bò nướng sa tế', '4ok', 'bò nướng cá sốt', '4ok', 'bẹ sữa nướng', '', 'cay món nướng sản', 'hàu phô mai', '', 'hàu nướng mỡ hành', '', 'xìa nướng', '', 'sò điệp nướng', '', 'ốc bươu nướng tiêu xanh', '', 'ba chỉ nướng', '', 'bẹ sữa nướng', '', 'tôm nướng', '', 'bạch tuộc nướng', '', 'bò nướng cay', '', 'bò nướng cá sốt', '', 'bò cuộn nấm kim châm', '']
+2022-08-30 15:45:13,519 - post_preprocess - DEBUG - Step 2 correct spell:
+FOODS: ['lấu và nướng cô ba', '05 trường ăn cua ép quy nhơn', 'thịt giòn mì cua các món nướng bò', 'nướng tại bàn', 'xúc xích đức nướng', '1ok cây', 'đậu bắp nướng', '', 'cà tím nướng', '', 'cá bò tôm viên nướng', '', 'bánh bao nướng', '', 'lòng heo nướng', '', 'mề gà nướng', '', 'mực nướng', '', 'tôm nướng', '', 'bạch tuộc nướng', '', 'sườn nướng bbq', '', 'ba chỉ heo nướng', '', 'ếch nướng', '', 'ba chỉ bò mỹ nướng', '', 'ba chỉ bò cuộn nấm', '4ok', 'ba chỉ bò cuộn phô mai', '4ok', 'bò nướng sa tế', '4ok', 'bò nướng cá sốt', '4ok', 'bẹ sữa nướng', '', 'cay món nướng sản', 'hàu phô mai', '', 'hàu nướng mỡ hành', '', 'xìa nướng', '', 'sò điệp nướng', '', 'ốc bươu nướng tiêu xanh', '', 'ba chỉ nướng', '', 'bẹ sữa nướng', '', 'tôm nướng', '', 'bạch tuộc nướng', '', 'bò nướng cay', '', 'bò nướng cá sốt', '', 'bò cuộn nấm kim châm', '']
 
-2022-08-30 15:19:53,138 - post_preprocess - DEBUG - Step 3 mapping:
+2022-08-30 15:45:13,519 - post_preprocess - DEBUG - Step 3 mapping:
 [['đậu bắp nướng', '25000'], ['cà tím nướng', '25000'], ['cá bò tôm viên nướng', '25000'], ['bánh bao nướng', '35000'], ['lòng heo nướng', '35000'], ['mề gà nướng', '35000'], ['mực nướng', '35000'], ['tôm nướng', '35000'], ['bạch tuộc nướng', '35000'], ['sườn nướng bbq', '35000'], ['ba chỉ heo nướng', '35000'], ['ếch nướng', '35000'], ['ba chỉ bò mỹ nướng', '35000'], ['ba chỉ bò cuộn nấm', '35000'], ['4ok', '35000'], ['ba chỉ bò cuộn phô mai', '35000'], ['4ok', '35000'], ['bò nướng sa tế', '35000'], ['4ok', '35000'], ['bò nướng cá sốt', '35000'], ['4ok', '35000'], ['bẹ sữa nướng', '35000'], ['hàu phô mai', '12000'], ['hàu nướng mỡ hành', '55000'], ['xìa nướng', '55000'], ['sò điệp nướng', '55000'], ['ốc bươu nướng tiêu xanh', '59000'], ['ba chỉ nướng', '65000'], ['bẹ sữa nướng', '69000'], ['tôm nướng', '69000'], ['bạch tuộc nướng', '69000'], ['bò nướng cay', '69000'], ['bò nướng cá sốt', '69000'], ['bò cuộn nấm kim châm', '79000'], ['cay món nướng sản', 'NOT GIVEN']]
 
-2022-08-30 15:19:53,185 - post_preprocess - INFO - Score: 0.6153846153846154
+2022-08-30 15:45:13,551 - post_preprocess - INFO - Score: 0.6153846153846154
 --------------------------------------------------
 
-2022-08-30 15:19:53,185 - post_preprocess - DEBUG - Image 004.jpeg
+2022-08-30 15:45:13,551 - post_preprocess - DEBUG - Image 004.jpeg
 
-2022-08-30 15:19:53,186 - post_preprocess - DEBUG - Input entities: ['LẤU VÀ NƯỚNG CÔ BA', '05 Trương Văn Của TP. Quy Nhơn 0077 822 6254', 'THỜl GIAN MỞ CỬA: 13H30 23H00', 'CÁC MÓN NẤU', 'Lòng chiên mắm 49k', 'Lòng xào nghệ 49k', 'Xìa hấp sả 55k', 'Xìa hấp thái 55k', 'Ếch xào sả ớt 55k', 'Ếch rang lá chanh 59k', 'Ếch rang muối 59k', 'Ếch chiên mắm 59k', 'Ếch chiên bơ 59k', 'Sụn rang muối 59k', 'Sụn chiên mắm 59k', 'Cánh gà rang muối 59k', 'Cánh gà chiên mắm 59k', 'Cánh gà chiên bơ 59k', 'Ốc bươu hấp sả 59k', 'Ôc bươu xào sả 59k', 'Ôc bươu um tiêu 59k', 'Ốc móng tay xào sả 59k', 'Ốc móng tay xào bơ tỏi 59k', 'Ốc móng tay xào rau muống 59k', 'Lưỡi vịt rang muối 69k', 'Lưỡi vịt chiên mắm 69k', 'Cà na rang muối 69k', 'Cà na hấp sả 69k', 'Cà na xào sả 69k', 'Cà na xào bơ tỏi 69k', 'Chân gà sốt Cô Ba 69k', 'Chân gà rang muối 69k']
+2022-08-30 15:45:13,551 - post_preprocess - DEBUG - Input entities: ['LẤU VÀ NƯỚNG CÔ BA', '05 Trương Văn Của TP. Quy Nhơn 0077 822 6254', 'THỜl GIAN MỞ CỬA: 13H30 23H00', 'CÁC MÓN NẤU', 'Lòng chiên mắm 49k', 'Lòng xào nghệ 49k', 'Xìa hấp sả 55k', 'Xìa hấp thái 55k', 'Ếch xào sả ớt 55k', 'Ếch rang lá chanh 59k', 'Ếch rang muối 59k', 'Ếch chiên mắm 59k', 'Ếch chiên bơ 59k', 'Sụn rang muối 59k', 'Sụn chiên mắm 59k', 'Cánh gà rang muối 59k', 'Cánh gà chiên mắm 59k', 'Cánh gà chiên bơ 59k', 'Ốc bươu hấp sả 59k', 'Ôc bươu xào sả 59k', 'Ôc bươu um tiêu 59k', 'Ốc móng tay xào sả 59k', 'Ốc móng tay xào bơ tỏi 59k', 'Ốc móng tay xào rau muống 59k', 'Lưỡi vịt rang muối 69k', 'Lưỡi vịt chiên mắm 69k', 'Cà na rang muối 69k', 'Cà na hấp sả 69k', 'Cà na xào sả 69k', 'Cà na xào bơ tỏi 69k', 'Chân gà sốt Cô Ba 69k', 'Chân gà rang muối 69k']
 
-2022-08-30 15:19:53,187 - post_preprocess - DEBUG - After clean entities: ['lấu và nướng cô ba', '05 trương văn của tp. quy nhơn ', 'thờl gian mở cửa: các món nấu', 'lòng chiên mắm', '49k', 'lòng xào nghệ', '49k', 'xìa hấp sả', '55k', 'xìa hấp thái', '55k', 'ếch xào sả ớt', '55k', 'ếch rang lá chanh', '59k', 'ếch rang muối', '59k', 'ếch chiên mắm', '59k', 'ếch chiên bơ', '59k', 'sụn rang muối', '59k', 'sụn chiên mắm', '59k', 'cánh gà rang muối', '59k', 'cánh gà chiên mắm', '59k', 'cánh gà chiên bơ', '59k', 'ốc bươu hấp sả', '59k', 'ôc bươu xào sả', '59k', 'ôc bươu um tiêu', '59k', 'ốc móng tay xào sả', '59k', 'ốc móng tay xào bơ tỏi', '59k', 'ốc móng tay xào rau muống', '59k', 'lưỡi vịt rang muối', '69k', 'lưỡi vịt chiên mắm', '69k', 'cà na rang muối', '69k', 'cà na hấp sả', '69k', 'cà na xào sả', '69k', 'cà na xào bơ tỏi', '69k', 'chân gà sốt cô ba', '69k', 'chân gà rang muối', '69k']
+2022-08-30 15:45:13,551 - post_preprocess - DEBUG - After clean entities: lấu và nướng cô ba
+05 trương văn của tp. quy nhơn 
+thờl gian mở cửa: các món nấu
+lòng chiên mắm
+49k
+lòng xào nghệ
+49k
+xìa hấp sả
+55k
+xìa hấp thái
+55k
+ếch xào sả ớt
+55k
+ếch rang lá chanh
+59k
+ếch rang muối
+59k
+ếch chiên mắm
+59k
+ếch chiên bơ
+59k
+sụn rang muối
+59k
+sụn chiên mắm
+59k
+cánh gà rang muối
+59k
+cánh gà chiên mắm
+59k
+cánh gà chiên bơ
+59k
+ốc bươu hấp sả
+59k
+ôc bươu xào sả
+59k
+ôc bươu um tiêu
+59k
+ốc móng tay xào sả
+59k
+ốc móng tay xào bơ tỏi
+59k
+ốc móng tay xào rau muống
+59k
+lưỡi vịt rang muối
+69k
+lưỡi vịt chiên mắm
+69k
+cà na rang muối
+69k
+cà na hấp sả
+69k
+cà na xào sả
+69k
+cà na xào bơ tỏi
+69k
+chân gà sốt cô ba
+69k
+chân gà rang muối
+69k
 
-2022-08-30 15:19:53,188 - post_preprocess - DEBUG - Step 1 classify: 
+2022-08-30 15:45:13,551 - post_preprocess - DEBUG - Step 1 classify: 
 FOODS: ['lấu và nướng cô ba', '05 trương văn của tp. quy nhơn ', 'thờl gian mở cửa: các món nấu', 'lòng chiên mắm', '', 'lòng xào nghệ', '', 'xìa hấp sả', '', 'xìa hấp thái', '', 'ếch xào sả ớt', '', 'ếch rang lá chanh', '', 'ếch rang muối', '', 'ếch chiên mắm', '', 'ếch chiên bơ', '', 'sụn rang muối', '', 'sụn chiên mắm', '', 'cánh gà rang muối', '', 'cánh gà chiên mắm', '', 'cánh gà chiên bơ', '', 'ốc bươu hấp sả', '', 'ôc bươu xào sả', '', 'ôc bươu um tiêu', '', 'ốc móng tay xào sả', '', 'ốc móng tay xào bơ tỏi', '', 'ốc móng tay xào rau muống', '', 'lưỡi vịt rang muối', '', 'lưỡi vịt chiên mắm', '', 'cà na rang muối', '', 'cà na hấp sả', '', 'cà na xào sả', '', 'cà na xào bơ tỏi', '', 'chân gà sốt cô ba', '', 'chân gà rang muối', '']
 PRICES: [[4, '49000'], [6, '49000'], [8, '55000'], [10, '55000'], [12, '55000'], [14, '59000'], [16, '59000'], [18, '59000'], [20, '59000'], [22, '59000'], [24, '59000'], [26, '59000'], [28, '59000'], [30, '59000'], [32, '59000'], [34, '59000'], [36, '59000'], [38, '59000'], [40, '59000'], [42, '59000'], [44, '69000'], [46, '69000'], [48, '69000'], [50, '69000'], [52, '69000'], [54, '69000'], [56, '69000'], [58, '69000']]
 
-2022-08-30 15:19:53,220 - post_preprocess - DEBUG - Step 2 correct spell:
+2022-08-30 15:45:13,566 - post_preprocess - DEBUG - Step 2 correct spell:
 FOODS: ['lấu và nướng cô ba', '05 trường ăn cua ép quy nhơn', 'thịt giòn mì cua các món nấu', 'lòng chiên mắm', '', 'lòng xào nghệ', '', 'xìa hấp sả', '', 'xìa hấp thái', '', 'ếch xào sả ớt', '', 'ếch rang lá chanh', '', 'ếch rang muối', '', 'ếch chiên mắm', '', 'ếch chiên bơ', '', 'sụn rang muối', '', 'sụn chiên mắm', '', 'cánh gà rang muối', '', 'cánh gà chiên mắm', '', 'cánh gà chiên bơ', '', 'ốc bươu hấp sả', '', 'ốc bươu xào sả', '', 'ốc bươu um tiêu', '', 'ốc móng tay xào sả', '', 'ốc móng tay xào bơ tỏi', '', 'ốc móng tay xào rau muống', '', 'lưỡi vịt rang muối', '', 'lưỡi vịt chiên mắm', '', 'cà na rang muối', '', 'cà na hấp sả', '', 'cà na xào sả', '', 'cà na xào bơ tỏi', '', 'chân gà sốt cô ba', '', 'chân gà rang muối', '']
 
-2022-08-30 15:19:53,221 - post_preprocess - DEBUG - Step 3 mapping:
+2022-08-30 15:45:13,582 - post_preprocess - DEBUG - Step 3 mapping:
 [['lòng chiên mắm', '49000'], ['lòng xào nghệ', '49000'], ['xìa hấp sả', '55000'], ['xìa hấp thái', '55000'], ['ếch xào sả ớt', '55000'], ['ếch rang lá chanh', '59000'], ['ếch rang muối', '59000'], ['ếch chiên mắm', '59000'], ['ếch chiên bơ', '59000'], ['sụn rang muối', '59000'], ['sụn chiên mắm', '59000'], ['cánh gà rang muối', '59000'], ['cánh gà chiên mắm', '59000'], ['cánh gà chiên bơ', '59000'], ['ốc bươu hấp sả', '59000'], ['ốc bươu xào sả', '59000'], ['ốc bươu um tiêu', '59000'], ['ốc móng tay xào sả', '59000'], ['ốc móng tay xào bơ tỏi', '59000'], ['ốc móng tay xào rau muống', '59000'], ['lưỡi vịt rang muối', '69000'], ['lưỡi vịt chiên mắm', '69000'], ['cà na rang muối', '69000'], ['cà na hấp sả', '69000'], ['cà na xào sả', '69000'], ['cà na xào bơ tỏi', '69000'], ['chân gà sốt cô ba', '69000'], ['chân gà rang muối', '69000']]
 
-2022-08-30 15:19:53,261 - post_preprocess - INFO - Score: 0.6909090909090909
+2022-08-30 15:45:13,610 - post_preprocess - INFO - Score: 0.6909090909090909
 --------------------------------------------------
 
-2022-08-30 15:19:53,261 - post_preprocess - DEBUG - Image 005.jpeg
+2022-08-30 15:45:13,610 - post_preprocess - DEBUG - Image 005.jpeg
 
-2022-08-30 15:19:53,262 - post_preprocess - DEBUG - Input entities: ['2MORO TEA', '5', 'Trà Sũa', 'Trà Sữa Olong Đặc Biệt ( Full Topping 182 23k', 'Trà Sữa Olong Trân Châu Đen/ Tráng 15k 20k', "Trà Sữa 3 Tẩng Kem Trửng Nướng 20' 254", 'Trà Sữa Kem Trúng Dừa Nướng 20k 25 *', 'Trà Sữa Kem Trứng Oreo 20k 25k', 'Trà Sữa Brulle Trứng Muổi 20k 25k', 'Photo)', 'Trà Sữa Khoai Món Đặc Biệt ( Full Topping 18k 23k', 'Trà Sữa Khoai Món Trân Cháu Đen/ Tráng 15k 20k', 'Trà Sữa Socola Đặc Biệt ( Full Topping ) 18k 23k', 'Sữa Twoi', 'Sữa Tươi Trân Chảu Đường Đen 20k 25k', 'Sữa Tưoi Trán Châu Đườn Đen 4 Tẩng Kem Trứng Nướng 20k 25k', 'Sữa Tuoi Caphe Sương Sáo 20k 25k', 'Sữa Tươi Kem Trứng Dừa Nưóng 2Ok 25k', 'Sữa Tuoi Kem Trúng Oreo 20k 25k', 'Sữa Tươi Kem Trửng Brulle Trứng Muối 20k 25k', 'Milo Dẩm Trán Châu Đường Đen Đặc biệt Full Topping) 25k', "'Tvà Tnái Cây TOPPINGEB", 'Trân Châu Đen/ Trắng', '1Ok 15k Kem Flan', 'Trà Chanh Túi Zip', '15k Kem Trứng', 'Trà Tắc Xi Muịý Ly/ Túi Zip 12k', 'Bánh Milo', '15k 2Ok', 'Trà Đào Ly/ Túi Pudding', 'Trà Xanh Dưa Hấu 12k 17k Trứngl Socolal Khoai Môn/ Sương Sáo )', 'Trà Ổi Hỏng 20k 25k']
+2022-08-30 15:45:13,610 - post_preprocess - DEBUG - Input entities: ['2MORO TEA', '5', 'Trà Sũa', 'Trà Sữa Olong Đặc Biệt ( Full Topping 182 23k', 'Trà Sữa Olong Trân Châu Đen/ Tráng 15k 20k', "Trà Sữa 3 Tẩng Kem Trửng Nướng 20' 254", 'Trà Sữa Kem Trúng Dừa Nướng 20k 25 *', 'Trà Sữa Kem Trứng Oreo 20k 25k', 'Trà Sữa Brulle Trứng Muổi 20k 25k', 'Photo)', 'Trà Sữa Khoai Món Đặc Biệt ( Full Topping 18k 23k', 'Trà Sữa Khoai Món Trân Cháu Đen/ Tráng 15k 20k', 'Trà Sữa Socola Đặc Biệt ( Full Topping ) 18k 23k', 'Sữa Twoi', 'Sữa Tươi Trân Chảu Đường Đen 20k 25k', 'Sữa Tưoi Trán Châu Đườn Đen 4 Tẩng Kem Trứng Nướng 20k 25k', 'Sữa Tuoi Caphe Sương Sáo 20k 25k', 'Sữa Tươi Kem Trứng Dừa Nưóng 2Ok 25k', 'Sữa Tuoi Kem Trúng Oreo 20k 25k', 'Sữa Tươi Kem Trửng Brulle Trứng Muối 20k 25k', 'Milo Dẩm Trán Châu Đường Đen Đặc biệt Full Topping) 25k', "'Tvà Tnái Cây TOPPINGEB", 'Trân Châu Đen/ Trắng', '1Ok 15k Kem Flan', 'Trà Chanh Túi Zip', '15k Kem Trứng', 'Trà Tắc Xi Muịý Ly/ Túi Zip 12k', 'Bánh Milo', '15k 2Ok', 'Trà Đào Ly/ Túi Pudding', 'Trà Xanh Dưa Hấu 12k 17k Trứngl Socolal Khoai Môn/ Sương Sáo )', 'Trà Ổi Hỏng 20k 25k']
 
-2022-08-30 15:19:53,263 - post_preprocess - DEBUG - After clean entities: ['2moro', 'tea', '5', 'trà sũa', 'trà sữa olong đặc biệt ', 'trà sữa khoai món đặc biệt ', '18k 23k', 'sữa twoi', 'sữa tươi trân chảu đường đen', '20k 25k', 'sữa tưoi trán châu đườn', 'đen 4 tẩng kem trứng nướng', '20k 25k', 'sữa tuoi caphe sương sáo', '20k 25k', 'sữa tươi kem trứng dừa nưóng', '2ok 25k', 'sữa tuoi kem trúng oreo', '20k 25k', 'sữa tươi kem trửng brulle trứng muối', '20k 25k', 'milo dẩm trán châu đường đen đặc biệt full ', 'pping)', '25k', "'tvà tnái cây ", 'ppingeb', 'trân châu đen/ trắng', '1ok 15k kem flan', 'trà chanh túi zip', '15k kem trứng', 'trà tắc xi muịý ly/ túi zip', '12k', 'bánh milo', '15k 2ok', 'trà đào ly/ túi pudding', 'trà xanh dưa hấu', '12k 17k trứngl socolal khoai môn/ sương sáo )', 'trà ổi hỏng', '20k 25k']
+2022-08-30 15:45:13,610 - post_preprocess - DEBUG - After clean entities: 2moro
+tea
+5
+trà sũa
+trà sữa olong đặc biệt ( full 
+pping
+182
+23k
+trà sữa olong trân châu đen/ tráng
+15k
+20k
+trà
+sữa 3 tẩng kem trửng nướng
+20'
+254
+trà sữa kem trúng dừa nướng
+20k
+25 *
+trà sữa kem trứng oreo
+20k
+25k
+trà sữa brulle trứng muổi
+20k
+25k
+pho
+)
+trà sữa khoai món đặc biệt ( full 
+pping
+18k
+23k
+trà sữa khoai món trân cháu đen/ tráng
+15k
+20k
+trà sữa socola đặc biệt ( full 
+pping )
+18k
+23k
+sữa twoi
+sữa tươi trân chảu đường đen
+20k
+25k
+sữa tưoi trán châu đườn
+đen 4 tẩng kem trứng nướng
+20k
+25k
+sữa tuoi caphe sương sáo
+20k
+25k
+sữa tươi kem trứng dừa nưóng
+2ok 25k
+sữa tuoi kem trúng oreo
+20k
+25k
+sữa tươi kem trửng brulle trứng muối
+20k
+25k
+milo dẩm trán châu đường đen đặc biệt full 
+pping)
+25k
+'tvà tnái cây 
+ppingeb
+trân châu đen/ trắng
+1ok 15k kem flan
+trà chanh túi zip
+15k kem trứng
+trà tắc xi muịý ly/ túi zip
+12k
+bánh milo
+15k
+2ok
+trà đào ly/ túi pudding
+trà xanh dưa hấu
+12k
+17k trứngl socolal khoai môn/ sương sáo )
+trà ổi hỏng
+20k
+25k
 
-2022-08-30 15:19:53,263 - post_preprocess - DEBUG - Step 1 classify: 
-FOODS: ['2moro', 'tea', '5', 'trà sũa', 'trà sữa olong đặc biệt ', 'trà sữa khoai món đặc biệt ', '', 'sữa twoi', 'sữa tươi trân chảu đường đen', '', 'sữa tưoi trán châu đườn', 'đen 4 tẩng kem trứng nướng', '', 'sữa tuoi caphe sương sáo', '', 'sữa tươi kem trứng dừa nưóng', '', 'sữa tuoi kem trúng oreo', '', 'sữa tươi kem trửng brulle trứng muối', '', 'milo dẩm trán châu đường đen đặc biệt full ', 'pping)', '', "'tvà tnái cây ", 'ppingeb', 'trân châu đen/ trắng', '', 'trà chanh túi zip', '', 'trà tắc xi muịý ly/ túi zip', '', 'bánh milo', '', 'trà đào ly/ túi pudding', 'trà xanh dưa hấu', '', 'trà ổi hỏng', '']
-PRICES: [[6, '18000'], [9, '20000'], [12, '20000'], [14, '20000'], [16, '25000'], [18, '20000'], [20, '20000'], [23, '25000'], [27, '15000'], [29, '15000'], [31, '12000'], [33, '15000'], [36, '12000'], [38, '20000']]
+2022-08-30 15:45:13,613 - post_preprocess - DEBUG - Step 1 classify: 
+FOODS: ['2moro', 'tea', '5', 'trà sũa', 'trà sữa olong đặc biệt ( full ', 'pping', '182', '', 'trà sữa olong trân châu đen/ tráng', '', '', 'trà', 'sữa 3 tẩng kem trửng nướng', "20'", '254', 'trà sữa kem trúng dừa nướng', '', '25 *', 'trà sữa kem trứng oreo', '', '', 'trà sữa brulle trứng muổi', '', '', 'pho', ')', 'trà sữa khoai món đặc biệt ( full ', 'pping', '', '', 'trà sữa khoai món trân cháu đen/ tráng', '', '', 'trà sữa socola đặc biệt ( full ', 'pping )', '', '', 'sữa twoi', 'sữa tươi trân chảu đường đen', '', '', 'sữa tưoi trán châu đườn', 'đen 4 tẩng kem trứng nướng', '', '', 'sữa tuoi caphe sương sáo', '', '', 'sữa tươi kem trứng dừa nưóng', '', 'sữa tuoi kem trúng oreo', '', '', 'sữa tươi kem trửng brulle trứng muối', '', '', 'milo dẩm trán châu đường đen đặc biệt full ', 'pping)', '', "'tvà tnái cây ", 'ppingeb', 'trân châu đen/ trắng', '', 'trà chanh túi zip', '', 'trà tắc xi muịý ly/ túi zip', '', 'bánh milo', '', '2ok', 'trà đào ly/ túi pudding', 'trà xanh dưa hấu', '', '', 'trà ổi hỏng', '', '']
+PRICES: [[7, '23000'], [9, '15000'], [10, '20000'], [16, '20000'], [19, '20000'], [20, '25000'], [22, '20000'], [23, '25000'], [28, '18000'], [29, '23000'], [31, '15000'], [32, '20000'], [35, '18000'], [36, '23000'], [39, '20000'], [40, '25000'], [43, '20000'], [44, '25000'], [46, '20000'], [47, '25000'], [49, '25000'], [51, '20000'], [52, '25000'], [54, '20000'], [55, '25000'], [58, '25000'], [62, '15000'], [64, '15000'], [66, '12000'], [68, '15000'], [72, '12000'], [73, '17000'], [75, '20000'], [76, '25000']]
 
-2022-08-30 15:19:53,336 - post_preprocess - DEBUG - Step 2 correct spell:
-FOODS: ['2moro', 'tea', '5', 'trà sữa', 'trà sữa olong đặc biệt', 'trà sữa khoai món đặc biệt', '', 'sữa two', 'sữa tươi trân chả đường đen', '', 'sữa tươi trân châu sườn', 'đen 4 tổng kem trứng nướng', '', 'sữa muối caphe sương sáo', '', 'sữa tươi kem trứng dừa nướng', '', 'sữa muối kem trứng oreo', '', 'sữa tươi kem trứng brulle trứng muối', '', 'milo cẩm trân châu đường đen đặc biệt full', 'pping', '', 'trà thái cây', 'pping b', 'trân châu đen trắng', '', 'trà chanh túi zip', '', 'trà tắc xù muối ly túi zip', '', 'bánh milo', '', 'trà đào ly túi pudding', 'trà xanh dưa hấu', '', 'trà ổi hồng', '']
+2022-08-30 15:45:13,660 - post_preprocess - DEBUG - Step 2 correct spell:
+FOODS: ['2moro', 'tea', '5', 'trà sữa', 'trà sữa olong đặc biệt full', 'pping', '182', '', 'trà sữa olong trân châu đen tráng', '', '', 'trà', 'sữa 3 tổng kem trứng nướng', "20'", '254', 'trà sữa kem trứng dừa nướng', '', '25', 'trà sữa kem trứng oreo', '', '', 'trà sữa brulle trứng muối', '', '', 'pho', '', 'trà sữa khoai món đặc biệt full', 'pping', '', '', 'trà sữa khoai món trân cháu đen tráng', '', '', 'trà sữa socola đặc biệt full', 'pping', '', '', 'sữa two', 'sữa tươi trân chả đường đen', '', '', 'sữa tươi trân châu sườn', 'đen 4 tổng kem trứng nướng', '', '', 'sữa muối caphe sương sáo', '', '', 'sữa tươi kem trứng dừa nướng', '', 'sữa muối kem trứng oreo', '', '', 'sữa tươi kem trứng brulle trứng muối', '', '', 'milo cẩm trân châu đường đen đặc biệt full', 'pping', '', 'trà thái cây', 'pping b', 'trân châu đen trắng', '', 'trà chanh túi zip', '', 'trà tắc xù muối ly túi zip', '', 'bánh milo', '', '2ok', 'trà đào ly túi pudding', 'trà xanh dưa hấu', '', '', 'trà ổi hồng', '', '']
 
-2022-08-30 15:19:53,337 - post_preprocess - DEBUG - Step 3 mapping:
-[['trà sữa khoai món đặc biệt', '18000'], ['sữa tươi trân chả đường đen', '20000'], ['đen 4 tổng kem trứng nướng', '20000'], ['sữa muối caphe sương sáo', '20000'], ['sữa tươi kem trứng dừa nướng', '25000'], ['sữa muối kem trứng oreo', '20000'], ['sữa tươi kem trứng brulle trứng muối', '20000'], ['pping', '25000'], ['trà thái cây', '25000'], ['pping b', '25000'], ['trân châu đen trắng', '25000'], ['trà chanh túi zip', '15000'], ['trà tắc xù muối ly túi zip', '12000'], ['bánh milo', '15000'], ['trà xanh dưa hấu', '12000'], ['trà ổi hồng', '20000'], ['sữa two', 'NOT GIVEN'], ['sữa tươi trân châu sườn', 'NOT GIVEN'], ['milo cẩm trân châu đường đen đặc biệt full', 'NOT GIVEN'], ['trà đào ly túi pudding', 'NOT GIVEN']]
+2022-08-30 15:45:13,660 - post_preprocess - DEBUG - Step 3 mapping:
+[['182', '23000'], ['trà sữa olong trân châu đen tráng M', '15000'], ['trà sữa olong trân châu đen tráng L', '20000'], ['trà sữa kem trứng dừa nướng', '20000'], ['trà sữa kem trứng oreo M', '20000'], ['trà sữa kem trứng oreo L', '25000'], ['trà sữa brulle trứng muối M', '20000'], ['trà sữa brulle trứng muối L', '25000'], ['pping M', '18000'], ['pping L', '23000'], ['trà sữa khoai món trân cháu đen tráng M', '15000'], ['trà sữa khoai món trân cháu đen tráng L', '20000'], ['pping M', '18000'], ['pping L', '23000'], ['sữa tươi trân chả đường đen M', '20000'], ['sữa tươi trân chả đường đen L', '25000'], ['đen 4 tổng kem trứng nướng M', '20000'], ['đen 4 tổng kem trứng nướng L', '25000'], ['sữa muối caphe sương sáo M', '20000'], ['sữa muối caphe sương sáo L', '25000'], ['sữa tươi kem trứng dừa nướng', '25000'], ['sữa muối kem trứng oreo M', '20000'], ['sữa muối kem trứng oreo L', '25000'], ['sữa tươi kem trứng brulle trứng muối M', '20000'], ['sữa tươi kem trứng brulle trứng muối L', '25000'], ['pping', '25000'], ['trà thái cây', '25000'], ['pping b', '25000'], ['trân châu đen trắng', '25000'], ['trà chanh túi zip', '15000'], ['trà tắc xù muối ly túi zip', '12000'], ['bánh milo', '15000'], ['2ok', '15000'], ['trà đào ly túi pudding', '15000'], ['trà xanh dưa hấu', '15000'], [' M', '12000'], [' L', '17000'], ['trà ổi hồng M', '20000'], ['trà ổi hồng L', '25000'], ['trà', 'NOT GIVEN'], ['sữa 3 tổng kem trứng nướng', 'NOT GIVEN'], ["20'", 'NOT GIVEN'], ['254', 'NOT GIVEN'], ['25', 'NOT GIVEN'], ['pho', 'NOT GIVEN'], ['trà sữa khoai món đặc biệt full', 'NOT GIVEN'], ['trà sữa socola đặc biệt full', 'NOT GIVEN'], ['sữa two', 'NOT GIVEN'], ['sữa tươi trân châu sườn', 'NOT GIVEN'], ['milo cẩm trân châu đường đen đặc biệt full', 'NOT GIVEN']]
 
-2022-08-30 15:19:53,361 - post_preprocess - INFO - Score: 0.0
+2022-08-30 15:45:13,710 - post_preprocess - INFO - Score: 0.1348314606741573
 --------------------------------------------------
 
-2022-08-30 15:19:53,362 - post_preprocess - DEBUG - Image 006.jpeg
+2022-08-30 15:45:13,710 - post_preprocess - DEBUG - Image 006.jpeg
 
-2022-08-30 15:19:53,362 - post_preprocess - DEBUG - Input entities: ['S', 'GSRDER RESTAUR 209 oulhty DRINK MENU', 'NON ALCOHO ALCOHO LIST', 'THỨC UỐNG KHỔNG CỐN THỨC UỔNG CÓ CỐN', 'TRÀ CAFE TEA COFFEE BEER', 'Cale den Vetrarnese ke ccitee 15.000 Tiger Nau 16.000', 'Calo sừa votnannawa mnix cotao 18.000 Tiger Lon 16.000', 'Trà bác Trà den , Ó-long boCk {Qu 25.000 Tiger Bạc (Crystal) 17.000', 'Trà chanh, gừng, mât ong Tec Gnpor hcncy 25.000 Helneken 18.000', 'NƯOC NGOT SOFT DRINK Saigon Special 15.000', 'Coca Pepsl 7-Up Nutri dau cam 18.000 QuY Nhon 12.000', 'Coke light Rodbull 20.000 Strong Bow (Táo dâu) 22.000', 'Nưóc suối Mineroi water , 12.000 CRAFT BEER', 'Nưóc khoáng Soahng wotor 18.000 (Bia lên men Ihủ cong tại Viêt Nam)', 'Soda chanh Sovo Lime 22.000 Onyxx 0.5L 47.000', 'Tonic wator 22.000 Amber - 0.5L 47.000', 'NƯỚC TRẢl CÁY TUƠI (HEALTHY JUICE) Bay 45.000', 'Cam Carrot , Ổi - Orange Catot Guavo 25.000 Makkoll (Ruou g9o Han Quỗc) 750ml 65.000', 'Thơm Cà chua D.hau Piroapple Tonara wmidicn 25.000 CoCKIAIL', 'Chanh Iưoi, chanh dôy lanon Arsn fn: 20.000 Mojlto 45.000', "TRMI C)Y XAY VÓI SỮA ChUA - SMOTHIE Borcoaulon' ImoJuko Sodo water", '28.000 GIn Tonic 40.000', 'Vltamin B.12 eoarry Stiubery Yopur', 'Nom votqucc . Dou Barkxy Sapplre . cxril wte', 'Sacnuo', 'Vltamin Manjo Bnona Yogurt 30.000 Maraghlta 40.000', 'Xoa Chuq  suachuo Whons Inple-sec Lrne Juikce', 'Vitamin Avocaco Bangna Cnocoute 35.000 Long Island Ice lea 55.000', 'Chuxs . Choalato Gn. Vocko Rhum,Toquna Inpla-sec Coke', 'Vitamin Morga Stautyony Yooxrt 30.000 Wiskey Sour 40.000', 'Xoc Dau , Sna chua Jimioexom Swaet-sou Sviup', 'Mango Daiquiri 40.000', 'MOCIAIL Suwnort Manpo lno Jte', "Vlrgin Mollto Lenxn Min'shlp Soyo 25.000 Sunrise one 40 55.000", 'Con Bacix. Sadja Barcodilght Arsseonjce Mini Gieenasne', 'Blueberry Lemon Bveoonycmnon nonnek oco 30.000 Cubo Llbre 45.000', 'Nan Guc Cnannh. Wa1 057 S283 Axmn Imo CokQ', 'Zoo Zoo Strutarry Fossicy? Fnsl 71p 30.000', 'Dav, Cnanhaar', 'Ginger Fìz lomon G1yor 7up 25.000', 'Cin']
+2022-08-30 15:45:13,723 - post_preprocess - DEBUG - Input entities: ['S', 'GSRDER RESTAUR 209 oulhty DRINK MENU', 'NON ALCOHO ALCOHO LIST', 'THỨC UỐNG KHỔNG CỐN THỨC UỔNG CÓ CỐN', 'TRÀ CAFE TEA COFFEE BEER', 'Cale den Vetrarnese ke ccitee 15.000 Tiger Nau 16.000', 'Calo sừa votnannawa mnix cotao 18.000 Tiger Lon 16.000', 'Trà bác Trà den , Ó-long boCk {Qu 25.000 Tiger Bạc (Crystal) 17.000', 'Trà chanh, gừng, mât ong Tec Gnpor hcncy 25.000 Helneken 18.000', 'NƯOC NGOT SOFT DRINK Saigon Special 15.000', 'Coca Pepsl 7-Up Nutri dau cam 18.000 QuY Nhon 12.000', 'Coke light Rodbull 20.000 Strong Bow (Táo dâu) 22.000', 'Nưóc suối Mineroi water , 12.000 CRAFT BEER', 'Nưóc khoáng Soahng wotor 18.000 (Bia lên men Ihủ cong tại Viêt Nam)', 'Soda chanh Sovo Lime 22.000 Onyxx 0.5L 47.000', 'Tonic wator 22.000 Amber - 0.5L 47.000', 'NƯỚC TRẢl CÁY TUƠI (HEALTHY JUICE) Bay 45.000', 'Cam Carrot , Ổi - Orange Catot Guavo 25.000 Makkoll (Ruou g9o Han Quỗc) 750ml 65.000', 'Thơm Cà chua D.hau Piroapple Tonara wmidicn 25.000 CoCKIAIL', 'Chanh Iưoi, chanh dôy lanon Arsn fn: 20.000 Mojlto 45.000', "TRMI C)Y XAY VÓI SỮA ChUA - SMOTHIE Borcoaulon' ImoJuko Sodo water", '28.000 GIn Tonic 40.000', 'Vltamin B.12 eoarry Stiubery Yopur', 'Nom votqucc . Dou Barkxy Sapplre . cxril wte', 'Sacnuo', 'Vltamin Manjo Bnona Yogurt 30.000 Maraghlta 40.000', 'Xoa Chuq  suachuo Whons Inple-sec Lrne Juikce', 'Vitamin Avocaco Bangna Cnocoute 35.000 Long Island Ice lea 55.000', 'Chuxs . Choalato Gn. Vocko Rhum,Toquna Inpla-sec Coke', 'Vitamin Morga Stautyony Yooxrt 30.000 Wiskey Sour 40.000', 'Xoc Dau , Sna chua Jimioexom Swaet-sou Sviup', 'Mango Daiquiri 40.000', 'MOCIAIL Suwnort Manpo lno Jte', "Vlrgin Mollto Lenxn Min'shlp Soyo 25.000 Sunrise one 40 55.000", 'Con Bacix. Sadja Barcodilght Arsseonjce Mini Gieenasne', 'Blueberry Lemon Bveoonycmnon nonnek oco 30.000 Cubo Llbre 45.000', 'Nan Guc Cnannh. Wa1 057 S283 Axmn Imo CokQ', 'Zoo Zoo Strutarry Fossicy? Fnsl 71p 30.000', 'Dav, Cnanhaar', 'Ginger Fìz lomon G1yor 7up 25.000', 'Cin']
 
-2022-08-30 15:19:53,364 - post_preprocess - DEBUG - After clean entities: ['s', 'gsrder restaur', '209 oulhty drink ', 'non alcoho alcoho list', 'thức uống khổng cốn thức uổng có cốn', 'trà cafe tea coffee beer', 'cale den vetrarnese ke ccitee', '15.000 tiger nau', '16.000', 'calo sừa votnannawa mnix cotao', '18.000 tiger lon', '16.000', 'trà bác trà den , ó-long bock {qu', '25.000 tiger bạc ', '17.000', 'trà chanh, gừng, mât ong tec gnpor hcncy', '25.0elneken 18.000', 'nưoc ngot soft drink saigon special', '15.000', 'coca', 'pepsl 7-up nutri dau cam', '18.000 quy nhon', '12.000', 'coke light rodbull', '20.000 strong bow ', '22.000', 'nưóc suối mineroi water ,', '12.000 craft beer', 'nưóc khoáng soahng wo', 'r', '18.000 ', 'soda chanh sovo lime', '22.000 onyxx', '0.5l 47.000', '', 'nic wa', 'r', '22.000 amber -', '0.5l 47.000', 'nước trảl cáy tuơi  bay', '45.000', 'cam carrot , ổi - orange ca', 't guavo', '25.000 makkoll ', '750ml 65.000', 'thơm cà chua d.hau piroapple ', 'nara wmidicn', '25.000 cockiail', 'chanh iưoi, chanh dôy lanon arsn fn:', '20.000 mojl', '', '45.000', "trmi c)y xay vói sữa chua - smothie borcoaulon' imojuko sodo water", '28.000 gin ', 'nic', '40.000', 'vltamin', 'b.12 eoarry stiubery yopur', 'nom votqucc . dou barkxy sapplre . cxril wte', 'sacnuo', 'vltamin manjo bnona yogurt', '30.000 maraghlta', '40.000', 'xoa chuq  suachuo whons inple-sec lrne juikce', 'vitamin avocaco bangna cnocoute', '35.000 long island ice lea', '55.000', 'chuxs . choala', ' gn. vocko rhum,', 'quna inpla-sec coke', 'vitamin morga stautyony yooxrt', '30.000 wiskey sour', '40.000', 'xoc dau , sna chua jimioexom swaet-sou sviup', 'mango daiquiri', '40.000', 'mociail suwnort manpo lno jte', 'vlrgin moll', " lenxn min'shlp soyo", '25.000 sunrise one', '40 55.000', 'con bacix. sadja barcodilght arsseonjce mini gieenasne', 'blueberry lemon bveoonycmnon nonnek oco', '30.000 cubo llbre', '45.000', 'nan guc cnannh.', 'wa1 057 s283 axmn imo cokq', 'zoo zoo strutarry fossicy? fnsl', '71p 30.000', 'dav, cnanhaar', 'ginger fìz lomon', 'g1yor 7up', '25.000', 'cin']
+2022-08-30 15:45:13,723 - post_preprocess - DEBUG - After clean entities: s
+gsrder restaur
+209 oulhty drink 
+non alcoho alcoho list
+thức uống khổng cốn thức uổng có cốn
+trà cafe tea coffee beer
+cale den vetrarnese ke ccitee
+15.000 tiger nau
+16.000
+calo sừa votnannawa mnix cotao
+18.000 tiger lon
+16.000
+trà bác trà den , ó-long bock {qu
+25.000 tiger bạc (crystal)
+17.000
+trà chanh, gừng, mât ong tec gnpor hcncy
+25.0elneken 18.000
+nưoc ngot soft drink saigon special
+15.000
+coca
+pepsl 7-up nutri dau cam
+18.000 quy nhon
+12.000
+coke light rodbull
+20.000 strong bow (táo dâu)
+22.000
+nưóc suối mineroi water ,
+12.000 craft beer
+nưóc khoáng soahng wo
+r
+18.000 (bia lên men ihủ cong tại viêt nam)
+soda chanh sovo lime
+22.000 onyxx
+0.5l
+47.000
 
-2022-08-30 15:19:53,372 - post_preprocess - DEBUG - Step 1 classify: 
-FOODS: ['s', 'gsrder restaur', '209 oulhty drink ', 'non alcoho alcoho list', 'thức uống khổng cốn thức uổng có cốn', 'trà cafe tea coffee beer', 'cale den vetrarnese ke ccitee', '', '', 'calo sừa votnannawa mnix cotao', '', '', 'trà bác trà den , ó-long bock {qu', '', '', 'trà chanh, gừng, mât ong tec gnpor hcncy', '', 'nưoc ngot soft drink saigon special', '', 'coca', 'pepsl 7-up nutri dau cam', '', '', 'coke light rodbull', '', '', 'nưóc suối mineroi water ,', '', 'nưóc khoáng soahng wo', 'r', '', 'soda chanh sovo lime', '', '', '', 'nic wa', 'r', '', '', 'nước trảl cáy tuơi  bay', '', 'cam carrot , ổi - orange ca', 't guavo', '', '', 'thơm cà chua d.hau piroapple ', 'nara wmidicn', '', 'chanh iưoi, chanh dôy lanon arsn fn:', '', '', '', "trmi c)y xay vói sữa chua - smothie borcoaulon' imojuko sodo water", '', 'nic', '', 'vltamin', 'b.12 eoarry stiubery yopur', 'nom votqucc . dou barkxy sapplre . cxril wte', 'sacnuo', 'vltamin manjo bnona yogurt', '', '', 'xoa chuq  suachuo whons inple-sec lrne juikce', 'vitamin avocaco bangna cnocoute', '', '', 'chuxs . choala', ' gn. vocko rhum,', 'quna inpla-sec coke', 'vitamin morga stautyony yooxrt', '', '', 'xoc dau , sna chua jimioexom swaet-sou sviup', 'mango daiquiri', '', 'mociail suwnort manpo lno jte', 'vlrgin moll', " lenxn min'shlp soyo", '', '', 'con bacix. sadja barcodilght arsseonjce mini gieenasne', 'blueberry lemon bveoonycmnon nonnek oco', '', '', 'nan guc cnannh.', 'wa1 057 s283 axmn imo cokq', 'zoo zoo strutarry fossicy? fnsl', '', 'dav, cnanhaar', 'ginger fìz lomon', 'g1yor 7up', '', 'cin']
-PRICES: [[7, '15000'], [8, '16000'], [10, '18000'], [11, '16000'], [13, '25000'], [14, '17000'], [16, '18000'], [18, '15000'], [21, '18000'], [22, '12000'], [24, '20000'], [25, '22000'], [27, '12000'], [30, '18000'], [32, '22000'], [33, '47000'], [37, '22000'], [38, '47000'], [40, '45000'], [43, '25000'], [44, '65000'], [47, '25000'], [49, '20000'], [51, '45000'], [53, '28000'], [55, '40000'], [61, '30000'], [62, '40000'], [65, '35000'], [66, '55000'], [71, '30000'], [72, '40000'], [75, '40000'], [79, '25000'], [80, '55000'], [83, '30000'], [84, '45000'], [88, '30000'], [92, '25000']]
+nic wa
+r
+22.000 amber -
+0.5l
+47.000
+nước trảl cáy tuơi (healthy juice) bay
+45.000
+cam carrot , ổi - orange ca
+t guavo
+25.000 makkoll (ruou
+g9o han quỗc)
+750ml 65.000
+thơm cà chua d.hau piroapple 
+nara wmidicn
+25.000 cockiail
+chanh iưoi, chanh dôy lanon arsn fn:
+20.000 mojl
 
-2022-08-30 15:19:53,835 - post_preprocess - DEBUG - Step 2 correct spell:
-FOODS: ['sả', 'garden rau', '209 bulot trứng', 'non a coho a coho biệt', 'thác uống khổng cuốn thác tổng có cuốn', 'trà cafe tea coffee beer', 'cafe đen v france ke coffee', '', '', 'calo sữa okinawa mix combo', '', '', 'trà bạc trà đen ô long beck qua', '', '', 'trà chanh gừng mật ong tắc non honey', '', 'nước ngọt sốt trứng saigon special', '', 'coca', 'pepsi 7 up nutri rau cam', '', '', 'coke light redbull', '', '', 'nước suối mini water', '', 'nước khoáng song two', 'ô', '', 'soda chanh soda size', '', '', '', 'nic ba', 'ô', '', '', 'nước trà cá tươi bay', '', 'cam carrot ổi orange cá', 'ớt gravy', '', '', 'thơm cà chua d rau pineapple', 'na a mini n', '', 'chanh tươi chanh dây la non trân ăn', '', '', '', 'trái c ô xay vải sữa chua smoothies box olong moji ko soda water', '', 'nic', '', 'vitamin', 'b 12 cherry tiger yogurt', 'nấm v tuộc dâu bay apple cari ớt', 'sa nho', 'vitamin mango non yogurt', '', '', 'hoa chua su chua hong apple set lòng ice', 'vitamin a cacao banana chocolate', '', '', 'chua cho la', 'gà vodka nhum', 'qua ipa set coke', 'vitamin mocha tay ny yaourt', '', '', 'xúc rau sữa chua jim kem set sầu soup', 'mango daiquiri', '', 'mocha su non mango lon ớt', 'virgin roll', 'len n minh hấp soda', '', '', 'con bacon soda bao light a senjyu mini green sen', 'blueberry lemon bò souvignon non nem cá', '', '', 'non gác chanh', 'wa1 057 s283 an iso coke', 'zoo zoo strawberry spicy full', '', 'da chanh a', 'ginger mì lemon', 'g1yor 7up', '', 'con']
+45.000
+trmi c)y xay vói sữa chua - smothie borcoaulon' imojuko sodo water
+28.000 gin 
+nic
+40.000
+vltamin
+b.12 eoarry stiubery yopur
+nom votqucc . dou barkxy sapplre . cxril wte
+sacnuo
+vltamin manjo bnona yogurt
+30.000 maraghlta
+40.000
+xoa chuq  suachuo whons inple-sec lrne juikce
+vitamin avocaco bangna cnocoute
+35.000 long island ice lea
+55.000
+chuxs . choala
+ gn. vocko rhum,
+quna inpla-sec coke
+vitamin morga stautyony yooxrt
+30.000 wiskey sour
+40.000
+xoc dau , sna chua jimioexom swaet-sou sviup
+mango daiquiri
+40.000
+mociail suwnort manpo lno jte
+vlrgin moll
+ lenxn min'shlp soyo
+25.000 sunrise one
+40
+55.000
+con bacix. sadja barcodilght arsseonjce mini gieenasne
+blueberry lemon bveoonycmnon nonnek oco
+30.000 cubo llbre
+45.000
+nan guc cnannh.
+wa1
+057 s283 axmn imo cokq
+zoo zoo strutarry fossicy? fnsl
+71p
+30.000
+dav, cnanhaar
+ginger fìz lomon
+g1yor 7up
+25.000
+cin
 
-2022-08-30 15:19:53,836 - post_preprocess - DEBUG - Step 3 mapping:
-[['cafe đen v france ke coffeesize s', '15000'], ['cafe đen v france ke coffeesize m', '16000'], ['calo sữa okinawa mix combosize s', '18000'], ['calo sữa okinawa mix combosize m', '16000'], ['trà bạc trà đen ô long beck quasize s', '25000'], ['trà bạc trà đen ô long beck quasize m', '17000'], ['trà chanh gừng mật ong tắc non honey', '18000'], ['nước ngọt sốt trứng saigon special', '15000'], ['pepsi 7 up nutri rau camsize s', '18000'], ['pepsi 7 up nutri rau camsize m', '12000'], ['coke light redbullsize s', '20000'], ['coke light redbullsize m', '22000'], ['nước suối mini water', '12000'], ['ô', '18000'], ['soda chanh soda sizesize s', '22000'], ['soda chanh soda sizesize m', '47000'], ['ôsize s', '22000'], ['ôsize m', '47000'], ['nước trà cá tươi bay', '45000'], ['ớt gravysize s', '25000'], ['ớt gravysize m', '65000'], ['na a mini n', '25000'], ['chanh tươi chanh dây la non trân ăn', '20000'], ['trái c ô xay vải sữa chua smoothies box olong moji ko soda water', '28000'], ['nic', '40000'], ['vitamin', '40000'], ['b 12 cherry tiger yogurt', '40000'], ['nấm v tuộc dâu bay apple cari ớt', '40000'], ['sa nho', '40000'], ['vitamin mango non yogurt', '40000'], ['size s', '30000'], ['size m', '40000'], ['vitamin a cacao banana chocolatesize s', '35000'], ['vitamin a cacao banana chocolatesize m', '55000'], ['vitamin mocha tay ny yaourtsize s', '30000'], ['vitamin mocha tay ny yaourtsize m', '40000'], ['mango daiquiri', '40000'], ['mocha su non mango lon ớt', '40000'], ['virgin roll', '40000'], ['len n minh hấp soda', '40000'], ['size s', '25000'], ['size m', '55000'], ['blueberry lemon bò souvignon non nem cásize s', '30000'], ['blueberry lemon bò souvignon non nem cásize m', '45000'], ['zoo zoo strawberry spicy full', '30000'], ['da chanh a', '30000'], ['ginger mì lemon', '30000'], ['g1yor 7up', '30000'], ['coca', 'NOT GIVEN'], ['nước khoáng song two', 'NOT GIVEN'], ['nic ba', 'NOT GIVEN'], ['cam carrot ổi orange cá', 'NOT GIVEN'], ['thơm cà chua d rau pineapple', 'NOT GIVEN'], ['hoa chua su chua hong apple set lòng ice', 'NOT GIVEN'], ['chua cho la', 'NOT GIVEN'], ['gà vodka nhum', 'NOT GIVEN'], ['qua ipa set coke', 'NOT GIVEN'], ['xúc rau sữa chua jim kem set sầu soup', 'NOT GIVEN'], ['con bacon soda bao light a senjyu mini green sen', 'NOT GIVEN'], ['non gác chanh', 'NOT GIVEN'], ['wa1 057 s283 an iso coke', 'NOT GIVEN'], ['con', 'NOT GIVEN']]
+2022-08-30 15:45:13,723 - post_preprocess - DEBUG - Step 1 classify: 
+FOODS: ['s', 'gsrder restaur', '209 oulhty drink ', 'non alcoho alcoho list', 'thức uống khổng cốn thức uổng có cốn', 'trà cafe tea coffee beer', 'cale den vetrarnese ke ccitee', '', '', 'calo sừa votnannawa mnix cotao', '', '', 'trà bác trà den , ó-long bock {qu', '', '', 'trà chanh, gừng, mât ong tec gnpor hcncy', '', 'nưoc ngot soft drink saigon special', '', 'coca', 'pepsl 7-up nutri dau cam', '', '', 'coke light rodbull', '', '', 'nưóc suối mineroi water ,', '', 'nưóc khoáng soahng wo', 'r', '', 'soda chanh sovo lime', '', '0.5l', '', '', 'nic wa', 'r', '', '0.5l', '', 'nước trảl cáy tuơi (healthy juice) bay', '', 'cam carrot , ổi - orange ca', 't guavo', '', 'g9o han quỗc)', '', 'thơm cà chua d.hau piroapple ', 'nara wmidicn', '', 'chanh iưoi, chanh dôy lanon arsn fn:', '', '', '', "trmi c)y xay vói sữa chua - smothie borcoaulon' imojuko sodo water", '', 'nic', '', 'vltamin', 'b.12 eoarry stiubery yopur', 'nom votqucc . dou barkxy sapplre . cxril wte', 'sacnuo', 'vltamin manjo bnona yogurt', '', '', 'xoa chuq  suachuo whons inple-sec lrne juikce', 'vitamin avocaco bangna cnocoute', '', '', 'chuxs . choala', ' gn. vocko rhum,', 'quna inpla-sec coke', 'vitamin morga stautyony yooxrt', '', '', 'xoc dau , sna chua jimioexom swaet-sou sviup', 'mango daiquiri', '', 'mociail suwnort manpo lno jte', 'vlrgin moll', " lenxn min'shlp soyo", '', '40', '', 'con bacix. sadja barcodilght arsseonjce mini gieenasne', 'blueberry lemon bveoonycmnon nonnek oco', '', '', 'nan guc cnannh.', 'wa1', '057 s283 axmn imo cokq', 'zoo zoo strutarry fossicy? fnsl', '71p', '', 'dav, cnanhaar', 'ginger fìz lomon', 'g1yor 7up', '', 'cin']
+PRICES: [[7, '15000'], [8, '16000'], [10, '18000'], [11, '16000'], [13, '25000'], [14, '17000'], [16, '18000'], [18, '15000'], [21, '18000'], [22, '12000'], [24, '20000'], [25, '22000'], [27, '12000'], [30, '18000'], [32, '22000'], [34, '47000'], [38, '22000'], [40, '47000'], [42, '45000'], [45, '25000'], [47, '65000'], [50, '25000'], [52, '20000'], [54, '45000'], [56, '28000'], [58, '40000'], [64, '30000'], [65, '40000'], [68, '35000'], [69, '55000'], [74, '30000'], [75, '40000'], [78, '40000'], [82, '25000'], [84, '55000'], [87, '30000'], [88, '45000'], [94, '30000'], [98, '25000']]
 
-2022-08-30 15:19:53,929 - post_preprocess - INFO - Score: 0.019801980198019806
+2022-08-30 15:45:13,943 - post_preprocess - DEBUG - Step 2 correct spell:
+FOODS: ['sả', 'garden set rau', '209 bulot trứng', 'non a coho a coho biệt', 'thác uống khổng cuốn thác tổng có cuốn', 'trà cafe tea coffee beer', 'cafe đen set cheese ke coffee', '', '', 'calo sữa vịt okinawa mix combo', '', '', 'trà bạc trà đen ô long beck qua', '', '', 'trà chanh gừng mật ong tắc non honey', '', 'nước ngọt sốt trứng saigon special', '', 'coca', 'pepsi 7 up nutri rau cam', '', '', 'coke light redbull', '', '', 'nước suối mini water', '', 'nước khoáng song two', 'ô', '', 'soda chanh soda size', '', '0 5l', '', '', 'nic ba', 'ô', '', '0 5l', '', 'nước trà cá tươi healthy ice bay', '', 'cam carrot ổi orange cá', 'ớt gravy', '', 'g9o hàn quốc', '', 'thơm cà chua d rau pineapple', 'na a mini n', '', 'chanh tươi chanh dây la non trân ăn', '', '', '', 'trái c ô xay vải sữa chua smoothies bạc olong moji ko soda water', '', 'nic', '', 'vitamin', 'b 12 cherry sả tiger yogurt', 'nấm v tuộc dâu bay apple cari ớt', 'sa nho', 'vitamin mango non yogurt', '', '', 'hoa chua su chua hong apple set lòng ice', 'vitamin a cacao banana chocolate', '', '', 'chua cho la', 'gà vodka nhum', 'qua ipa set coke', 'vitamin mocha sữa trứng yaourt', '', '', 'xúc rau sữa chua jim kem set sầu soup', 'mango daiquiri', '', 'mocha su non mango lon ớt', 'virgin roll', 'len n minh hấp soda', '', '40', '', 'con bacon soda bạc light trà senjyu mini green sen', 'blueberry lemon lemon non non nem cá', '', '', 'non gác chanh', 'wa1', '057 s283 an iso coke', 'zoo zoo trà tay spicy full', '71p', '', 'da chanh a', 'ginger mì lemon', 'g1yor 7up', '', 'con']
+
+2022-08-30 15:45:13,943 - post_preprocess - DEBUG - Step 3 mapping:
+[['cafe đen set cheese ke coffee size s', '15000'], ['cafe đen set cheese ke coffee size m', '16000'], ['calo sữa vịt okinawa mix combo size s', '18000'], ['calo sữa vịt okinawa mix combo size m', '16000'], ['trà bạc trà đen ô long beck qua size s', '25000'], ['trà bạc trà đen ô long beck qua size m', '17000'], ['trà chanh gừng mật ong tắc non honey', '18000'], ['nước ngọt sốt trứng saigon special', '15000'], ['pepsi 7 up nutri rau cam size s', '18000'], ['pepsi 7 up nutri rau cam size m', '12000'], ['coke light redbull size s', '20000'], ['coke light redbull size m', '22000'], ['nước suối mini water', '12000'], ['ô', '18000'], ['soda chanh soda size', '22000'], ['0 5l', '47000'], ['nic ba', '47000'], ['ô', '47000'], ['0 5l', '47000'], ['nước trà cá tươi healthy ice bay', '45000'], ['ớt gravy', '25000'], ['g9o hàn quốc', '65000'], ['na a mini n', '25000'], ['chanh tươi chanh dây la non trân ăn', '20000'], ['trái c ô xay vải sữa chua smoothies bạc olong moji ko soda water', '28000'], ['nic', '40000'], ['vitamin', '40000'], ['b 12 cherry sả tiger yogurt', '40000'], ['nấm v tuộc dâu bay apple cari ớt', '40000'], ['sa nho', '40000'], ['vitamin mango non yogurt', '40000'], [' size s', '30000'], [' size m', '40000'], ['vitamin a cacao banana chocolate size s', '35000'], ['vitamin a cacao banana chocolate size m', '55000'], ['vitamin mocha sữa trứng yaourt size s', '30000'], ['vitamin mocha sữa trứng yaourt size m', '40000'], ['mango daiquiri', '40000'], ['mocha su non mango lon ớt', '40000'], ['virgin roll', '40000'], ['len n minh hấp soda', '40000'], ['40', '55000'], ['blueberry lemon lemon non non nem cá size s', '30000'], ['blueberry lemon lemon non non nem cá size m', '45000'], ['71p', '30000'], ['da chanh a', '30000'], ['ginger mì lemon', '30000'], ['g1yor 7up', '30000'], ['coca', 'NOT GIVEN'], ['nước khoáng song two', 'NOT GIVEN'], ['cam carrot ổi orange cá', 'NOT GIVEN'], ['thơm cà chua d rau pineapple', 'NOT GIVEN'], ['hoa chua su chua hong apple set lòng ice', 'NOT GIVEN'], ['chua cho la', 'NOT GIVEN'], ['gà vodka nhum', 'NOT GIVEN'], ['qua ipa set coke', 'NOT GIVEN'], ['xúc rau sữa chua jim kem set sầu soup', 'NOT GIVEN'], ['con bacon soda bạc light trà senjyu mini green sen', 'NOT GIVEN'], ['non gác chanh', 'NOT GIVEN'], ['wa1', 'NOT GIVEN'], ['057 s283 an iso coke', 'NOT GIVEN'], ['zoo zoo trà tay spicy full', 'NOT GIVEN'], ['con', 'NOT GIVEN']]
+
+2022-08-30 15:45:14,005 - post_preprocess - INFO - Score: 0.0196078431372549
 --------------------------------------------------
 
-2022-08-30 15:19:53,929 - post_preprocess - DEBUG - Image 007.jpeg
+2022-08-30 15:45:14,005 - post_preprocess - DEBUG - Image 007.jpeg
 
-2022-08-30 15:19:53,930 - post_preprocess - DEBUG - Input entities: ['9', 'GARDF RESTAURAN 20n Quklitv WINE LIst', 'HOUSE WINE (VANG BẢN LY)', 'DABECO Sauvignon Blanc VietNam 35.000', 'CONNAISSUER Sauvignon Blanc France 65.000', 'DABECO EXPORT Cadlnal ,VietNam 35.000', 'CONNAISUUER Shiraz France 75.000', 'White WinE', 'CONNAISUUER Sauvignon Blanc Franco 390.000', 'DABECO CLASSIC , Sauvignon blanc VlelNam 190.000', 'Red WINE', 'CONNAISSUEER Shiroz France 2005 480.000', '1895 Carbernet Sauvignon France 2016 370.000', 'ChIvo Cabernet Sauvlgnon Chlle 450.000', 'GLAMOUR Spoclal seloctlon Carbornet Sauvignon Chlle 790.000', 'LUCKY SEVEN Cabernet Sauvignon Auslralia 2016 390.000', 'DABECO CLASSIC Cardinal , VietNam 190.000', 'DABECO STRONG WINE Carbernet Sauvignon VletNam 250.000', 'COLCH RESERVE Carbernet Sauvignon; Chlle 2014 320.000', 'AVALON ,Cabernet Shlraz Merlot Auslralla 290.000']
+2022-08-30 15:45:14,005 - post_preprocess - DEBUG - Input entities: ['9', 'GARDF RESTAURAN 20n Quklitv WINE LIst', 'HOUSE WINE (VANG BẢN LY)', 'DABECO Sauvignon Blanc VietNam 35.000', 'CONNAISSUER Sauvignon Blanc France 65.000', 'DABECO EXPORT Cadlnal ,VietNam 35.000', 'CONNAISUUER Shiraz France 75.000', 'White WinE', 'CONNAISUUER Sauvignon Blanc Franco 390.000', 'DABECO CLASSIC , Sauvignon blanc VlelNam 190.000', 'Red WINE', 'CONNAISSUEER Shiroz France 2005 480.000', '1895 Carbernet Sauvignon France 2016 370.000', 'ChIvo Cabernet Sauvlgnon Chlle 450.000', 'GLAMOUR Spoclal seloctlon Carbornet Sauvignon Chlle 790.000', 'LUCKY SEVEN Cabernet Sauvignon Auslralia 2016 390.000', 'DABECO CLASSIC Cardinal , VietNam 190.000', 'DABECO STRONG WINE Carbernet Sauvignon VletNam 250.000', 'COLCH RESERVE Carbernet Sauvignon; Chlle 2014 320.000', 'AVALON ,Cabernet Shlraz Merlot Auslralla 290.000']
 
-2022-08-30 15:19:53,930 - post_preprocess - DEBUG - After clean entities: ['9', 'gardf restauran', '20n quklitv wine list', 'house wine ', 'dabeco sauvignon blanc vietnam', '35.000', 'connaissuer sauvignon blanc france', '65.000', 'dabeco export cadlnal ,vietnam', '35.000', 'connaisuuer shiraz france', '75.000', 'white wine', 'connaisuuer sauvignon blanc franco', '390.000', 'dabeco classic , sauvignon blanc vlelnam', '190.000', 'red wine', 'connaissueer shiroz france', '20 carbernet sauvignon france', '2016 370.000', 'chivo cabernet sauvlgnon chlle', '450.000', 'glamour spoclal seloctlon carbornet sauvignon chlle', '790.000', 'lucky seven cabernet sauvignon auslralia', '2016 390.000', 'dabeco classic cardinal , vietnam', '190.000', 'dabeco strong wine carbernet sauvignon vletnam', '250.000', 'colch reserve carbernet sauvignon; chlle', '2014 320.000', 'avalon ,cabernet shlraz merlot auslralla', '290.000']
+2022-08-30 15:45:14,005 - post_preprocess - DEBUG - After clean entities: 9
+gardf restauran
+20n quklitv wine list
+house wine (vang bản ly)
+dabeco sauvignon blanc vietnam
+35.000
+connaissuer sauvignon blanc france
+65.000
+dabeco export cadlnal ,vietnam
+35.000
+connaisuuer shiraz france
+75.000
+white wine
+connaisuuer sauvignon blanc franco
+390.000
+dabeco classic , sauvignon blanc vlelnam
+190.000
+red wine
+connaissueer shiroz france
+20 carbernet sauvignon france
+2016
+370.000
+chivo cabernet sauvlgnon chlle
+450.000
+glamour spoclal seloctlon carbornet sauvignon chlle
+790.000
+lucky seven cabernet sauvignon auslralia
+2016
+390.000
+dabeco classic cardinal , vietnam
+190.000
+dabeco strong wine carbernet sauvignon vletnam
+250.000
+colch reserve carbernet sauvignon; chlle
+2014
+320.000
+avalon ,cabernet shlraz merlot auslralla
+290.000
 
-2022-08-30 15:19:53,931 - post_preprocess - DEBUG - Step 1 classify: 
-FOODS: ['9', 'gardf restauran', '20n quklitv wine list', 'house wine ', 'dabeco sauvignon blanc vietnam', '', 'connaissuer sauvignon blanc france', '', 'dabeco export cadlnal ,vietnam', '', 'connaisuuer shiraz france', '', 'white wine', 'connaisuuer sauvignon blanc franco', '', 'dabeco classic , sauvignon blanc vlelnam', '', 'red wine', 'connaissueer shiroz france', '20 carbernet sauvignon france', '', 'chivo cabernet sauvlgnon chlle', '', 'glamour spoclal seloctlon carbornet sauvignon chlle', '', 'lucky seven cabernet sauvignon auslralia', '', 'dabeco classic cardinal , vietnam', '', 'dabeco strong wine carbernet sauvignon vletnam', '', 'colch reserve carbernet sauvignon; chlle', '', 'avalon ,cabernet shlraz merlot auslralla', '']
-PRICES: [[5, '35000'], [7, '65000'], [9, '35000'], [11, '75000'], [14, '390000'], [16, '190000'], [20, '2016'], [22, '450000'], [24, '790000'], [26, '2016'], [28, '190000'], [30, '250000'], [32, '2014'], [34, '290000']]
+2022-08-30 15:45:14,005 - post_preprocess - DEBUG - Step 1 classify: 
+FOODS: ['9', 'gardf restauran', '20n quklitv wine list', 'house wine (vang bản ly)', 'dabeco sauvignon blanc vietnam', '', 'connaissuer sauvignon blanc france', '', 'dabeco export cadlnal ,vietnam', '', 'connaisuuer shiraz france', '', 'white wine', 'connaisuuer sauvignon blanc franco', '', 'dabeco classic , sauvignon blanc vlelnam', '', 'red wine', 'connaissueer shiroz france', '20 carbernet sauvignon france', '', '', 'chivo cabernet sauvlgnon chlle', '', 'glamour spoclal seloctlon carbornet sauvignon chlle', '', 'lucky seven cabernet sauvignon auslralia', '', '', 'dabeco classic cardinal , vietnam', '', 'dabeco strong wine carbernet sauvignon vletnam', '', 'colch reserve carbernet sauvignon; chlle', '', '', 'avalon ,cabernet shlraz merlot auslralla', '']
+PRICES: [[5, '35000'], [7, '65000'], [9, '35000'], [11, '75000'], [14, '390000'], [16, '190000'], [20, '2016'], [21, '370000'], [23, '450000'], [25, '790000'], [27, '2016'], [28, '390000'], [30, '190000'], [32, '250000'], [34, '2014'], [35, '320000'], [37, '290000']]
 
-2022-08-30 15:19:54,029 - post_preprocess - DEBUG - Step 2 correct spell:
-FOODS: ['9', 'garden feta rau', '20n quất wine biệt', 'house wine', 'dabeco sauvignon blanc vietnam', '', 'connaissuer sauvignon blanc france', '', 'dabeco export cadinal vietnam', '', 'connaisuuer shiraz france', '', 'white wine', 'connaisuuer sauvignon blanc france', '', 'dabeco classic sauvignon blanc vietnam', '', 'red wine', 'connaissueer shiraz france', '20 carbernet sauvignon france', '', 'chivo cabernet sauvignon chile', '', 'glamour special selection carbernet sauvignon chile', '', 'lucky seven cabernet sauvignon australia', '', 'dabeco classic cardinal vietnam', '', 'dabeco strong wine carbernet sauvignon vietnam', '', 'colch reserve carbernet sauvignon chile', '', 'avalon cabernet shiraz merlot australia', '']
+2022-08-30 15:45:14,053 - post_preprocess - DEBUG - Step 2 correct spell:
+FOODS: ['9', 'garden me sakura', '20n qua kim wine biệt', 'house wine vang bản ly', 'dabeco sauvignon blanc vietnam', '', 'connaissuer sauvignon blanc france', '', 'dabeco export cadinal vietnam', '', 'connaisuuer shiraz france', '', 'white wine', 'connaisuuer sauvignon blanc france', '', 'dabeco classic sauvignon blanc vietnam', '', 'red wine', 'connaissueer shiraz france', '20 carbernet sauvignon france', '', '', 'chivo cabernet sauvignon chile', '', 'glamour special selection carbernet sauvignon chile', '', 'lucky seven cabernet sauvignon australia', '', '', 'dabeco classic cardinal vietnam', '', 'dabeco strong wine carbernet sauvignon vietnam', '', 'colch reserve carbernet sauvignon chile', '', '', 'avalon cabernet shiraz merlot australia', '']
 
-2022-08-30 15:19:54,030 - post_preprocess - DEBUG - Step 3 mapping:
-[['dabeco sauvignon blanc vietnam', '35000'], ['connaissuer sauvignon blanc france', '65000'], ['dabeco export cadinal vietnam', '35000'], ['connaisuuer shiraz france', '75000'], ['connaisuuer sauvignon blanc france', '390000'], ['dabeco classic sauvignon blanc vietnam', '190000'], ['red wine', '190000'], ['connaissueer shiraz france', '190000'], ['20 carbernet sauvignon france', '190000'], ['chivo cabernet sauvignon chile', '450000'], ['glamour special selection carbernet sauvignon chile', '790000'], ['lucky seven cabernet sauvignon australia', '2016'], ['dabeco classic cardinal vietnam', '190000'], ['dabeco strong wine carbernet sauvignon vietnam', '250000'], ['colch reserve carbernet sauvignon chile', '2014'], ['avalon cabernet shiraz merlot australia', '290000'], ['white wine', 'NOT GIVEN']]
+2022-08-30 15:45:14,053 - post_preprocess - DEBUG - Step 3 mapping:
+[['dabeco sauvignon blanc vietnam', '35000'], ['connaissuer sauvignon blanc france', '65000'], ['dabeco export cadinal vietnam', '35000'], ['connaisuuer shiraz france', '75000'], ['connaisuuer sauvignon blanc france', '390000'], ['dabeco classic sauvignon blanc vietnam', '190000'], ['red wine', '190000'], ['connaissueer shiraz france', '190000'], ['20 carbernet sauvignon france', '190000'], [' M', '2016'], [' L', '370000'], ['chivo cabernet sauvignon chile', '450000'], ['glamour special selection carbernet sauvignon chile', '790000'], ['lucky seven cabernet sauvignon australia M', '2016'], ['lucky seven cabernet sauvignon australia L', '390000'], ['dabeco classic cardinal vietnam', '190000'], ['dabeco strong wine carbernet sauvignon vietnam', '250000'], ['colch reserve carbernet sauvignon chile M', '2014'], ['colch reserve carbernet sauvignon chile L', '320000'], ['avalon cabernet shiraz merlot australia', '290000'], ['white wine', 'NOT GIVEN']]
 
-2022-08-30 15:19:54,051 - post_preprocess - INFO - Score: 0.0
+2022-08-30 15:45:14,068 - post_preprocess - INFO - Score: 0.0
 --------------------------------------------------
 
-2022-08-30 15:19:54,052 - post_preprocess - DEBUG - Image 008.jpeg
+2022-08-30 15:45:14,068 - post_preprocess - DEBUG - Image 008.jpeg
 
-2022-08-30 15:19:54,052 - post_preprocess - DEBUG - Input entities: ['LẤU VÀ NƯỚNG CÔ BA', '05 Trương Văn Của TP. Quy Nhơn 0077 822 6254', 'THỜl GIAN MỞ CỬA: 13H30 23H00', 'CÁC MÓN NẤU', 'Lườn ngỗng xông khói 79k', 'Tôm hấp 79k', 'Tôm xào bơ tỏi 79k', 'Tôm rang me 79k', 'Tôm rang muối 79k', 'Mực hấp 79k', 'Mực chiên mắm 79k', 'Mực sốt sa tế 79k', 'Bạch tuộc sốt CÔ BA 79k', 'Bạch tuộc sốt sa tế 79k', 'Bạch tuộc lắc ớt tắc 79k', 'Bò tơ hấp sả 79k', 'Bò tơ xào lá lốt 79k', 'Bò tơ xào lăn 79k', 'Bò tơ xào nén 79k', 'Bò tơ xào sả ớt 79k', 'Bắp bò sốt tiêu xanh 85k', 'Bắp bò xào sa tế 85k', 'Bò lúc Iắc 85k', 'Trứng non cháy tỏi 85k', 'Càng ghẹ rang muối 89k', 'Càng ghẹ rang me Trirguon, CO BA 66 89k', 'Ốc hương hấp 99k', 'Ốc hương xào sả 99k', 'Ôc hương bơ tỏi 99k', 'Ốc hương rang muối 99k', 'Ốc hương xào me 99k']
+2022-08-30 15:45:14,068 - post_preprocess - DEBUG - Input entities: ['LẤU VÀ NƯỚNG CÔ BA', '05 Trương Văn Của TP. Quy Nhơn 0077 822 6254', 'THỜl GIAN MỞ CỬA: 13H30 23H00', 'CÁC MÓN NẤU', 'Lườn ngỗng xông khói 79k', 'Tôm hấp 79k', 'Tôm xào bơ tỏi 79k', 'Tôm rang me 79k', 'Tôm rang muối 79k', 'Mực hấp 79k', 'Mực chiên mắm 79k', 'Mực sốt sa tế 79k', 'Bạch tuộc sốt CÔ BA 79k', 'Bạch tuộc sốt sa tế 79k', 'Bạch tuộc lắc ớt tắc 79k', 'Bò tơ hấp sả 79k', 'Bò tơ xào lá lốt 79k', 'Bò tơ xào lăn 79k', 'Bò tơ xào nén 79k', 'Bò tơ xào sả ớt 79k', 'Bắp bò sốt tiêu xanh 85k', 'Bắp bò xào sa tế 85k', 'Bò lúc Iắc 85k', 'Trứng non cháy tỏi 85k', 'Càng ghẹ rang muối 89k', 'Càng ghẹ rang me Trirguon, CO BA 66 89k', 'Ốc hương hấp 99k', 'Ốc hương xào sả 99k', 'Ôc hương bơ tỏi 99k', 'Ốc hương rang muối 99k', 'Ốc hương xào me 99k']
 
-2022-08-30 15:19:54,053 - post_preprocess - DEBUG - After clean entities: ['lấu và nướng cô ba', '05 trương văn của tp. quy nhơn ', 'thờl gian mở cửa: các món nấu', 'lườn ngỗng xông khói', '79k', 'tôm hấp', '79k', 'tôm xào bơ tỏi', '79k', 'tôm rang me', '79k', 'tôm rang muối', '79k', 'mực hấp', '79k', 'mực chiên mắm', '79k', 'mực sốt sa tế', '79k', 'bạch tuộc sốt cô ba', '79k', 'bạch tuộc sốt sa tế', '79k', 'bạch tuộc lắc ớt tắc', '79k', 'bò tơ hấp sả', '79k', 'bò tơ xào lá lốt', '79k', 'bò tơ xào lăn', '79k', 'bò tơ xào nén', '79k', 'bò tơ xào sả ớt', '79k', 'bắp bò sốt tiêu xanh', '85k', 'bắp bò xào sa tế', '85k', 'bò lúc iắc', '85k', 'trứng non cháy tỏi', '85k', 'càng ghẹ rang muối', '89k', 'càng ghẹ rang me trirguon, co ba', '66 89k', 'ốc hương hấp', '99k', 'ốc hương xào sả', '99k', 'ôc hương bơ tỏi', '99k', 'ốc hương rang muối', '99k', 'ốc hương xào me', '99k']
+2022-08-30 15:45:14,068 - post_preprocess - DEBUG - After clean entities: lấu và nướng cô ba
+05 trương văn của tp. quy nhơn 
+thờl gian mở cửa: các món nấu
+lườn ngỗng xông khói
+79k
+tôm hấp
+79k
+tôm xào bơ tỏi
+79k
+tôm rang me
+79k
+tôm rang muối
+79k
+mực hấp
+79k
+mực chiên mắm
+79k
+mực sốt sa tế
+79k
+bạch tuộc sốt cô ba
+79k
+bạch tuộc sốt sa tế
+79k
+bạch tuộc lắc ớt tắc
+79k
+bò tơ hấp sả
+79k
+bò tơ xào lá lốt
+79k
+bò tơ xào lăn
+79k
+bò tơ xào nén
+79k
+bò tơ xào sả ớt
+79k
+bắp bò sốt tiêu xanh
+85k
+bắp bò xào sa tế
+85k
+bò lúc iắc
+85k
+trứng non cháy tỏi
+85k
+càng ghẹ rang muối
+89k
+càng ghẹ rang me trirguon, co ba
+66
+89k
+ốc hương hấp
+99k
+ốc hương xào sả
+99k
+ôc hương bơ tỏi
+99k
+ốc hương rang muối
+99k
+ốc hương xào me
+99k
 
-2022-08-30 15:19:54,054 - post_preprocess - DEBUG - Step 1 classify: 
-FOODS: ['lấu và nướng cô ba', '05 trương văn của tp. quy nhơn ', 'thờl gian mở cửa: các món nấu', 'lườn ngỗng xông khói', '', 'tôm hấp', '', 'tôm xào bơ tỏi', '', 'tôm rang me', '', 'tôm rang muối', '', 'mực hấp', '', 'mực chiên mắm', '', 'mực sốt sa tế', '', 'bạch tuộc sốt cô ba', '', 'bạch tuộc sốt sa tế', '', 'bạch tuộc lắc ớt tắc', '', 'bò tơ hấp sả', '', 'bò tơ xào lá lốt', '', 'bò tơ xào lăn', '', 'bò tơ xào nén', '', 'bò tơ xào sả ớt', '', 'bắp bò sốt tiêu xanh', '', 'bắp bò xào sa tế', '', 'bò lúc iắc', '', 'trứng non cháy tỏi', '', 'càng ghẹ rang muối', '', 'càng ghẹ rang me trirguon, co ba', '', 'ốc hương hấp', '', 'ốc hương xào sả', '', 'ôc hương bơ tỏi', '', 'ốc hương rang muối', '', 'ốc hương xào me', '']
-PRICES: [[4, '79000'], [6, '79000'], [8, '79000'], [10, '79000'], [12, '79000'], [14, '79000'], [16, '79000'], [18, '79000'], [20, '79000'], [22, '79000'], [24, '79000'], [26, '79000'], [28, '79000'], [30, '79000'], [32, '79000'], [34, '79000'], [36, '85000'], [38, '85000'], [40, '85000'], [42, '85000'], [44, '89000'], [46, '89000'], [48, '99000'], [50, '99000'], [52, '99000'], [54, '99000'], [56, '99000']]
+2022-08-30 15:45:14,068 - post_preprocess - DEBUG - Step 1 classify: 
+FOODS: ['lấu và nướng cô ba', '05 trương văn của tp. quy nhơn ', 'thờl gian mở cửa: các món nấu', 'lườn ngỗng xông khói', '', 'tôm hấp', '', 'tôm xào bơ tỏi', '', 'tôm rang me', '', 'tôm rang muối', '', 'mực hấp', '', 'mực chiên mắm', '', 'mực sốt sa tế', '', 'bạch tuộc sốt cô ba', '', 'bạch tuộc sốt sa tế', '', 'bạch tuộc lắc ớt tắc', '', 'bò tơ hấp sả', '', 'bò tơ xào lá lốt', '', 'bò tơ xào lăn', '', 'bò tơ xào nén', '', 'bò tơ xào sả ớt', '', 'bắp bò sốt tiêu xanh', '', 'bắp bò xào sa tế', '', 'bò lúc iắc', '', 'trứng non cháy tỏi', '', 'càng ghẹ rang muối', '', 'càng ghẹ rang me trirguon, co ba', '66', '', 'ốc hương hấp', '', 'ốc hương xào sả', '', 'ôc hương bơ tỏi', '', 'ốc hương rang muối', '', 'ốc hương xào me', '']
+PRICES: [[4, '79000'], [6, '79000'], [8, '79000'], [10, '79000'], [12, '79000'], [14, '79000'], [16, '79000'], [18, '79000'], [20, '79000'], [22, '79000'], [24, '79000'], [26, '79000'], [28, '79000'], [30, '79000'], [32, '79000'], [34, '79000'], [36, '85000'], [38, '85000'], [40, '85000'], [42, '85000'], [44, '89000'], [47, '89000'], [49, '99000'], [51, '99000'], [53, '99000'], [55, '99000'], [57, '99000']]
 
-2022-08-30 15:19:54,108 - post_preprocess - DEBUG - Step 2 correct spell:
-FOODS: ['lấu và nướng cô ba', '05 trường ăn cua ép quy nhơn', 'thịt giòn mì cua các món nấu', 'lườn ngỗng xông khói', '', 'tôm hấp', '', 'tôm xào bơ tỏi', '', 'tôm rang me', '', 'tôm rang muối', '', 'mực hấp', '', 'mực chiên mắm', '', 'mực sốt sa tế', '', 'bạch tuộc sốt cô ba', '', 'bạch tuộc sốt sa tế', '', 'bạch tuộc lắc ớt tắc', '', 'bò tơ hấp sả', '', 'bò tơ xào lá lốt', '', 'bò tơ xào lăn', '', 'bò tơ xào nén', '', 'bò tơ xào sả ớt', '', 'bắp bò sốt tiêu xanh', '', 'bắp bò xào sa tế', '', 'bò lúc lắc', '', 'trứng non cháy tỏi', '', 'càng ghẹ rang muối', '', 'càng ghẹ rang me trứng non cá ba', '', 'ốc hương hấp', '', 'ốc hương xào sả', '', 'ốc hương bơ tỏi', '', 'ốc hương rang muối', '', 'ốc hương xào me', '']
+2022-08-30 15:45:14,100 - post_preprocess - DEBUG - Step 2 correct spell:
+FOODS: ['lấu và nướng cô ba', '05 trường ăn cua ép quy nhơn', 'thịt giòn mì cua các món nấu', 'lườn ngỗng xông khói', '', 'tôm hấp', '', 'tôm xào bơ tỏi', '', 'tôm rang me', '', 'tôm rang muối', '', 'mực hấp', '', 'mực chiên mắm', '', 'mực sốt sa tế', '', 'bạch tuộc sốt cô ba', '', 'bạch tuộc sốt sa tế', '', 'bạch tuộc lắc ớt tắc', '', 'bò tơ hấp sả', '', 'bò tơ xào lá lốt', '', 'bò tơ xào lăn', '', 'bò tơ xào nén', '', 'bò tơ xào sả ớt', '', 'bắp bò sốt tiêu xanh', '', 'bắp bò xào sa tế', '', 'bò lúc lắc', '', 'trứng non cháy tỏi', '', 'càng ghẹ rang muối', '', 'càng ghẹ rang me trứng non cá ba', '66', '', 'ốc hương hấp', '', 'ốc hương xào sả', '', 'ốc hương bơ tỏi', '', 'ốc hương rang muối', '', 'ốc hương xào me', '']
 
-2022-08-30 15:19:54,109 - post_preprocess - DEBUG - Step 3 mapping:
-[['lườn ngỗng xông khói', '79000'], ['tôm hấp', '79000'], ['tôm xào bơ tỏi', '79000'], ['tôm rang me', '79000'], ['tôm rang muối', '79000'], ['mực hấp', '79000'], ['mực chiên mắm', '79000'], ['mực sốt sa tế', '79000'], ['bạch tuộc sốt cô ba', '79000'], ['bạch tuộc sốt sa tế', '79000'], ['bạch tuộc lắc ớt tắc', '79000'], ['bò tơ hấp sả', '79000'], ['bò tơ xào lá lốt', '79000'], ['bò tơ xào lăn', '79000'], ['bò tơ xào nén', '79000'], ['bò tơ xào sả ớt', '79000'], ['bắp bò sốt tiêu xanh', '85000'], ['bắp bò xào sa tế', '85000'], ['bò lúc lắc', '85000'], ['trứng non cháy tỏi', '85000'], ['càng ghẹ rang muối', '89000'], ['càng ghẹ rang me trứng non cá ba', '89000'], ['ốc hương hấp', '99000'], ['ốc hương xào sả', '99000'], ['ốc hương bơ tỏi', '99000'], ['ốc hương rang muối', '99000'], ['ốc hương xào me', '99000']]
+2022-08-30 15:45:14,111 - post_preprocess - DEBUG - Step 3 mapping:
+[['lườn ngỗng xông khói', '79000'], ['tôm hấp', '79000'], ['tôm xào bơ tỏi', '79000'], ['tôm rang me', '79000'], ['tôm rang muối', '79000'], ['mực hấp', '79000'], ['mực chiên mắm', '79000'], ['mực sốt sa tế', '79000'], ['bạch tuộc sốt cô ba', '79000'], ['bạch tuộc sốt sa tế', '79000'], ['bạch tuộc lắc ớt tắc', '79000'], ['bò tơ hấp sả', '79000'], ['bò tơ xào lá lốt', '79000'], ['bò tơ xào lăn', '79000'], ['bò tơ xào nén', '79000'], ['bò tơ xào sả ớt', '79000'], ['bắp bò sốt tiêu xanh', '85000'], ['bắp bò xào sa tế', '85000'], ['bò lúc lắc', '85000'], ['trứng non cháy tỏi', '85000'], ['càng ghẹ rang muối', '89000'], ['66', '89000'], ['ốc hương hấp', '99000'], ['ốc hương xào sả', '99000'], ['ốc hương bơ tỏi', '99000'], ['ốc hương rang muối', '99000'], ['ốc hương xào me', '99000'], ['càng ghẹ rang me trứng non cá ba', 'NOT GIVEN']]
 
-2022-08-30 15:19:54,142 - post_preprocess - INFO - Score: 0.8679245283018868
+2022-08-30 15:45:14,131 - post_preprocess - INFO - Score: 0.8518518518518519
 --------------------------------------------------
 
-2022-08-30 15:19:54,143 - post_preprocess - DEBUG - Image 009.jpeg
+2022-08-30 15:45:14,131 - post_preprocess - DEBUG - Image 009.jpeg
 
-2022-08-30 15:19:54,143 - post_preprocess - DEBUG - Input entities: ['CÁC MÓM MUC', 'MỘC', 'MUC COM', 'MUC CoM CHIÊN MÁM 120.000 /dia', 'MUC CoM CHIẼN TỎI 120.000 /dia', 'MUC COM HÁP 120.000 /dia', 'MUC Com NUONG MUÓI đT 120.000 /dia', 'MUC NANg', 'MUC NANG CHIÈN MÁM 120.000 /dia', 'MUC NANG CHIỀN TỎl 120.000 /dia', 'MUC NANG HÁP 120.000 /dia', 'MUC NANG XaO Chua NGot 120.000 /dia', 'MUC ÔNG', 'MUC ÓNG   NUONG MOI 120.000 /dia', 'MUC ÓNG CHIÊN TỎI 120.000 /dia', 'MUC ÓNG CHIÉN XỦ 120.000 /dia', 'MUC ÓNG HÁP HANH GÙNG 120.000 /dia', 'MUC ÓNG NHÚNG DỦA 240.000 /phàn', 'MUC ÓNG NUONG MUÓI OT 120.000 /dia', 'MUC ÓNG XaO CHUa NGot 125.000 /dia', 'MUC KHÁC', 'KHỎ MUC NUđNG 105.000 /Con', 'MUC 1 NÁNG NUONG 155.000 /Con', 'MUC KHỎ CHIÊN MÁM 105.000 /Con', 'BACH TUÔC', 'BACH TUỘC HÁP', 'Theo thòi giả (kg)', 'BACH TUỘC NUENG', 'Rãt hân hạnh phục vụ Quý khách!']
+2022-08-30 15:45:14,131 - post_preprocess - DEBUG - Input entities: ['CÁC MÓM MUC', 'MỘC', 'MUC COM', 'MUC CoM CHIÊN MÁM 120.000 /dia', 'MUC CoM CHIẼN TỎI 120.000 /dia', 'MUC COM HÁP 120.000 /dia', 'MUC Com NUONG MUÓI đT 120.000 /dia', 'MUC NANg', 'MUC NANG CHIÈN MÁM 120.000 /dia', 'MUC NANG CHIỀN TỎl 120.000 /dia', 'MUC NANG HÁP 120.000 /dia', 'MUC NANG XaO Chua NGot 120.000 /dia', 'MUC ÔNG', 'MUC ÓNG   NUONG MOI 120.000 /dia', 'MUC ÓNG CHIÊN TỎI 120.000 /dia', 'MUC ÓNG CHIÉN XỦ 120.000 /dia', 'MUC ÓNG HÁP HANH GÙNG 120.000 /dia', 'MUC ÓNG NHÚNG DỦA 240.000 /phàn', 'MUC ÓNG NUONG MUÓI OT 120.000 /dia', 'MUC ÓNG XaO CHUa NGot 125.000 /dia', 'MUC KHÁC', 'KHỎ MUC NUđNG 105.000 /Con', 'MUC 1 NÁNG NUONG 155.000 /Con', 'MUC KHỎ CHIÊN MÁM 105.000 /Con', 'BACH TUÔC', 'BACH TUỘC HÁP', 'Theo thòi giả (kg)', 'BACH TUỘC NUENG', 'Rãt hân hạnh phục vụ Quý khách!']
 
-2022-08-30 15:19:54,144 - post_preprocess - DEBUG - After clean entities: ['các móm muc', 'mộc', 'muc com', 'muc com chiên mám', '120.000 /dia', 'muc com chiẽn tỏi', '120.000 /dia', 'muc com háp', '120.000 /dia', 'muc com nuong muói đt', '120.000 /dia', 'muc nang', 'muc nang chièn mám', '120.000 /dia', 'muc nang chiền tỏl', '120.000 /dia', 'muc nang háp', '120.000 /dia', 'muc nang xao chua ngot', '120.000 /dia', 'muc ông', 'muc óng   nuong moi', '120.000 /dia', 'muc óng chiên tỏi', '120.000 /dia', 'muc óng chién xủ', '120.000 /dia', 'muc óng háp hanh gùng', '120.000 /dia', 'muc óng nhúng dủa', '240.000 /phàn', 'muc óng nuong muói ot', '120.000 /dia', 'muc óng xao chua ngot', '125.000 /dia', 'muc khác', 'khỏ muc nuđng', '105.000 /con', 'muc 1 náng nuong', '155.000 /con', 'muc khỏ chiên mám', '105.000 /con', 'bach tuôc', 'bach tuộc háp', 'theo thòi giả ', 'bach tuộc nueng', 'rãt hân hạnh phục vụ quý', 'khách!']
+2022-08-30 15:45:14,131 - post_preprocess - DEBUG - After clean entities: các móm muc
+mộc
+muc com
+muc com chiên mám
+120.000 /dia
+muc com chiẽn tỏi
+120.000 /dia
+muc com háp
+120.000 /dia
+muc com nuong muói đt
+120.000 /dia
+muc nang
+muc nang chièn mám
+120.000 /dia
+muc nang chiền tỏl
+120.000 /dia
+muc nang háp
+120.000 /dia
+muc nang xao chua ngot
+120.000 /dia
+muc ông
+muc óng   nuong moi
+120.000 /dia
+muc óng chiên tỏi
+120.000 /dia
+muc óng chién xủ
+120.000 /dia
+muc óng háp hanh gùng
+120.000 /dia
+muc óng nhúng dủa
+240.000 /phàn
+muc óng nuong muói ot
+120.000 /dia
+muc óng xao chua ngot
+125.000 /dia
+muc khác
+khỏ muc nuđng
+105.000 /con
+muc 1 náng nuong
+155.000 /con
+muc khỏ chiên mám
+105.000 /con
+bach tuôc
+bach tuộc háp
+theo thòi giả (kg)
+bach tuộc nueng
+rãt hân hạnh phục vụ quý
+khách!
 
-2022-08-30 15:19:54,145 - post_preprocess - DEBUG - Step 1 classify: 
-FOODS: ['các móm muc', 'mộc', 'muc com', 'muc com chiên mám', '', 'muc com chiẽn tỏi', '', 'muc com háp', '', 'muc com nuong muói đt', '', 'muc nang', 'muc nang chièn mám', '', 'muc nang chiền tỏl', '', 'muc nang háp', '', 'muc nang xao chua ngot', '', 'muc ông', 'muc óng   nuong moi', '', 'muc óng chiên tỏi', '', 'muc óng chién xủ', '', 'muc óng háp hanh gùng', '', 'muc óng nhúng dủa', '', 'muc óng nuong muói ot', '', 'muc óng xao chua ngot', '', 'muc khác', 'khỏ muc nuđng', '', 'muc 1 náng nuong', '', 'muc khỏ chiên mám', '', 'bach tuôc', 'bach tuộc háp', 'theo thòi giả ', 'bach tuộc nueng', 'rãt hân hạnh phục vụ quý', 'khách!']
+2022-08-30 15:45:14,131 - post_preprocess - DEBUG - Step 1 classify: 
+FOODS: ['các móm muc', 'mộc', 'muc com', 'muc com chiên mám', '', 'muc com chiẽn tỏi', '', 'muc com háp', '', 'muc com nuong muói đt', '', 'muc nang', 'muc nang chièn mám', '', 'muc nang chiền tỏl', '', 'muc nang háp', '', 'muc nang xao chua ngot', '', 'muc ông', 'muc óng   nuong moi', '', 'muc óng chiên tỏi', '', 'muc óng chién xủ', '', 'muc óng háp hanh gùng', '', 'muc óng nhúng dủa', '', 'muc óng nuong muói ot', '', 'muc óng xao chua ngot', '', 'muc khác', 'khỏ muc nuđng', '', 'muc 1 náng nuong', '', 'muc khỏ chiên mám', '', 'bach tuôc', 'bach tuộc háp', 'theo thòi giả (kg)', 'bach tuộc nueng', 'rãt hân hạnh phục vụ quý', 'khách!']
 PRICES: [[4, '120000'], [6, '120000'], [8, '120000'], [10, '120000'], [13, '120000'], [15, '120000'], [17, '120000'], [19, '120000'], [22, '120000'], [24, '120000'], [26, '120000'], [28, '120000'], [30, '240000'], [32, '120000'], [34, '125000'], [37, '105000'], [39, '155000'], [41, '105000']]
 
-2022-08-30 15:19:54,263 - post_preprocess - DEBUG - Step 2 correct spell:
-FOODS: ['các mắm mực', 'mộc', 'mực cơm', 'mực cơm chiên mắm', '', 'mực cơm chiên tỏi', '', 'mực cơm hấp', '', 'mực cơm nướng muối đá', '', 'mực nang', 'mực nang chiên mắm', '', 'mực nang chiên tỏi', '', 'mực nang hấp', '', 'mực nang xào chua ngọt', '', 'mực ông', 'mực nóng nướng mai', '', 'mực nóng chiên tỏi', '', 'mực nóng chiên củ', '', 'mực nóng hấp chanh gừng', '', 'mực nóng nhúng dừa', '', 'mực nóng nướng muối ớt', '', 'mực nóng xào chua ngọt', '', 'mực thác', 'kho mực nướng', '', 'mực 1 nóng nướng', '', 'mực kho chiên mắm', '', 'bạch tuộc', 'bạch tuộc hấp', 'theo thái giả', 'bạch tuộc nướng', 'rốt chân hạnh phúc vị qua', 'thạch']
+2022-08-30 15:45:14,225 - post_preprocess - DEBUG - Step 2 correct spell:
+FOODS: ['các mắm mực', 'mộc', 'mực cơm', 'mực cơm chiên mắm', '', 'mực cơm chiên tỏi', '', 'mực cơm hấp', '', 'mực cơm nướng muối đá', '', 'mực nang', 'mực nang chiên mắm', '', 'mực nang chiên tỏi', '', 'mực nang hấp', '', 'mực nang xào chua ngọt', '', 'mực ông', 'mực nóng nướng mai', '', 'mực nóng chiên tỏi', '', 'mực nóng chiên củ', '', 'mực nóng hấp chanh gừng', '', 'mực nóng nhúng dừa', '', 'mực nóng nướng muối ớt', '', 'mực nóng xào chua ngọt', '', 'mực thác', 'kho mực nướng', '', 'mực 1 nóng nướng', '', 'mực kho chiên mắm', '', 'bạch tuộc', 'bạch tuộc hấp', 'theo thái giả kg', 'bạch tuộc nướng', 'rốt chân hạnh phúc vị qua', 'thạch']
 
-2022-08-30 15:19:54,263 - post_preprocess - DEBUG - Step 3 mapping:
-[['mực cơm chiên mắm', '120000'], ['mực cơm chiên tỏi', '120000'], ['mực cơm hấp', '120000'], ['mực cơm nướng muối đá', '120000'], ['mực nang chiên mắm', '120000'], ['mực nang chiên tỏi', '120000'], ['mực nang hấp', '120000'], ['mực nang xào chua ngọt', '120000'], ['mực nóng nướng mai', '120000'], ['mực nóng chiên tỏi', '120000'], ['mực nóng chiên củ', '120000'], ['mực nóng hấp chanh gừng', '120000'], ['mực nóng nhúng dừa', '240000'], ['mực nóng nướng muối ớt', '120000'], ['mực nóng xào chua ngọt', '125000'], ['kho mực nướng', '105000'], ['mực 1 nóng nướng', '155000'], ['mực kho chiên mắm', '105000'], ['mực nang', 'NOT GIVEN'], ['mực ông', 'NOT GIVEN'], ['mực thác', 'NOT GIVEN'], ['bạch tuộc', 'NOT GIVEN'], ['bạch tuộc hấp', 'NOT GIVEN'], ['theo thái giả', 'NOT GIVEN'], ['bạch tuộc nướng', 'NOT GIVEN'], ['rốt chân hạnh phúc vị qua', 'NOT GIVEN'], ['thạch', 'NOT GIVEN']]
+2022-08-30 15:45:14,225 - post_preprocess - DEBUG - Step 3 mapping:
+[['mực cơm chiên mắm', '120000'], ['mực cơm chiên tỏi', '120000'], ['mực cơm hấp', '120000'], ['mực cơm nướng muối đá', '120000'], ['mực nang chiên mắm', '120000'], ['mực nang chiên tỏi', '120000'], ['mực nang hấp', '120000'], ['mực nang xào chua ngọt', '120000'], ['mực nóng nướng mai', '120000'], ['mực nóng chiên tỏi', '120000'], ['mực nóng chiên củ', '120000'], ['mực nóng hấp chanh gừng', '120000'], ['mực nóng nhúng dừa', '240000'], ['mực nóng nướng muối ớt', '120000'], ['mực nóng xào chua ngọt', '125000'], ['kho mực nướng', '105000'], ['mực 1 nóng nướng', '155000'], ['mực kho chiên mắm', '105000'], ['mực nang', 'NOT GIVEN'], ['mực ông', 'NOT GIVEN'], ['mực thác', 'NOT GIVEN'], ['bạch tuộc', 'NOT GIVEN'], ['bạch tuộc hấp', 'NOT GIVEN'], ['theo thái giả kg', 'NOT GIVEN'], ['bạch tuộc nướng', 'NOT GIVEN'], ['rốt chân hạnh phúc vị qua', 'NOT GIVEN'], ['thạch', 'NOT GIVEN']]
 
-2022-08-30 15:19:54,304 - post_preprocess - INFO - Score: 0.34782608695652173
+2022-08-30 15:45:14,257 - post_preprocess - INFO - Score: 0.34782608695652173
 --------------------------------------------------
 
-2022-08-30 15:19:54,305 - post_preprocess - DEBUG - Image 010.jpeg
+2022-08-30 15:45:14,257 - post_preprocess - DEBUG - Image 010.jpeg
 
-2022-08-30 15:19:54,305 - post_preprocess - DEBUG - Input entities: ['M@C CÁc MÓM CÁ', 'CÁ BÓP', 'Ca BOP HÁP GIA VI', 'Ca BoP HaP XI DaU', 'Ca BOP NÁU MẢN', 'Ca BoP NÁU MAnG Theo thoi gỉả (kg)', 'Ca Bop NUOnG Gia Vi', 'Ca Bop NUong MUÓI OT', 'Ca BOP SÓT MUÓI', 'CÁ CHACH', 'Ca Chach CHIÊN GIÒN', 'Ca Chach nuong Theo thoi gia (kg)', 'Ca Chach UM HOA Chuoi', 'CÁ DÌa', 'Ca Dia CHIỄN', 'Ca dia NÁU LA GIANG Theo thoi gia (kg)', 'Ca dia NUoNG', 'CÁ ĐÓl', 'Ca DÓl NÁU MẢN Theo thoi gia (kg)', 'Ca doi NuonG MUÓi OT', 'CÁ ĐUC', 'a DuC CHIEN XỦ Theo thoi gia (kg)', 'Ca duC NuoNG', 'cÁc ĐUÓI', 'CA DUÓI NÁU LA GIANG 140.000 /phàn', 'Ca DUÓI NUONG 100.000/día', 'Ca duoi UM 120.000/t1ó', 'cÁ GÁY', 'Ca GaY NaU MaN', 'Ca GaY Nuong Muoi OT Theo Loi giả (kg)', 'cÁ hồng', 'CA HÔNG HÁP BANH TRANG', 'Ca hoNG NUoNG Theo lhoi giả (kg)', 'Ca Hong SOT ME', 'CÁ Mao ẾcH', 'Ca Mao ÉCH NÁU RAU RẶM', 'Ca MaO Éch Nuong MuÓi OT Theo thoi gỉả (kg)', 'Rãt hân hạnh phục vụ Quý khách!']
+2022-08-30 15:45:14,257 - post_preprocess - DEBUG - Input entities: ['M@C CÁc MÓM CÁ', 'CÁ BÓP', 'Ca BOP HÁP GIA VI', 'Ca BoP HaP XI DaU', 'Ca BOP NÁU MẢN', 'Ca BoP NÁU MAnG Theo thoi gỉả (kg)', 'Ca Bop NUOnG Gia Vi', 'Ca Bop NUong MUÓI OT', 'Ca BOP SÓT MUÓI', 'CÁ CHACH', 'Ca Chach CHIÊN GIÒN', 'Ca Chach nuong Theo thoi gia (kg)', 'Ca Chach UM HOA Chuoi', 'CÁ DÌa', 'Ca Dia CHIỄN', 'Ca dia NÁU LA GIANG Theo thoi gia (kg)', 'Ca dia NUoNG', 'CÁ ĐÓl', 'Ca DÓl NÁU MẢN Theo thoi gia (kg)', 'Ca doi NuonG MUÓi OT', 'CÁ ĐUC', 'a DuC CHIEN XỦ Theo thoi gia (kg)', 'Ca duC NuoNG', 'cÁc ĐUÓI', 'CA DUÓI NÁU LA GIANG 140.000 /phàn', 'Ca DUÓI NUONG 100.000/día', 'Ca duoi UM 120.000/t1ó', 'cÁ GÁY', 'Ca GaY NaU MaN', 'Ca GaY Nuong Muoi OT Theo Loi giả (kg)', 'cÁ hồng', 'CA HÔNG HÁP BANH TRANG', 'Ca hoNG NUoNG Theo lhoi giả (kg)', 'Ca Hong SOT ME', 'CÁ Mao ẾcH', 'Ca Mao ÉCH NÁU RAU RẶM', 'Ca MaO Éch Nuong MuÓi OT Theo thoi gỉả (kg)', 'Rãt hân hạnh phục vụ Quý khách!']
 
-2022-08-30 15:19:54,306 - post_preprocess - DEBUG - After clean entities: ['m@c các móm cá', 'cá bóp', 'ca bop háp gia vi', 'ca bop hap xi dau', 'ca bop náu mản', 'ca bop náu mang theo thoi gỉả ', 'ca bop nuong gia vi', 'ca bop nuong muói ot', 'ca bop sót muói', 'cá chach', 'ca chach chiên giòn', 'ca chach nuong theo thoi gia ', 'ca chach um hoa chuoi', 'cá dìa', 'ca dia chiễn', 'ca dia náu la giang theo thoi gia ', 'ca dia nuong', 'cá đól', 'ca dól náu mản theo thoi gia ', 'ca doi nuong muói ot', 'cá đuc', 'a duc chien xủ theo thoi gia ', 'ca duc nuong', 'các đuói', 'ca duói náu la giang', '140.000 /phàn', 'ca duói nuong', '100.000/día', 'ca duoi um', '120.000/t1ó', 'cá gáy', 'ca gay nau man', 'ca gay nuong muoi ot theo loi giả ', 'cá hồng', 'ca hông háp banh trang', 'ca hong nuong theo lhoi giả ', 'ca hong sot me', 'cá mao ếch', 'ca mao éch náu rau rặm', 'ca mao éch nuong muói ot theo thoi gỉả ', 'rãt hân hạnh phục vụ quý', 'khách!']
+2022-08-30 15:45:14,257 - post_preprocess - DEBUG - After clean entities: m@c các móm cá
+cá bóp
+ca bop háp gia vi
+ca bop hap xi dau
+ca bop náu mản
+ca bop náu mang theo thoi gỉả (kg)
+ca bop nuong gia vi
+ca bop nuong muói ot
+ca bop sót muói
+cá chach
+ca chach chiên giòn
+ca chach nuong theo thoi gia (kg)
+ca chach um hoa chuoi
+cá dìa
+ca dia chiễn
+ca dia náu la giang theo thoi gia (kg)
+ca dia nuong
+cá đól
+ca dól náu mản theo thoi gia (kg)
+ca doi nuong muói ot
+cá đuc
+a duc chien xủ theo thoi gia (kg)
+ca duc nuong
+các đuói
+ca duói náu la giang
+140.000 /phàn
+ca duói nuong
+100.000/día
+ca duoi um
+120.000/t1ó
+cá gáy
+ca gay nau man
+ca gay nuong muoi ot theo loi giả (kg)
+cá hồng
+ca hông háp banh trang
+ca hong nuong theo lhoi giả (kg)
+ca hong sot me
+cá mao ếch
+ca mao éch náu rau rặm
+ca mao éch nuong muói ot theo thoi gỉả (kg)
+rãt hân hạnh phục vụ quý
+khách!
 
-2022-08-30 15:19:54,306 - post_preprocess - DEBUG - Step 1 classify: 
-FOODS: ['m@c các móm cá', 'cá bóp', 'ca bop háp gia vi', 'ca bop hap xi dau', 'ca bop náu mản', 'ca bop náu mang theo thoi gỉả ', 'ca bop nuong gia vi', 'ca bop nuong muói ot', 'ca bop sót muói', 'cá chach', 'ca chach chiên giòn', 'ca chach nuong theo thoi gia ', 'ca chach um hoa chuoi', 'cá dìa', 'ca dia chiễn', 'ca dia náu la giang theo thoi gia ', 'ca dia nuong', 'cá đól', 'ca dól náu mản theo thoi gia ', 'ca doi nuong muói ot', 'cá đuc', 'a duc chien xủ theo thoi gia ', 'ca duc nuong', 'các đuói', 'ca duói náu la giang', '', 'ca duói nuong', '', 'ca duoi um', '', 'cá gáy', 'ca gay nau man', 'ca gay nuong muoi ot theo loi giả ', 'cá hồng', 'ca hông háp banh trang', 'ca hong nuong theo lhoi giả ', 'ca hong sot me', 'cá mao ếch', 'ca mao éch náu rau rặm', 'ca mao éch nuong muói ot theo thoi gỉả ', 'rãt hân hạnh phục vụ quý', 'khách!']
+2022-08-30 15:45:14,257 - post_preprocess - DEBUG - Step 1 classify: 
+FOODS: ['m@c các móm cá', 'cá bóp', 'ca bop háp gia vi', 'ca bop hap xi dau', 'ca bop náu mản', 'ca bop náu mang theo thoi gỉả (kg)', 'ca bop nuong gia vi', 'ca bop nuong muói ot', 'ca bop sót muói', 'cá chach', 'ca chach chiên giòn', 'ca chach nuong theo thoi gia (kg)', 'ca chach um hoa chuoi', 'cá dìa', 'ca dia chiễn', 'ca dia náu la giang theo thoi gia (kg)', 'ca dia nuong', 'cá đól', 'ca dól náu mản theo thoi gia (kg)', 'ca doi nuong muói ot', 'cá đuc', 'a duc chien xủ theo thoi gia (kg)', 'ca duc nuong', 'các đuói', 'ca duói náu la giang', '', 'ca duói nuong', '', 'ca duoi um', '', 'cá gáy', 'ca gay nau man', 'ca gay nuong muoi ot theo loi giả (kg)', 'cá hồng', 'ca hông háp banh trang', 'ca hong nuong theo lhoi giả (kg)', 'ca hong sot me', 'cá mao ếch', 'ca mao éch náu rau rặm', 'ca mao éch nuong muói ot theo thoi gỉả (kg)', 'rãt hân hạnh phục vụ quý', 'khách!']
 PRICES: [[25, '140000'], [27, '100000'], [29, '120000']]
 
-2022-08-30 15:19:54,448 - post_preprocess - DEBUG - Step 2 correct spell:
-FOODS: ['m c các mắm cá', 'cá bóp', 'cá bắp hấp gia vi', 'cá bắp hấp xù rau', 'cá bắp nấu sản', 'cá bắp nấu rang theo thái giả', 'cá bắp nướng gia vi', 'cá bắp nướng muối ớt', 'cá bắp sốt muối', 'cá chanh', 'cá chanh chiên giòn', 'cá chanh nướng theo thái gia', 'cá chanh um hoa chuối', 'cá dìa', 'cá dừa chiên', 'cá dừa nấu la giang theo thái gia', 'cá dừa nướng', 'cá đậu', 'cá dừa nấu sản theo thái gia', 'cá dồi nướng muối ớt', 'cá đặc', 'a mực chiên củ theo thái gia', 'cau nướng', 'các đuôi', 'cá muối nấu la giang', '', 'cá muối nướng', '', 'cá muối um', '', 'cá gáy', 'cá cay rau mai', 'cá cay nướng muối ớt theo lon giả', 'cá hồng', 'cá hông hấp bánh trứng', 'cá hong nướng theo hải giả', 'cá hong sốt me', 'cá mao ếch', 'cá mao ếch nấu rau ram', 'cá mao ếch nướng muối ớt theo thái giả', 'rốt chân hạnh phúc vị qua', 'thạch']
+2022-08-30 15:45:14,382 - post_preprocess - DEBUG - Step 2 correct spell:
+FOODS: ['m c các mắm cá', 'cá bóp', 'cá bắp hấp gia vi', 'cá bắp hấp xù rau', 'cá bắp nấu sản', 'cá bắp nấu rang theo thái giả kg', 'cá bắp nướng gia vi', 'cá bắp nướng muối ớt', 'cá bắp sốt muối', 'cá chanh', 'cá chanh chiên giòn', 'cá chanh nướng theo thái gia kg', 'cá chanh um hoa chuối', 'cá dìa', 'cá dừa chiên', 'cá dừa nấu la giang theo thái gia kg', 'cá dừa nướng', 'cá đậu', 'cá dừa nấu sản theo thái gia kg', 'cá dồi nướng muối ớt', 'cá đặc', 'a mực chiên củ theo thái gia kg', 'cau nướng', 'các đuôi', 'cá muối nấu la giang', '', 'cá muối nướng', '', 'cá muối um', '', 'cá gáy', 'cá cay rau mai', 'cá cay nướng muối ớt theo lon giả kg', 'cá hồng', 'cá hông hấp bánh trứng', 'cá hong nướng theo hải giả kg', 'cá hong sốt me', 'cá mao ếch', 'cá mao ếch nấu rau ram', 'cá mao ếch nướng muối ớt theo thái giả kg', 'rốt chân hạnh phúc vị qua', 'thạch']
 
-2022-08-30 15:19:54,449 - post_preprocess - DEBUG - Step 3 mapping:
-[['cá muối nấu la giang', '140000'], ['cá muối nướng', '100000'], ['cá muối um', '120000'], ['cá gáy', 'NOT GIVEN'], ['cá cay rau mai', 'NOT GIVEN'], ['cá cay nướng muối ớt theo lon giả', 'NOT GIVEN'], ['cá hồng', 'NOT GIVEN'], ['cá hông hấp bánh trứng', 'NOT GIVEN'], ['cá hong nướng theo hải giả', 'NOT GIVEN'], ['cá hong sốt me', 'NOT GIVEN'], ['cá mao ếch', 'NOT GIVEN'], ['cá mao ếch nấu rau ram', 'NOT GIVEN'], ['cá mao ếch nướng muối ớt theo thái giả', 'NOT GIVEN'], ['rốt chân hạnh phúc vị qua', 'NOT GIVEN'], ['thạch', 'NOT GIVEN']]
+2022-08-30 15:45:14,382 - post_preprocess - DEBUG - Step 3 mapping:
+[['cá muối nấu la giang', '140000'], ['cá muối nướng', '100000'], ['cá muối um', '120000'], ['cá gáy', 'NOT GIVEN'], ['cá cay rau mai', 'NOT GIVEN'], ['cá cay nướng muối ớt theo lon giả kg', 'NOT GIVEN'], ['cá hồng', 'NOT GIVEN'], ['cá hông hấp bánh trứng', 'NOT GIVEN'], ['cá hong nướng theo hải giả kg', 'NOT GIVEN'], ['cá hong sốt me', 'NOT GIVEN'], ['cá mao ếch', 'NOT GIVEN'], ['cá mao ếch nấu rau ram', 'NOT GIVEN'], ['cá mao ếch nướng muối ớt theo thái giả kg', 'NOT GIVEN'], ['rốt chân hạnh phúc vị qua', 'NOT GIVEN'], ['thạch', 'NOT GIVEN']]
 
-2022-08-30 15:19:54,462 - post_preprocess - INFO - Score: 0.0
+2022-08-30 15:45:14,414 - post_preprocess - INFO - Score: 0.0
 --------------------------------------------------
 
-2022-08-30 15:19:54,462 - post_preprocess - INFO - 
+2022-08-30 15:45:14,414 - post_preprocess - INFO - 
 
-Average Score: 0.3520569706005454
+Average Score: 0.3634701729055337
 

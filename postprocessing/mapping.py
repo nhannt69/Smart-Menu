@@ -7,8 +7,8 @@ def clean_raw_text(raw_text: str) -> str:
     clean_text = raw_text.lower()
 
     # Remove anything in parentheses
-    token = r"\([^)]*\)"
-    clean_text = re.sub(token, "", clean_text)
+    # token = r"\([^)]*\)"
+    # clean_text = re.sub(token, "", clean_text)
 
     # Remove hyperlink
     clean_text = re.sub(
@@ -25,6 +25,7 @@ def clean_raw_text(raw_text: str) -> str:
     token = r"\d{1,2}\s?(h|giờ|hour)\s?\d{0,2}\s?(phút|minutes?)?"
     clean_text = re.sub(token, "", clean_text)
 
+
     #Remove stop words
     token = r"menu|thời\sgian"
     clean_text = re.sub(token, "", clean_text)
@@ -32,6 +33,10 @@ def clean_raw_text(raw_text: str) -> str:
     # Split ent between foods and prices
     token = r"(\D+\s*)(\s)([\d\,\.\w]{2,})"
     clean_text = re.sub(token, r"\g<1>\n\g<3>", clean_text)
+    #Split price vs price
+    token = r"(\d+\w?) +(\d+\w?)"
+    while re.search(token, clean_text):
+        clean_text = re.sub(token, r"\g<1>\n\g<2>", clean_text)
 
     # Remove size entities
     token = r"size|\s+x{0,2}[lms][\.\s:-]+|(nhỏ|vừa|lớn|bự|to|small|medium|big|large):?"
@@ -81,7 +86,7 @@ def get_current_food(foods: List, current_price_idx: int):
 
 def get_size(text):
     text = text.lower()
-    size_token = r"\s+s|nhỏ|small"
+    size_token = r"\bs\b|nhỏ|small"
 
     quantity_token = r"size|set"
 
@@ -89,11 +94,11 @@ def get_size(text):
     quantity = re.findall(quantity_token, text)
 
     if not size:
-        return ["S", "M", "L"]
+        return ["M", "L"]
 
     size = size[0]
     quantity = quantity[0] if quantity else "size"
-    if re.match(r"\s+s", size):
+    if re.match(r"\bs\b", size):
         return [quantity + " s", quantity + " m", quantity + " l"]
     if re.match(r"small", size):
         return [quantity + " small", quantity + " medium", quantity + " large"]
@@ -138,8 +143,8 @@ def map(foods: list, prices: list, sizes: list) -> List[List[str]]:
         if dis_price == 1:
             current_food = foods[current_price_ent_idx - 1]
 
-            menu.append([current_food + sizes[0], current_price_ent[1]])
-            menu.append([current_food + sizes[1], next_price_ent[1]])
+            menu.append([current_food + ' ' + sizes[0], current_price_ent[1]])
+            menu.append([current_food + ' ' + sizes[1], next_price_ent[1]])
             i += 2
 
             if i + 2 < n_prices:
@@ -147,7 +152,7 @@ def map(foods: list, prices: list, sizes: list) -> List[List[str]]:
                 dis_price_1 = next_price_ent_1[0] - next_price_ent[0]
 
                 if dis_price_1 == 1:
-                    menu.append([current_food + sizes[2], next_price_ent_1[1]])
+                    menu.append([current_food + ' ' + sizes[2], next_price_ent_1[1]])
                     i += 1
 
             foods[current_price_ent_idx - 1] = ""

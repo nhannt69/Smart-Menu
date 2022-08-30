@@ -46,7 +46,7 @@ class PostPreprocessor(object):
         raw_text = "\n".join(entities)
         text = mapping.clean_raw_text(raw_text)
         entities = text.split("\n")
-        self.logger.debug(f"After clean entities: {entities}")
+        self.logger.debug(f"After clean entities: {text}")
 
         # Step 1: Classify food and prices
         foods, prices = mapping.get_price_and_food(entities)
