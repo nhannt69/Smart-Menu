@@ -102,6 +102,11 @@ def map(foods: list, prices: list, sizes:list) -> List[List[str]]:
 
     n_prices = len(prices)
 
+    #check if list price is null
+    if not prices:
+        return [[f, 'NOT GIVEN'] for f in foods if f]
+
+
     #Clean header content
     for idx, f in enumerate(foods):
         if idx < prices[0][0] - 1:
