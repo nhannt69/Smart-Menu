@@ -33,8 +33,6 @@ def clean_raw_text(raw_text: str) -> str:
     token = r"size|\s+x{0,2}[lms][\.\s:-]+|(nhỏ|vừa|lớn|bự|to|small|medium|big|large):?"
     clean_text = re.sub(token, "\n", clean_text)
 
-
-
     return clean_text.strip()
 
 
@@ -75,6 +73,7 @@ def get_current_food(foods: List, current_price_idx: int):
 
     return current_food
 
+
 def get_size(text):
     text = text.lower()
     size_token = r"\s+s|nhỏ|small"
@@ -82,35 +81,35 @@ def get_size(text):
     quantity_token = r"size|set"
 
     size = re.findall(size_token, text)
-    quantity = re.findall(quantity_token,text)
+    quantity = re.findall(quantity_token, text)
 
     if not size:
         return ["S", "M", "L"]
 
     size = size[0]
-    quantity = quantity[0] if quantity else 'size'
+    quantity = quantity[0] if quantity else "size"
     if re.match(r"\s+s", size):
-        return [quantity + ' s', quantity + ' m', quantity + ' l']
-    if re.match(r'small', size):
-        return [quantity + ' small', quantity + ' medium', quantity + ' large']
-    if re.match(r'nhỏ', size):
-        return [quantity + ' nhỏ', quantity + ' vừa', quantity + ' lớn']
+        return [quantity + " s", quantity + " m", quantity + " l"]
+    if re.match(r"small", size):
+        return [quantity + " small", quantity + " medium", quantity + " large"]
+    if re.match(r"nhỏ", size):
+        return [quantity + " nhỏ", quantity + " vừa", quantity + " lớn"]
+
 
 # Step 3 mapping price and food
-def map(foods: list, prices: list, sizes:list) -> List[List[str]]:
+def map(foods: list, prices: list, sizes: list) -> List[List[str]]:
     menu = []
 
     n_prices = len(prices)
 
-    #check if list price is null
+    # check if list price is null
     if not prices:
-        return [[f, 'NOT GIVEN'] for f in foods if f]
+        return [[f, "NOT GIVEN"] for f in foods if f]
 
-
-    #Clean header content
+    # Clean header content
     for idx, f in enumerate(foods):
         if idx < prices[0][0] - 1:
-            foods[idx] = ''
+            foods[idx] = ""
         else:
             break
 
